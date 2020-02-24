@@ -1,0 +1,435 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:15 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_clk_wiz_1_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_rst_clk_wiz_1_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:15 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_xlconcat_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_microblaze_0_xlconcat_0 (xilinx.com:ip:xlconcat:2.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:15 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_microblaze_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1 (Rev. 17)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:15 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_axi_intc_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_microblaze_0_axi_intc_0 (xilinx.com:ip:axi_intc:4.1 (Rev. 10)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter C_IRQ_CONNECTION with default value 0 : a parameter called C_IRQ_CONNECTION already exists in axi_intc_v4_1
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_microblaze_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_microblaze_0_0 (xilinx.com:ip:microblaze:10.0 (Rev. 6)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_mdm_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_mdm_1_0 (xilinx.com:ip:mdm:3.2 (Rev. 13)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter C_DEBUG_INTERFACE with default value 0 : a parameter called C_DEBUG_INTERFACE already exists in mdm_v3_2
+Set parameter C_M_AXIS_ID_WIDTH to value 7 (source 'default')
+Set parameter C_S_AXI_ADDR_WIDTH to value 4 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_lmb_bram_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_lmb_bram_0 (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ilmb_v10_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_ilmb_v10_0 (xilinx.com:ip:lmb_v10:3.0 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ilmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_ilmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0 (Rev. 14)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dlmb_v10_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_dlmb_v10_0 (xilinx.com:ip:lmb_v10:3.0 (Rev. 9)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_dlmb_bram_if_cntlr_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_dlmb_bram_if_cntlr_0 (xilinx.com:ip:lmb_bram_if_cntlr:4.0 (Rev. 14)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+Set parameter C_MASK1 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK2 to value 0x0000000000800000 (source 'default')
+Set parameter C_MASK3 to value 0x0000000000800000 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_clk_wiz_1_0 (xilinx.com:ip:clk_wiz:6.0) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_uartlite_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_uartlite_0_0 (xilinx.com:ip:axi_uartlite:2.0 (Rev. 20)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 18)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+
+Unable to set the value 'led_16bits' on parameter 'GPIO BOARD INTERFACE' due to the following failure - 
+Value 'led_16bits' is out of the range for parameter 'GPIO BOARD INTERFACE(GPIO_BOARD_INTERFACE)' for BD Cell 'design_1_axi_gpio_1_0' . Valid values are - Custom, dip_switches_8bits, hdmi_in_hpd_led, hdmi_out_hpd_led, led_8bits, push_buttons_5bits
+. Restoring to an old valid value of 'Custom'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:axi_gpio:2.0 -user_name design_1_axi_gpio_1_0
+set_property -dict "\
+  CONFIG.C_ALL_INPUTS {0} \
+  CONFIG.C_ALL_INPUTS_2 {0} \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {0} \
+  CONFIG.C_DOUT_DEFAULT {0x00000000} \
+  CONFIG.C_DOUT_DEFAULT_2 {0x00000000} \
+  CONFIG.C_GPIO2_WIDTH {32} \
+  CONFIG.C_GPIO_WIDTH {16} \
+  CONFIG.C_INTERRUPT_PRESENT {0} \
+  CONFIG.C_IS_DUAL {0} \
+  CONFIG.C_TRI_DEFAULT {0xFFFFFFFF} \
+  CONFIG.C_TRI_DEFAULT_2 {0xFFFFFFFF} \
+  CONFIG.Component_Name {design_1_axi_gpio_1_0} \
+  CONFIG.GPIO.BOARD.ASSOCIATED_PARAM {GPIO_BOARD_INTERFACE} \
+  CONFIG.GPIO2_BOARD_INTERFACE {Custom} \
+  CONFIG.GPIO_BOARD_INTERFACE {led_16bits} \
+  CONFIG.S_AXI.ADDR_WIDTH {9} \
+  CONFIG.S_AXI.ARUSER_WIDTH {0} \
+  CONFIG.S_AXI.AWUSER_WIDTH {0} \
+  CONFIG.S_AXI.BUSER_WIDTH {0} \
+  CONFIG.S_AXI.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.S_AXI.DATA_WIDTH {32} \
+  CONFIG.S_AXI.FREQ_HZ {100000000} \
+  CONFIG.S_AXI.HAS_BRESP {1} \
+  CONFIG.S_AXI.HAS_BURST {0} \
+  CONFIG.S_AXI.HAS_CACHE {0} \
+  CONFIG.S_AXI.HAS_LOCK {0} \
+  CONFIG.S_AXI.HAS_PROT {0} \
+  CONFIG.S_AXI.HAS_QOS {0} \
+  CONFIG.S_AXI.HAS_REGION {0} \
+  CONFIG.S_AXI.HAS_RRESP {1} \
+  CONFIG.S_AXI.HAS_WSTRB {1} \
+  CONFIG.S_AXI.ID_WIDTH {0} \
+  CONFIG.S_AXI.MAX_BURST_LENGTH {1} \
+  CONFIG.S_AXI.NUM_READ_OUTSTANDING {1} \
+  CONFIG.S_AXI.NUM_READ_THREADS {1} \
+  CONFIG.S_AXI.NUM_WRITE_OUTSTANDING {1} \
+  CONFIG.S_AXI.NUM_WRITE_THREADS {1} \
+  CONFIG.S_AXI.PHASE {0.0} \
+  CONFIG.S_AXI.PROTOCOL {AXI4LITE} \
+  CONFIG.S_AXI.READ_WRITE_MODE {READ_WRITE} \
+  CONFIG.S_AXI.RUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.RUSER_WIDTH {0} \
+  CONFIG.S_AXI.SUPPORTS_NARROW_BURST {0} \
+  CONFIG.S_AXI.WUSER_BITS_PER_BYTE {0} \
+  CONFIG.S_AXI.WUSER_WIDTH {0} \
+  CONFIG.S_AXI_ACLK.ASSOCIATED_BUSIF {S_AXI} \
+  CONFIG.S_AXI_ACLK.ASSOCIATED_RESET {s_axi_aresetn} \
+  CONFIG.S_AXI_ACLK.CLK_DOMAIN {/clk_wiz_1_clk_out1} \
+  CONFIG.S_AXI_ACLK.FREQ_HZ {100000000} \
+  CONFIG.S_AXI_ACLK.PHASE {0.0} \
+  CONFIG.S_AXI_ARESETN.POLARITY {ACTIVE_LOW} \
+  CONFIG.USE_BOARD_FLOW {true} " [get_ips design_1_axi_gpio_1_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 18)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Thu Feb 20 11:46:14 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_PmodBT2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_PmodBT2_0_0 (digilentinc.com:IP:PmodBT2:1.0 (Rev. 10)) to Vivado generation flows.
+

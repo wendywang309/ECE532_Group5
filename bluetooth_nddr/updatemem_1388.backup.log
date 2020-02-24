@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# updatemem v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# 
+# Start of session at: Thu Feb 20 19:10:51 2020
+# Process ID: 1388
+# Current directory: c:/ECE532/bluetooth_nddr
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2018.1/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2018.1/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: c:/ECE532/bluetooth_nddr/updatemem.log
+# Journal file: c:/ECE532/bluetooth_nddr\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2018.1/scripts/updatemem/main.tcl -notrace
+ Loading bitfile C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+Loading data files...
+Updating memory content...
+Creating bitstream...
+Writing bitstream C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper_hw_platform_0/download.bit...
+  update_mem: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 520.551 ; gain = 461.113
+INFO: [Common 17-206] Exiting updatemem at Thu Feb 20 19:11:06 2020...

@@ -1,0 +1,574 @@
+16:20:30 **** Build of project drumstick_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodBT2_v1_0/src"
+make -C microblaze_0/libsrc/PmodBT2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodNAV_v1_0/src"
+make -C microblaze_0/libsrc/PmodNAV_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/PmodBT2_v1_0/src"
+make -C microblaze_0/libsrc/PmodBT2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodBT2..."
+"Running Make libs in microblaze_0/libsrc/PmodNAV_v1_0/src"
+make -C microblaze_0/libsrc/PmodNAV_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodNAV..."
+PmodNAV.c: In function 'NAV_GetODRRaw':
+PmodNAV.c:2289:11: warning: 'getODR' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return getODR;
+           ^~~~~~
+PmodNAV.c: In function 'NAV_GetFIFOMode':
+PmodNAV.c:2616:11: warning: 'getFIFO' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return getFIFO;
+           ^~~~~~~
+PmodNAV.c: In function 'NAV_GetFIFOThs':
+PmodNAV.c:2665:11: warning: 'bFifoThs' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return bFifoThs;
+           ^~~~~~~~
+PmodNAV.c: In function 'NAV_GetFIFOStatus':
+PmodNAV.c:2699:11: warning: 'getFIFOSts' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    return getFIFOSts;
+           ^~~~~~~~~~
+"Running Make libs in microblaze_0/libsrc/standalone_v6_6/src"
+make -C microblaze_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:74:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+
+**** Build of configuration Debug for project drumstick ****
+
+Nothing to build for project drumstick
+16:20:45 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2018.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [drumstick.elf] Error 1
+16:20:48 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 153988	   1540	   3528	 159056	  26d50	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+16:31:35 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+16:43:10 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+16:45:01 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+16:51:19 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+16:54:24 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+16:55:18 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+16:59:06 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:01:47 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:06:59 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154084	   1540	   3528	 159152	  26db0	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:09:41 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:14:13 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:20:01 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154100	   1540	   3528	 159168	  26dc0	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:20:35 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 154100	   1540	   3528	 159168	  26dc0	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:21:54 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:27:40 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126732	   1540	   3528	 131800	  202d8	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:27:56 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:42:45 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126752	   1540	   3524	 131816	  202e8	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:43:06 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126752	   1540	   3524	 131816	  202e8	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:43:27 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:110:18: error: invalid initializer
+  u8 hit_buf[1] = 1;
+                  ^
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+make: *** [src/main.o] Error 1
+17:43:33 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126752	   1540	   3524	 131816	  202e8	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:44:43 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126784	   1540	   3524	 131848	  20308	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:44:58 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:49:30 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126752	   1540	   3524	 131816	  202e8	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:49:38 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:50:16 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126784	   1540	   3524	 131848	  20308	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+17:50:49 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+17:56:36 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+19:17:32 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+19:18:50 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+19:42:12 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126808	   1540	   3524	 131872	  20320	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+19:42:23 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:10: warning: unused variable 'str' [-Wunused-variable]
+    char *str;
+          ^~~
+../src/main.c:97:10: warning: unused variable 'compass' [-Wunused-variable]
+    char *compass[8] = {"North", "North-East", "East", "South-East", "South",
+          ^~~~~~~
+../src/main.c:95:13: warning: unused variable 'magXYd' [-Wunused-variable]
+             magXYd,
+             ^~~~~~
+../src/main.c:94:13: warning: unused variable 'dps' [-Wunused-variable]
+             dps,
+             ^~~
+../src/main.c:93:13: warning: unused variable 'tempF' [-Wunused-variable]
+             tempF,
+             ^~~~~
+../src/main.c:92:10: warning: variable 'Pref' set but not used [-Wunused-but-set-variable]
+    float Pref,
+          ^~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126808	   1540	   3524	 131872	  20320	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+19:42:31 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.
+19:44:42 **** Incremental Build of configuration Debug for project drumstick ****
+make all 
+make: Nothing to be done for `all'.

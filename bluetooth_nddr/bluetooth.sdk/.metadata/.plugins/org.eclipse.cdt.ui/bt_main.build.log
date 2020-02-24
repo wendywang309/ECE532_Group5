@@ -1,0 +1,28 @@
+19:37:43 **** Auto Build of configuration Debug for project bt_main ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../bt_main_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:89:4: warning: implicit declaration of function 'NavDemo_Cleanup' [-Wimplicit-function-declaration]
+    NavDemo_Cleanup();
+    ^~~~~~~~~~~~~~~
+../src/main.c:65:5: warning: unused variable 'hit_buf' [-Wunused-variable]
+  u8 hit_buf[1] = "1";
+     ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: bt_main.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bt_main_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bt_main.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bt_main.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bt_main.elf  |tee "bt_main.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8040	    336	   3288	  11664	   2d90	bt_main.elf
+'Finished building: bt_main.elf.size'
+' '
+
+19:37:44 Build Finished (took 1s.24ms)
+
