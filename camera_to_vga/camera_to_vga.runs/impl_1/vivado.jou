@@ -2,11 +2,11 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Thu Feb 27 21:56:08 2020
-# Process ID: 14536
-# Current directory: C:/ECE532/camera.runs/impl_1
+# Start of session at: Sun Mar  8 16:24:45 2020
+# Process ID: 7804
+# Current directory: D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
-# Log file: C:/ECE532/camera.runs/impl_1/design_1_wrapper.vdi
-# Journal file: C:/ECE532/camera.runs/impl_1\vivado.jou
+# Log file: D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/impl_1/design_1_wrapper.vdi
+# Journal file: D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

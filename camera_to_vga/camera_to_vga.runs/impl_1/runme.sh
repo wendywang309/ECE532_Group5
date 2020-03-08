@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/SDK/2018.1/bin;C:/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.1/bin
+  PATH=D:/Xilinx/SDK/2018.1/bin;D:/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2018.1/bin
 else
-  PATH=C:/Xilinx/SDK/2018.1/bin;C:/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.1/bin:$PATH
+  PATH=D:/Xilinx/SDK/2018.1/bin;D:/Xilinx/Vivado/2018.1/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2018.1/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2018.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/ECE532/camera.runs/impl_1'
+HD_PWD='D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
+/bin/touch .write_bitstream.begin.rst
 EAStep vivado -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 
 

@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Thu Feb 27 21:54:40 2020
-//Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+//Date        : Sun Mar  8 16:20:16 2020
+//Host        : SINCOL-PC running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
 //Purpose     : IP block netlist
@@ -16,6 +16,7 @@ module design_1_wrapper
     RED_O,
     VSYNC_O,
     button_debounce,
+    detect_0,
     led_config_finished,
     ov7670_d,
     ov7670_href,
@@ -34,6 +35,7 @@ module design_1_wrapper
   output [4:0]RED_O;
   output VSYNC_O;
   input button_debounce;
+  output [10:0]detect_0;
   output led_config_finished;
   input [7:0]ov7670_d;
   input ov7670_href;
@@ -53,6 +55,7 @@ module design_1_wrapper
   wire [4:0]RED_O;
   wire VSYNC_O;
   wire button_debounce;
+  wire [10:0]detect_0;
   wire led_config_finished;
   wire [7:0]ov7670_d;
   wire ov7670_href;
@@ -73,6 +76,7 @@ module design_1_wrapper
         .RED_O(RED_O),
         .VSYNC_O(VSYNC_O),
         .button_debounce(button_debounce),
+        .detect_0(detect_0),
         .led_config_finished(led_config_finished),
         .ov7670_d(ov7670_d),
         .ov7670_href(ov7670_href),

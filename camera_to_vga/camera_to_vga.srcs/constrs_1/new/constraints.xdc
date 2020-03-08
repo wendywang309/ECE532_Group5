@@ -74,3 +74,16 @@ set_property IOSTANDARD LVCMOS33 [get_ports VSYNC_O]
 
 # Magic
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ov7670_pclk_IBUF]
+
+#Debug for finger detection
+set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33} [get_ports {detect_0[0]}]
+set_property -dict {PACKAGE_PIN K15 IOSTANDARD LVCMOS33} [get_ports {detect_0[1]}]
+set_property -dict {PACKAGE_PIN J13 IOSTANDARD LVCMOS33} [get_ports {detect_0[2]}]
+set_property -dict {PACKAGE_PIN N14 IOSTANDARD LVCMOS33} [get_ports {detect_0[3]}]
+set_property -dict {PACKAGE_PIN R18 IOSTANDARD LVCMOS33} [get_ports {detect_0[4]}]
+set_property -dict {PACKAGE_PIN V17 IOSTANDARD LVCMOS33} [get_ports {detect_0[5]}]
+set_property -dict {PACKAGE_PIN U17 IOSTANDARD LVCMOS33} [get_ports {detect_0[6]}]
+set_property -dict {PACKAGE_PIN U16 IOSTANDARD LVCMOS33} [get_ports {detect_0[7]}]
+set_property -dict {PACKAGE_PIN V16 IOSTANDARD LVCMOS33} [get_ports {detect_0[8]}]
+set_property -dict {PACKAGE_PIN T15 IOSTANDARD LVCMOS33} [get_ports {detect_0[9]}]
+set_property -dict {PACKAGE_PIN U14 IOSTANDARD LVCMOS33} [get_ports {detect_0[10]}]

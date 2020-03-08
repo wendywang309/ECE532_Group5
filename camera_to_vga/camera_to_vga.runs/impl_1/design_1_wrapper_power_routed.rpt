@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Thu Feb 27 21:58:56 2020
-| Host             : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Date             : Sun Mar  8 16:24:10 2020
+| Host             : SINCOL-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
 | Device           : xc7a100tcsg324-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.219        |
+| Total On-Chip Power (W)  | 0.220        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.119        |
@@ -53,19 +53,19 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      896 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      353 |     63400 |            0.56 |
-|   Register     |    <0.001 |      254 |    126800 |            0.20 |
-|   CARRY4       |    <0.001 |       16 |     15850 |            0.10 |
+| Slice Logic    |    <0.001 |      998 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      372 |     63400 |            0.59 |
+|   Register     |    <0.001 |      309 |    126800 |            0.24 |
+|   CARRY4       |    <0.001 |       26 |     15850 |            0.16 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |       63 |     63400 |            0.10 |
-|   Others       |     0.000 |      167 |       --- |             --- |
-| Signals        |     0.002 |      897 |       --- |             --- |
-| Block RAM      |     0.005 |     52.5 |       135 |           38.89 |
+|   Others       |     0.000 |      185 |       --- |             --- |
+| Signals        |     0.002 |      984 |       --- |             --- |
+| Block RAM      |     0.006 |     57.5 |       135 |           42.59 |
 | MMCM           |     0.106 |        1 |         6 |           16.67 |
-| I/O            |     0.004 |       38 |       210 |           18.10 |
+| I/O            |     0.004 |       49 |       210 |           23.33 |
 | Static Power   |     0.100 |          |           |                 |
-| Total          |     0.219 |          |           |                 |
+| Total          |     0.220 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.026 |       0.009 |      0.017 |
+| Vccint    |       1.000 |     0.027 |       0.010 |      0.017 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.000 |      0.001 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -148,7 +148,7 @@ Table of Contents
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
 | design_1_wrapper                               |     0.119 |
-|   design_1_i                                   |     0.115 |
+|   design_1_i                                   |     0.116 |
 |     blk_mem_gen_0                              |     0.006 |
 |       U0                                       |     0.006 |
 |         inst_blk_mem_gen                       |     0.006 |
@@ -251,9 +251,27 @@ Table of Contents
 |                 prim_noinit.ram                |    <0.001 |
 |               ramloop[9].ram.r                 |    <0.001 |
 |                 prim_noinit.ram                |    <0.001 |
+|     blk_mem_gen_1                              |    <0.001 |
+|       U0                                       |    <0.001 |
+|         inst_blk_mem_gen                       |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen |    <0.001 |
+|             valid.cstr                         |    <0.001 |
+|               has_mux_b.B                      |    <0.001 |
+|               ramloop[45].ram.r                |    <0.001 |
+|                 prim_noinit.ram                |    <0.001 |
+|               ramloop[46].ram.r                |    <0.001 |
+|                 prim_noinit.ram                |    <0.001 |
+|               ramloop[47].ram.r                |    <0.001 |
+|                 prim_noinit.ram                |    <0.001 |
+|               ramloop[4].ram.r                 |     0.000 |
+|                 prim_noinit.ram                |     0.000 |
+|               ramloop[5].ram.r                 |    <0.001 |
+|                 prim_noinit.ram                |    <0.001 |
 |     clk_wiz_0                                  |     0.106 |
 |       inst                                     |     0.106 |
 |     debounce_0                                 |    <0.001 |
+|       inst                                     |    <0.001 |
+|     finger_detection_0                         |    <0.001 |
 |       inst                                     |    <0.001 |
 |     ov7670_capture_0                           |     0.001 |
 |       U0                                       |     0.001 |

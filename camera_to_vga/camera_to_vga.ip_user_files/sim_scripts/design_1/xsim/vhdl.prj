@@ -1,0 +1,11 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/d527/ov7670_capture.vhdl" \
+"../../../bd/design_1/ip/design_1_ov7670_capture_0_0/sim/design_1_ov7670_capture_0_0.vhd" \
+"../../../bd/design_1/ipshared/3e20/i2c_sender.vhdl" \
+"../../../bd/design_1/ipshared/3e20/ov7670_controller.vhdl" \
+"../../../bd/design_1/ipshared/3e20/ov7670_registers.vhdl" \
+"../../../bd/design_1/ip/design_1_ov7670_controller_0_0/sim/design_1_ov7670_controller_0_0.vhd" \
+"../../../bd/design_1/ipshared/3cfd/ov7670_vga.vhdl" \
+"../../../bd/design_1/ip/design_1_ov7670_vga_0_0/sim/design_1_ov7670_vga_0_0.vhd" \
+
+nosort
