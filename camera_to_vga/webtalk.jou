@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Mar  9 12:51:51 2020
+# Process ID: 6932
+# Current directory: c:/ECE532/ECE532_Group5/camera_to_vga
+# Command line: wbtcv.exe -mode batch -source c:/ece532/ece532_group5/camera_to_vga/camera_to_vga.tmp/finger_detection_v1_0_project/finger_detection_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/ECE532/ECE532_Group5/camera_to_vga/webtalk.log
+# Journal file: c:/ECE532/ECE532_Group5/camera_to_vga\webtalk.jou
+#-----------------------------------------------------------
+source c:/ece532/ece532_group5/camera_to_vga/camera_to_vga.tmp/finger_detection_v1_0_project/finger_detection_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace

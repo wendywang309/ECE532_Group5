@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-// Date        : Thu Feb 27 20:19:27 2020
+// Date        : Mon Mar  9 12:17:27 2020
 // Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/ECE532/camera.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v
+//               c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_sim_netlist.v
 // Design      : design_1_clk_wiz_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,13 +14,13 @@
 
 (* NotValidForBitStream *)
 module design_1_clk_wiz_0_0
-   (clk_50,
-    clk_25,
+   (clk_25,
+    clk_50,
     resetn,
     locked,
     clk_in1);
-  output clk_50;
   output clk_25;
+  output clk_50;
   input resetn;
   output locked;
   input clk_in1;
@@ -41,13 +41,13 @@ endmodule
 
 (* ORIG_REF_NAME = "design_1_clk_wiz_0_0_clk_wiz" *) 
 module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
-   (clk_50,
-    clk_25,
+   (clk_25,
+    clk_50,
     resetn,
     locked,
     clk_in1);
-  output clk_50;
   output clk_25;
+  output clk_50;
   input resetn;
   output locked;
   input clk_in1;
@@ -94,12 +94,12 @@ module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
         .O(clk_in1_design_1_clk_wiz_0_0));
   (* BOX_TYPE = "PRIMITIVE" *) 
   BUFG clkout1_buf
-       (.I(clk_50_design_1_clk_wiz_0_0),
-        .O(clk_50));
-  (* BOX_TYPE = "PRIMITIVE" *) 
-  BUFG clkout2_buf
        (.I(clk_25_design_1_clk_wiz_0_0),
         .O(clk_25));
+  (* BOX_TYPE = "PRIMITIVE" *) 
+  BUFG clkout2_buf
+       (.I(clk_50_design_1_clk_wiz_0_0),
+        .O(clk_50));
   (* BOX_TYPE = "PRIMITIVE" *) 
   MMCME2_ADV #(
     .BANDWIDTH("OPTIMIZED"),
@@ -108,11 +108,11 @@ module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
     .CLKFBOUT_USE_FINE_PS("FALSE"),
     .CLKIN1_PERIOD(10.000000),
     .CLKIN2_PERIOD(0.000000),
-    .CLKOUT0_DIVIDE_F(20.000000),
+    .CLKOUT0_DIVIDE_F(40.000000),
     .CLKOUT0_DUTY_CYCLE(0.500000),
     .CLKOUT0_PHASE(0.000000),
     .CLKOUT0_USE_FINE_PS("FALSE"),
-    .CLKOUT1_DIVIDE(40),
+    .CLKOUT1_DIVIDE(20),
     .CLKOUT1_DUTY_CYCLE(0.500000),
     .CLKOUT1_PHASE(0.000000),
     .CLKOUT1_USE_FINE_PS("FALSE"),
@@ -159,9 +159,9 @@ module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
         .CLKIN2(1'b0),
         .CLKINSEL(1'b1),
         .CLKINSTOPPED(NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED),
-        .CLKOUT0(clk_50_design_1_clk_wiz_0_0),
+        .CLKOUT0(clk_25_design_1_clk_wiz_0_0),
         .CLKOUT0B(NLW_mmcm_adv_inst_CLKOUT0B_UNCONNECTED),
-        .CLKOUT1(clk_25_design_1_clk_wiz_0_0),
+        .CLKOUT1(clk_50_design_1_clk_wiz_0_0),
         .CLKOUT1B(NLW_mmcm_adv_inst_CLKOUT1B_UNCONNECTED),
         .CLKOUT2(NLW_mmcm_adv_inst_CLKOUT2_UNCONNECTED),
         .CLKOUT2B(NLW_mmcm_adv_inst_CLKOUT2B_UNCONNECTED),

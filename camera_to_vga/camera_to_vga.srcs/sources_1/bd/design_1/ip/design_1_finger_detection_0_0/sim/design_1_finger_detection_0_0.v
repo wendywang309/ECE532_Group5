@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:finger_detection:1.0
-// IP Revision: 9
+// IP Revision: 18
 
 `timescale 1ns/1ps
 
@@ -64,7 +64,7 @@ module design_1_finger_detection_0_0 (
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 input wire [11 : 0] dout;
-output wire [17 : 0] addr;
+input wire [17 : 0] addr;
 output wire [10 : 0] detect;
 
   finger_detection inst (

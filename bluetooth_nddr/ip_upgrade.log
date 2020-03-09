@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Mar  9 13:10:44 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_design_1_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_design_1_wrapper_0_0 (xilinx.com:user:design_1_wrapper:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Mar  9 11:32:30 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_design_1_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_design_1_wrapper_0_0 (xilinx.com:user:design_1_wrapper:1.0 (Rev. 2)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Mar  9 11:00:49 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_PmodBT2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_PmodBT2_0_0 (digilentinc.com:IP:PmodBT2:1.0 (Rev. 10)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Mon Mar  9 10:58:03 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_design_1_wrapper_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_design_1_wrapper_0_0 (xilinx.com:user:design_1_wrapper:1.0 (Rev. 2)) to Vivado generation flows.
+

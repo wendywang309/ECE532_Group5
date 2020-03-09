@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="35">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1583698817"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1583698817"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1583698817"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1583698817"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1583773614"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1583773614"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1583773614"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1583773614"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\design_1_ov7670_capture_0_0\design_1_ov7670_capture_0_0.xci" Type="IP">
         <Instance HierarchyPath="ov7670_capture_0"/>
@@ -25,14 +25,6 @@
       </File>
       <File Name="ip\design_1_ov7670_vga_0_0\design_1_ov7670_vga_0_0.xci" Type="IP">
         <Instance HierarchyPath="ov7670_vga_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_clk_wiz_0_0\design_1_clk_wiz_0_0.xci" Type="IP">
-        <Instance HierarchyPath="clk_wiz_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -64,14 +56,6 @@
       <File Name="sim\design_1.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\design_1_blk_mem_gen_0_1\design_1_blk_mem_gen_0_1.xci" Type="IP">
-        <Instance HierarchyPath="blk_mem_gen_1"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\design_1_finger_detection_0_0\design_1_finger_detection_0_0.xci" Type="IP">

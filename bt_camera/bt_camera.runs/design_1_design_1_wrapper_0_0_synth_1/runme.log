@@ -1,0 +1,932 @@
+
+*** Running vivado
+    with args -log design_1_design_1_wrapper_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_design_1_wrapper_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_design_1_wrapper_0_0.tcl -notrace
+Command: synth_design -top design_1_design_1_wrapper_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23160 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 499.703 ; gain = 104.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_design_1_wrapper_0_0' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/synth/design_1_design_1_wrapper_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1.v:13]
+INFO: [Synth 8-638] synthesizing module 'design_1_blk_mem_gen_0_0' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_blk_mem_gen_0_0/synth/design_1_blk_mem_gen_0_0.vhd:71]
+	Parameter C_FAMILY bound to: artix7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 153600 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 153600 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 18 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 153600 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 153600 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 18 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 50 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 4 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     16.423531 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/67d8/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_blk_mem_gen_0_0/synth/design_1_blk_mem_gen_0_0.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'design_1_blk_mem_gen_0_0' (11#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_blk_mem_gen_0_0/synth/design_1_blk_mem_gen_0_0.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'design_1_debounce_0_0' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_debounce_0_0/synth/design_1_debounce_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/9e46/debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (12#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/9e46/debounce.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_debounce_0_0' (13#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_debounce_0_0/synth/design_1_debounce_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_finger_detection_0_0' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'finger_detection' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/4564/src/finger_detection.v:23]
+WARNING: [Synth 8-6014] Unused sequential element red_reg was removed.  [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/4564/src/finger_detection.v:28]
+WARNING: [Synth 8-6014] Unused sequential element final_count_reg was removed.  [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/4564/src/finger_detection.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'finger_detection' (14#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/4564/src/finger_detection.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'detect' does not match port width (1) of module 'finger_detection' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_finger_detection_0_0' (15#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'design_1_ov7670_capture_0_0' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_capture_0_0/synth/design_1_ov7670_capture_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'ov7670_capture' declared at 'c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/d527/ov7670_capture.vhdl:11' bound to instance 'U0' of component 'ov7670_capture' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_capture_0_0/synth/design_1_ov7670_capture_0_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'ov7670_capture' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/d527/ov7670_capture.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_capture' (16#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/d527/ov7670_capture.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ov7670_capture_0_0' (17#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_capture_0_0/synth/design_1_ov7670_capture_0_0.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'design_1_ov7670_controller_0_0' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_controller_0_0/synth/design_1_ov7670_controller_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'ov7670_controller' declared at 'c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_controller.vhdl:11' bound to instance 'U0' of component 'ov7670_controller' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_controller_0_0/synth/design_1_ov7670_controller_0_0.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'ov7670_controller' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_controller.vhdl:23]
+INFO: [Synth 8-3491] module 'i2c_sender' declared at 'c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/i2c_sender.vhdl:11' bound to instance 'Inst_i2c_sender' of component 'i2c_sender' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_controller.vhdl:58]
+INFO: [Synth 8-638] synthesizing module 'i2c_sender' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/i2c_sender.vhdl:24]
+INFO: [Synth 8-256] done synthesizing module 'i2c_sender' (18#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/i2c_sender.vhdl:24]
+INFO: [Synth 8-3491] module 'ov7670_registers' declared at 'c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_registers.vhdl:27' bound to instance 'Inst_ov7670_registers' of component 'ov7670_registers' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_controller.vhdl:73]
+INFO: [Synth 8-638] synthesizing module 'ov7670_registers' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_registers.vhdl:35]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_registers' (19#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_registers.vhdl:35]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_controller' (20#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_controller.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ov7670_controller_0_0' (21#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_controller_0_0/synth/design_1_ov7670_controller_0_0.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'design_1_ov7670_vga_0_0' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_vga_0_0/synth/design_1_ov7670_vga_0_0.vhd:69]
+INFO: [Synth 8-3491] module 'ov7670_vga' declared at 'c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3cfd/ov7670_vga.vhdl:11' bound to instance 'U0' of component 'ov7670_vga' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_vga_0_0/synth/design_1_ov7670_vga_0_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'ov7670_vga' [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3cfd/ov7670_vga.vhdl:24]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_vga' (22#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3cfd/ov7670_vga.vhdl:24]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ov7670_vga_0_0' (23#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ov7670_vga_0_0/synth/design_1_ov7670_vga_0_0.vhd:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ov7670_capture_0'. This will prevent further optimization [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1.v:114]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ov7670_vga_0'. This will prevent further optimization [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1.v:131]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'finger_detection_0'. This will prevent further optimization [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1.v:109]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'blk_mem_gen_0'. This will prevent further optimization [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1.v:97]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (24#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (25#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ipshared/010c/src/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_design_1_wrapper_0_0' (26#1) [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/synth/design_1_design_1_wrapper_0_0.v:57]
+WARNING: [Synth 8-3331] design finger_detection has unconnected port dout[11]
+WARNING: [Synth 8-3331] design finger_detection has unconnected port dout[10]
+WARNING: [Synth 8-3331] design finger_detection has unconnected port dout[9]
+WARNING: [Synth 8-3331] design finger_detection has unconnected port dout[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[17]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[16]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[15]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1535]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1534]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1533]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1532]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1531]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1530]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1529]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1528]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1527]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1526]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1525]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1524]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1523]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1522]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1521]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1520]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1519]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1518]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1517]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1516]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1515]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1514]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1513]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1512]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1511]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1510]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1509]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1508]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1507]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1506]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1505]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1504]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1503]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1502]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1501]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1500]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1499]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1498]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1497]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1496]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1495]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1494]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1493]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1492]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1491]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1490]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1489]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1488]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1487]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1486]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1485]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1484]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1483]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1482]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1481]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1480]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1479]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1478]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1477]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1476]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1475]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1474]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1473]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1472]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1471]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1470]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1469]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1468]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1467]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1466]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1465]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1464]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1463]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1462]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:47 ; elapsed = 00:02:50 . Memory (MB): peak = 808.590 ; gain = 413.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 808.590 ; gain = 413.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:48 ; elapsed = 00:02:50 . Memory (MB): peak = 808.590 ; gain = 413.168
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ooc.xdc] for cell 'inst/design_1_i'
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/design_1_ooc.xdc] for cell 'inst/design_1_i'
+Parsing XDC File [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc] for cell 'inst'
+WARNING: [Vivado 12-507] No nets matched 'ov7670_pclk_IBUF'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[0]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[2]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[9]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[15]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[10]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[11]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[17]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[3]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[4]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[6]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[7]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[8]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[12]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[13]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[16]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[1]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[5]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[14]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[1]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[3]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[4]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[7]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[0]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[2]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[5]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[6]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[8]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[9]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[10]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[11]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/clk_wiz_0_clk_25'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[10]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:181]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:181]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[11]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:182]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:182]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[15]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:183]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:183]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[16]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:184]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:184]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[7]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:185]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:185]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[8]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:186]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:186]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[9]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:187]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:187]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[12]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:188]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:188]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[13]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:189]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:189]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[14]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:190]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:190]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[17]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:191]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:191]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[1]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:210]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:210]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[2]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:211]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:211]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[0]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:212]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:212]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[3]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:213]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:213]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[6]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:214]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:214]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[4]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:215]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:215]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[5]'. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:216]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc:216]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/src/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_design_1_wrapper_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_design_1_wrapper_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.runs/design_1_design_1_wrapper_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.runs/design_1_design_1_wrapper_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 948.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:03 ; elapsed = 00:03:32 . Memory (MB): peak = 948.762 ; gain = 553.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:03 ; elapsed = 00:03:32 . Memory (MB): peak = 948.762 ; gain = 553.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/design_1_i/ov7670_capture_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/design_1_i/ov7670_controller_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/design_1_i/ov7670_vga_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/design_1_i/debounce_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/design_1_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/design_1_i/finger_detection_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.runs/design_1_design_1_wrapper_0_0_synth_1/dont_touch.xdc, line 29).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:03 ; elapsed = 00:03:32 . Memory (MB): peak = 948.762 ; gain = 553.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "not_white" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_sr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "divider" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "finished" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register address_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element sreg_reg was removed.  [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_registers.vhdl:52]
+INFO: [Synth 8-5546] ROM "vCounter" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:07 ; elapsed = 00:03:36 . Memory (MB): peak = 948.762 ; gain = 553.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 265   
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 128   
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module finger_detection 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module ov7670_capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module i2c_sender 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module ov7670_registers 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ov7670_controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ov7670_vga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "inst/o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/not_white" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/Inst_i2c_sender/divider" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/Inst_i2c_sender/taken" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U0/Inst_ov7670_registers/finished" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register U0/Inst_ov7670_registers/address_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element U0/Inst_ov7670_registers/sreg_reg was removed.  [c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/ipshared/3e20/ov7670_registers.vhdl:52]
+INFO: [Synth 8-5546] ROM "U0/vCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[6]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[5]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[4]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[3]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[2]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[1]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[0]) is unused and will be removed from module blk_mem_gen_v8_4_1.
+INFO: [Synth 8-3332] Sequential element (inst/green_reg[1]) is unused and will be removed from module design_1_finger_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/green_reg[0]) is unused and will be removed from module design_1_finger_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/blue_reg[1]) is unused and will be removed from module design_1_finger_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/blue_reg[0]) is unused and will be removed from module design_1_finger_detection_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/address_reg[0]) is unused and will be removed from module design_1_ov7670_capture_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/d_latch_reg[11]) is unused and will be removed from module design_1_ov7670_capture_0_0.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/design_1_i/ov7670_controller_0/\U0/Inst_i2c_sender/data_sr_reg[0] )
+INFO: [Synth 8-3332] Sequential element (U0/Inst_i2c_sender/data_sr_reg[0]) is unused and will be removed from module design_1_ov7670_controller_0_0.
+INFO: [Synth 8-3886] merging instance 'inst/design_1_i/ov7670_vga_0/U0/vga_blue_reg[0]' (FD) to 'inst/design_1_i/ov7670_vga_0/U0/vga_green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/design_1_i/ov7670_vga_0/U0/vga_green_reg[0]' (FD) to 'inst/design_1_i/ov7670_vga_0/U0/vga_green_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/design_1_i/ov7670_vga_0/U0/vga_green_reg[1]' (FD) to 'inst/design_1_i/ov7670_vga_0/U0/vga_red_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/design_1_i/ov7670_vga_0/\U0/vga_red_reg[0] )
+INFO: [Synth 8-3332] Sequential element (U0/vga_red_reg[0]) is unused and will be removed from module design_1_ov7670_vga_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:12 ; elapsed = 00:03:42 . Memory (MB): peak = 948.762 ; gain = 553.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------------+-----------------------------------+---------------+----------------+
+|Module Name                    | RTL Object                        | Depth x Width | Implemented As | 
++-------------------------------+-----------------------------------+---------------+----------------+
+|ov7670_registers               | sreg_reg                          | 256x16        | Block RAM      | 
+|design_1_ov7670_controller_0_0 | U0/Inst_ov7670_registers/sreg_reg | 256x16        | Block RAM      | 
++-------------------------------+-----------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/design_1_i/ov7670_controller_0/U0i_1/U0/Inst_ov7670_registers/sreg_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:23 ; elapsed = 00:03:53 . Memory (MB): peak = 948.762 ; gain = 553.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:23 ; elapsed = 00:03:54 . Memory (MB): peak = 948.762 ; gain = 553.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/design_1_i/ov7670_controller_0/U0/Inst_ov7670_registers/sreg_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:24 ; elapsed = 00:03:54 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-5799] Converted tricell instance 'U0i_0' to logic
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:25 ; elapsed = 00:03:55 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:25 ; elapsed = 00:03:55 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:25 ; elapsed = 00:03:56 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:25 ; elapsed = 00:03:56 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:25 ; elapsed = 00:03:56 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:25 ; elapsed = 00:03:56 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    21|
+|2     |LUT1       |    10|
+|3     |LUT2       |    48|
+|4     |LUT3       |    34|
+|5     |LUT4       |    25|
+|6     |LUT5       |    60|
+|7     |LUT6       |   158|
+|8     |MUXF7      |    45|
+|9     |MUXF8      |    18|
+|10    |RAMB18E1   |     2|
+|11    |RAMB18E1_1 |     1|
+|12    |RAMB18E1_2 |     1|
+|13    |RAMB18E1_3 |     1|
+|14    |RAMB36E1   |     6|
+|15    |RAMB36E1_1 |     6|
+|16    |RAMB36E1_2 |    37|
+|17    |RAMB36E1_3 |     1|
+|18    |FDRE       |   242|
+|19    |FDSE       |    31|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+------------------------------------------+------+
+|      |Instance                                           |Module                                    |Cells |
++------+---------------------------------------------------+------------------------------------------+------+
+|1     |top                                                |                                          |   747|
+|2     |  inst                                             |design_1_wrapper                          |   747|
+|3     |    design_1_i                                     |design_1                                  |   747|
+|4     |      blk_mem_gen_0                                |design_1_blk_mem_gen_0_0                  |   321|
+|5     |        U0                                         |blk_mem_gen_v8_4_1                        |   321|
+|6     |          inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                  |   321|
+|7     |            \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                           |   321|
+|8     |              \valid.cstr                          |blk_mem_gen_generic_cstr                  |   321|
+|9     |                \has_mux_b.B                       |blk_mem_gen_mux__parameterized0           |   181|
+|10    |                \ramloop[0].ram.r                  |blk_mem_gen_prim_width                    |     2|
+|11    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                  |     2|
+|12    |                \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9    |     3|
+|13    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized9  |     3|
+|14    |                \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10   |     3|
+|15    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized10 |     3|
+|16    |                \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11   |     3|
+|17    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized11 |     3|
+|18    |                \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12   |     3|
+|19    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized12 |     3|
+|20    |                \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13   |     3|
+|21    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized13 |     3|
+|22    |                \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14   |     3|
+|23    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized14 |     3|
+|24    |                \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15   |     3|
+|25    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized15 |     3|
+|26    |                \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16   |     3|
+|27    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized16 |     3|
+|28    |                \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17   |     3|
+|29    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized17 |     3|
+|30    |                \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18   |     3|
+|31    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized18 |     3|
+|32    |                \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0    |     2|
+|33    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0  |     2|
+|34    |                \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19   |     3|
+|35    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized19 |     3|
+|36    |                \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20   |     3|
+|37    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized20 |     3|
+|38    |                \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21   |     3|
+|39    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized21 |     3|
+|40    |                \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22   |     3|
+|41    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized22 |     3|
+|42    |                \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23   |     3|
+|43    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized23 |     3|
+|44    |                \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24   |     3|
+|45    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized24 |     3|
+|46    |                \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25   |     3|
+|47    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized25 |     3|
+|48    |                \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26   |     3|
+|49    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized26 |     3|
+|50    |                \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27   |     3|
+|51    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized27 |     3|
+|52    |                \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28   |     3|
+|53    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized28 |     3|
+|54    |                \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1    |     2|
+|55    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1  |     2|
+|56    |                \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29   |     3|
+|57    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized29 |     3|
+|58    |                \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30   |     3|
+|59    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized30 |     3|
+|60    |                \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31   |     3|
+|61    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized31 |     3|
+|62    |                \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32   |     3|
+|63    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized32 |     3|
+|64    |                \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized33   |     3|
+|65    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized33 |     3|
+|66    |                \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized34   |     3|
+|67    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized34 |     3|
+|68    |                \ramloop[36].ram.r                 |blk_mem_gen_prim_width__parameterized35   |     3|
+|69    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized35 |     3|
+|70    |                \ramloop[37].ram.r                 |blk_mem_gen_prim_width__parameterized36   |     3|
+|71    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized36 |     3|
+|72    |                \ramloop[38].ram.r                 |blk_mem_gen_prim_width__parameterized37   |     3|
+|73    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized37 |     3|
+|74    |                \ramloop[39].ram.r                 |blk_mem_gen_prim_width__parameterized38   |     3|
+|75    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized38 |     3|
+|76    |                \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2    |     1|
+|77    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2  |     1|
+|78    |                \ramloop[40].ram.r                 |blk_mem_gen_prim_width__parameterized39   |     4|
+|79    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized39 |     4|
+|80    |                \ramloop[41].ram.r                 |blk_mem_gen_prim_width__parameterized40   |     3|
+|81    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized40 |     3|
+|82    |                \ramloop[42].ram.r                 |blk_mem_gen_prim_width__parameterized41   |     3|
+|83    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized41 |     3|
+|84    |                \ramloop[43].ram.r                 |blk_mem_gen_prim_width__parameterized42   |     4|
+|85    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized42 |     4|
+|86    |                \ramloop[44].ram.r                 |blk_mem_gen_prim_width__parameterized43   |     4|
+|87    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized43 |     4|
+|88    |                \ramloop[45].ram.r                 |blk_mem_gen_prim_width__parameterized44   |     3|
+|89    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized44 |     3|
+|90    |                \ramloop[46].ram.r                 |blk_mem_gen_prim_width__parameterized45   |     2|
+|91    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized45 |     2|
+|92    |                \ramloop[47].ram.r                 |blk_mem_gen_prim_width__parameterized46   |     3|
+|93    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized46 |     3|
+|94    |                \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3    |     3|
+|95    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3  |     3|
+|96    |                \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4    |     4|
+|97    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized4  |     4|
+|98    |                \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5    |     1|
+|99    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized5  |     1|
+|100   |                \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6    |     3|
+|101   |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized6  |     3|
+|102   |                \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7    |     3|
+|103   |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized7  |     3|
+|104   |                \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8    |     3|
+|105   |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized8  |     3|
+|106   |      debounce_0                                   |design_1_debounce_0_0                     |    38|
+|107   |        inst                                       |debounce                                  |    38|
+|108   |      finger_detection_0                           |design_1_finger_detection_0_0             |    41|
+|109   |        inst                                       |finger_detection                          |    41|
+|110   |      ov7670_capture_0                             |design_1_ov7670_capture_0_0               |    75|
+|111   |        U0                                         |ov7670_capture                            |    75|
+|112   |      ov7670_controller_0                          |design_1_ov7670_controller_0_0            |   178|
+|113   |        U0                                         |ov7670_controller                         |   178|
+|114   |          Inst_i2c_sender                          |i2c_sender                                |   142|
+|115   |          Inst_ov7670_registers                    |ov7670_registers                          |    34|
+|116   |      ov7670_vga_0                                 |design_1_ov7670_vga_0_0                   |    94|
+|117   |        U0                                         |ov7670_vga                                |    94|
++------+---------------------------------------------------+------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:25 ; elapsed = 00:03:56 . Memory (MB): peak = 949.438 ; gain = 554.016
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 171 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:03:21 . Memory (MB): peak = 949.438 ; gain = 413.844
+Synthesis Optimization Complete : Time (s): cpu = 00:03:25 ; elapsed = 00:03:56 . Memory (MB): peak = 949.438 ; gain = 554.016
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 139 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 157 Warnings, 51 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:29 ; elapsed = 00:03:59 . Memory (MB): peak = 949.961 ; gain = 566.488
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.runs/design_1_design_1_wrapper_0_0_synth_1/design_1_design_1_wrapper_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_design_1_wrapper_0_0/design_1_design_1_wrapper_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 116 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/ECE532_Group5/bluetooth_nddr/bluetooth.runs/design_1_design_1_wrapper_0_0_synth_1/design_1_design_1_wrapper_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_design_1_wrapper_0_0_utilization_synth.rpt -pb design_1_design_1_wrapper_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 949.961 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  9 13:17:26 2020...

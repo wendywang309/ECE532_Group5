@@ -1,0 +1,397 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Thu Feb 20 18:45:16 2020
+# Process ID: 17584
+# Current directory: C:/ECE532/bluetooth_nddr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17612 C:\ECE532\bluetooth_nddr\bluetooth.xpr
+# Log file: C:/ECE532/bluetooth_nddr/vivado.log
+# Journal file: C:/ECE532/bluetooth_nddr\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE532/bluetooth_nddr/bluetooth.xpr
+INFO: [Project 1-313] Project file moved from 'C:/ECE532/bluetooth_nv' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/diligent_library/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 1022.020 ; gain = 269.727
+update_compile_order -fileset sources_1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+WARNING: [Project 1-153] The current project device 'xc7a200tsbg484-1' does not match with the device on the 'DIGILENTINC.COM:NEXYS4_DDR:PART0:1.1' board part. A device change to match the device on 'DIGILENTINC.COM:NEXYS4_DDR:PART0:1.1' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to artix7 (xc7a100tcsg324-1)
+update_ip_catalog
+open_bd_design {C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- digilentinc.com:IP:PmodNAV:1.0 - PmodNAV_0
+Adding cell -- digilentinc.com:IP:PmodBT2:1.0 - PmodBT2_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_buttons
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_leds
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Successfully read diagram <design_1> from BD file <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1193.340 ; gain = 106.543
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {design_1_PmodBT2_0_0 design_1_mdm_1_0 design_1_lmb_bram_0 design_1_PmodNAV_0_0 design_1_microblaze_0_axi_periph_0 design_1_microblaze_0_0 design_1_dlmb_v10_0 design_1_microblaze_0_xlconcat_0 design_1_microblaze_0_axi_intc_0 design_1_axi_bram_ctrl_0_bram_0 design_1_axi_uartlite_0_0 design_1_axi_gpio_0_0 design_1_ilmb_bram_if_cntlr_0 design_1_rst_clk_wiz_1_100M_0 design_1_axi_gpio_1_0 design_1_dlmb_bram_if_cntlr_0 design_1_axi_bram_ctrl_0_0 design_1_ilmb_v10_0 design_1_clk_wiz_1_0}] -log ip_upgrade.log
+Upgrading 'C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3420] Updated design_1_PmodBT2_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_PmodNAV_0_0 to use current project options
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+INFO: [IP_Flow 19-3420] Updated design_1_axi_bram_ctrl_0_0 to use current project options
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [IP_Flow 19-3420] Updated design_1_axi_bram_ctrl_0_bram_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_axi_gpio_0_0 to use current project options
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3932] Unable to set the value 'led_8bits' on parameter 'GPIO BOARD INTERFACE' due to the following failure - 
+Value 'led_8bits' is out of the range for parameter 'GPIO BOARD INTERFACE(GPIO_BOARD_INTERFACE)' for BD Cell 'design_1_axi_gpio_1_0' . Valid values are - Custom, dip_switches_16bits, dual_seven_seg_led_disp, led_16bits, push_buttons_5bits, rgb_led, seven_seg_led_an
+. Restoring to an old valid value of 'Custom'
+INFO: [IP_Flow 19-3420] Updated design_1_axi_gpio_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_axi_uartlite_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_clk_wiz_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_dlmb_bram_if_cntlr_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_dlmb_v10_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_ilmb_bram_if_cntlr_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_ilmb_v10_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_lmb_bram_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_mdm_1_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_microblaze_0_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_microblaze_0_axi_intc_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_microblaze_0_axi_periph_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_microblaze_0_xlconcat_0 to use current project options
+INFO: [IP_Flow 19-3420] Updated design_1_rst_clk_wiz_1_100M_0 to use current project options
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_axi_gpio_1_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/ECE532/bluetooth_nddr/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/ECE532/bluetooth_nddr/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1488.633 ; gain = 284.758
+export_ip_user_files -of_objects [get_ips {design_1_PmodBT2_0_0 design_1_mdm_1_0 design_1_lmb_bram_0 design_1_PmodNAV_0_0 design_1_microblaze_0_axi_periph_0 design_1_microblaze_0_0 design_1_dlmb_v10_0 design_1_microblaze_0_xlconcat_0 design_1_microblaze_0_axi_intc_0 design_1_axi_bram_ctrl_0_bram_0 design_1_axi_uartlite_0_0 design_1_axi_gpio_0_0 design_1_ilmb_bram_if_cntlr_0 design_1_rst_clk_wiz_1_100M_0 design_1_axi_gpio_1_0 design_1_dlmb_bram_if_cntlr_0 design_1_axi_bram_ctrl_0_0 design_1_ilmb_v10_0 design_1_clk_wiz_1_0}] -no_script -sync -force -quiet
+apply_board_connection -board_interface "led_16bits" -ip_intf "/axi_leds/GPIO" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.GPIO_BOARD_INTERFACE led_16bits [get_bd_cells -quiet /axi_leds]
+INFO: [board_interface 100-100] delete_bd_objs -quiet /axi_leds_GPIO /led_16bits
+INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 led_16bits
+INFO: [board_interface 100-100] connect_bd_intf_net /led_16bits /axi_leds/GPIO
+save_bd_design
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x0000A000-0x0000AFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x00008000-0x00009FFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x00010000-0x0001FFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x0000B000-0x0000BFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0xC0000000 and high address C_DCACHE_HIGHADDR to 0xC003FFFF.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x0000A000-0x0000AFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x00008000-0x00009FFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x00010000-0x0001FFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x0000B000-0x0000BFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0xC0000000 and high address C_ICACHE_HIGHADDR to 0xC003FFFF.
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's03_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's03_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_BID'(1) to net 'microblaze_0_M_AXI_DC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_RID'(1) to net 'microblaze_0_M_AXI_DC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_BID'(1) to net 'microblaze_0_M_AXI_IC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_RID'(1) to net 'microblaze_0_M_AXI_IC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(18) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(18) - Only lower order bits will be connected.
+VHDL Output written to : C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's03_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's03_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_BID'(1) to net 'microblaze_0_M_AXI_DC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_RID'(1) to net 'microblaze_0_M_AXI_DC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_BID'(1) to net 'microblaze_0_M_AXI_IC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_RID'(1) to net 'microblaze_0_M_AXI_IC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(18) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(18) - Only lower order bits will be connected.
+VHDL Output written to : C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodBT2_axi_uart16550_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodBT2_axi_uart16550_0_0 (AXI UART16550 2.0) from revision 17 to revision 18
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodBT2_axi_gpio_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodBT2_axi_gpio_0_0 (AXI GPIO 2.0) from revision 17 to revision 18
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodBT2_pmod_bridge_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodBT2_pmod_bridge_0_0 (Pmod Bridge 1.0) from revision 9 to revision 12
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodBT2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_buttons .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_leds .
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_pmod_bridge_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodNAV_pmod_bridge_0_0 (Pmod Bridge 1.0) from revision 9 to revision 12
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlconcat_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlconcat_0_0 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlconcat_0_1 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlconcat_0_1 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlconcat_0_2 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlconcat_0_2 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlconcat_0_3 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlconcat_0_3 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_0_0 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_0_3 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_0_3 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_0_4 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_0_4 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_0_5 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_0_5 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_0_6 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_0_6 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_0_8 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_0_8 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_0_9 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_0_9 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_axi_gpio_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodNAV_axi_gpio_0_0 (AXI GPIO 2.0) from revision 17 to revision 18
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_axi_quad_spi_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodNAV_axi_quad_spi_0_0 (AXI Quad SPI 3.2) from revision 14 to revision 15
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_8_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_8_0 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_8_1 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_8_1 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlslice_8_2 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlslice_8_2 to use current project options
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodNAV_xlconcat_0_4 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3420] Updated PmodNAV_xlconcat_0_4 to use current project options
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodNAV_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_7/design_1_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m07_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_9/design_1_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_8/design_1_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_microblaze_0_axi_intc_0, cache-ID = 1989f1d70053f6e0; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_microblaze_0_xlconcat_0, cache-ID = 0de8d433c0d6d396; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mdm_1_0, cache-ID = 3613aa1c45731418; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_rst_clk_wiz_1_100M_0, cache-ID = 98b162ee5c7a626d; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_uartlite_0_0, cache-ID = f3bcd192662d27a9; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_PmodBT2_0_0, cache-ID = 9bbc7b4c3a60cdf4; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_dlmb_v10_0, cache-ID = 199a240e00e893d3; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_ilmb_v10_0, cache-ID = 199a240e00e893d3; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_lmb_bram_0, cache-ID = de293e95227a87b8; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_gpio_0_0, cache-ID = 5962798c513304a4; cache size = 57.095 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_axi_gpio_1_0, cache-ID = 31ffa9c37c4ae295; cache size = 57.095 MB.
+[Thu Feb 20 18:50:54 2020] Launched design_1_auto_pc_4_synth_1, design_1_auto_pc_5_synth_1, design_1_auto_pc_7_synth_1, design_1_auto_pc_6_synth_1, design_1_auto_pc_3_synth_1, design_1_auto_pc_2_synth_1, design_1_auto_pc_1_synth_1, design_1_microblaze_0_0_synth_1, design_1_clk_wiz_1_0_synth_1, design_1_PmodNAV_0_0_synth_1, design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_axi_bram_ctrl_0_bram_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_9_synth_1, design_1_auto_pc_8_synth_1, synth_1...
+Run output will be captured here:
+design_1_auto_pc_4_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_4_synth_1/runme.log
+design_1_auto_pc_5_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_5_synth_1/runme.log
+design_1_auto_pc_7_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_7_synth_1/runme.log
+design_1_auto_pc_6_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_6_synth_1/runme.log
+design_1_auto_pc_3_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_3_synth_1/runme.log
+design_1_auto_pc_2_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_2_synth_1/runme.log
+design_1_auto_pc_1_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_microblaze_0_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_microblaze_0_0_synth_1/runme.log
+design_1_clk_wiz_1_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_clk_wiz_1_0_synth_1/runme.log
+design_1_PmodNAV_0_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_PmodNAV_0_0_synth_1/runme.log
+design_1_dlmb_bram_if_cntlr_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_bram_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_axi_bram_ctrl_0_bram_0_synth_1/runme.log
+design_1_ilmb_bram_if_cntlr_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_9_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_9_synth_1/runme.log
+design_1_auto_pc_8_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_auto_pc_8_synth_1/runme.log
+synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/synth_1/runme.log
+[Thu Feb 20 18:50:55 2020] Launched impl_1...
+Run output will be captured here: C:/ECE532/bluetooth_nddr/bluetooth.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 1669.926 ; gain = 171.563
+file mkdir C:/ECE532/bluetooth_nddr/bluetooth.sdk
+file copy -force C:/ECE532/bluetooth_nddr/bluetooth.runs/impl_1/design_1_wrapper.sysdef C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/ECE532/bluetooth_nddr/bluetooth.sdk -hwspec C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/bluetooth_nddr/bluetooth.sdk -hwspec C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+startgroup
+apply_board_connection -board_interface "" -ip_intf "/PmodNAV_0/Pmod_out" -diagram "design_1" 
+INFO: [board_interface 100-100] delete_bd_objs -quiet /PmodNAV_0_Pmod_out /ja
+INFO: [board_interface 100-100] set_property CONFIG.PMOD Custom [get_bd_cells -quiet /PmodNAV_0]
+endgroup
+validate_bd_design
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x0000A000-0x0000AFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x00008000-0x00009FFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x00010000-0x0001FFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x0000B000-0x0000BFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0xC0000000 and high address C_DCACHE_HIGHADDR to 0xC003FFFF.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x0000A000-0x0000AFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x00008000-0x00009FFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x00010000-0x0001FFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x0000B000-0x0000BFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0xC0000000 and high address C_ICACHE_HIGHADDR to 0xC003FFFF.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/PmodNAV_0/Pmod_out_pin10_i
+/PmodNAV_0/Pmod_out_pin1_i
+/PmodNAV_0/Pmod_out_pin2_i
+/PmodNAV_0/Pmod_out_pin3_i
+/PmodNAV_0/Pmod_out_pin4_i
+/PmodNAV_0/Pmod_out_pin7_i
+/PmodNAV_0/Pmod_out_pin8_i
+/PmodNAV_0/Pmod_out_pin9_i
+
+validate_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1876.488 ; gain = 1.602
+save_bd_design
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M06_AXI] [get_bd_intf_nets microblaze_0_axi_periph_M07_AXI] [get_bd_nets clk_wiz_1_clk_out2] [get_bd_cells PmodNAV_0]
+save_bd_design
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x0000A000-0x0000AFFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The D-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_DC segment 0x00008000-0x00009FFF, which prevents this M_AXI_DC segment from being accessed by the cache. To resolve this issue assign parameters C_DCACHE_BASEADDR and C_DCACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0xC0000000 and high address C_DCACHE_HIGHADDR to 0xC003FFFF.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x0000A000-0x0000AFFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+WARNING: [xilinx.com:ip:microblaze:10.0-14] /microblaze_0: The I-cache cacheable segment 0xC0000000 - 0xC003FFFF does not include the M_AXI_IC segment 0x00008000-0x00009FFF, which prevents this M_AXI_IC segment from being accessed by the cache. To resolve this issue assign parameters C_ICACHE_BASEADDR and C_ICACHE_HIGHADDR manually, or modify the address map.
+INFO: [xilinx.com:ip:microblaze:10.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0xC0000000 and high address C_ICACHE_HIGHADDR to 0xC003FFFF.
+Wrote  : <C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's03_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's03_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_BID'(1) to net 'microblaze_0_M_AXI_DC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_RID'(1) to net 'microblaze_0_M_AXI_DC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_BID'(1) to net 'microblaze_0_M_AXI_IC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_RID'(1) to net 'microblaze_0_M_AXI_IC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(18) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(18) - Only lower order bits will be connected.
+VHDL Output written to : C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's02_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's02_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_awid'(2) to net 's03_couplers_to_xbar_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0_axi_periph/xbar/s_axi_arid'(2) to net 's03_couplers_to_xbar_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_BID'(1) to net 'microblaze_0_M_AXI_DC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_DC_RID'(1) to net 'microblaze_0_M_AXI_DC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_BID'(1) to net 'microblaze_0_M_AXI_IC_BID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/microblaze_0/M_AXI_IC_RID'(1) to net 'microblaze_0_M_AXI_IC_RID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(18) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(18) - Only lower order bits will be connected.
+VHDL Output written to : C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodBT2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_buttons .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_leds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_5/design_1_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_4/design_1_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_3/design_1_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_2/design_1_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_7/design_1_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_6/design_1_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/ECE532/bluetooth_nddr/bluetooth.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_dlmb_bram_if_cntlr_0, cache-ID = 17dd2c8b7cf03357; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_ilmb_bram_if_cntlr_0, cache-ID = 17dd2c8b7cf03357; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_5, cache-ID = 1ddc4413486366c6; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_4, cache-ID = 1ddc4413486366c6; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_3, cache-ID = 1ddc4413486366c6; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_2, cache-ID = 7626cd03725a341e; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_1, cache-ID = 1ddc4413486366c6; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = 1ddc4413486366c6; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_7, cache-ID = 970e495fcd0543cb; cache size = 80.690 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_6, cache-ID = 79da3b14e325c3f0; cache size = 80.690 MB.
+[Thu Feb 20 19:25:21 2020] Launched design_1_xbar_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/design_1_xbar_0_synth_1/runme.log
+synth_1: C:/ECE532/bluetooth_nddr/bluetooth.runs/synth_1/runme.log
+[Thu Feb 20 19:25:21 2020] Launched impl_1...
+Run output will be captured here: C:/ECE532/bluetooth_nddr/bluetooth.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1931.234 ; gain = 46.195
+file mkdir C:/ECE532/bluetooth_nddr/bluetooth.sdk
+file copy -force C:/ECE532/bluetooth_nddr/bluetooth.runs/impl_1/design_1_wrapper.sysdef C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/ECE532/bluetooth_nddr/bluetooth.sdk -hwspec C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/bluetooth_nddr/bluetooth.sdk -hwspec C:/ECE532/bluetooth_nddr/bluetooth.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.

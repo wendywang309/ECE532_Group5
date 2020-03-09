@@ -164,6 +164,12 @@ proc create_root_design { parentCell } {
   set RED_O [ create_bd_port -dir O -from 4 -to 0 RED_O ]
   set VSYNC_O [ create_bd_port -dir O VSYNC_O ]
   set button_debounce [ create_bd_port -dir I button_debounce ]
+  set clk_25 [ create_bd_port -dir I clk_25 ]
+  set clk_50 [ create_bd_port -dir I -type clk clk_50 ]
+  set_property -dict [ list \
+   CONFIG.FREQ_HZ {50000000} \
+   CONFIG.PHASE {0.0} \
+ ] $clk_50
   set detect_0 [ create_bd_port -dir O -from 10 -to 0 detect_0 ]
   set led_config_finished [ create_bd_port -dir O led_config_finished ]
   set ov7670_d [ create_bd_port -dir I -from 7 -to 0 ov7670_d ]
@@ -175,15 +181,6 @@ proc create_root_design { parentCell } {
   set ov7670_siod [ create_bd_port -dir IO ov7670_siod ]
   set ov7670_vsync [ create_bd_port -dir I ov7670_vsync ]
   set ov7670_xclk [ create_bd_port -dir O ov7670_xclk ]
-  set reset [ create_bd_port -dir I -type rst reset ]
-  set_property -dict [ list \
-   CONFIG.POLARITY {ACTIVE_LOW} \
- ] $reset
-  set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
-  set_property -dict [ list \
-   CONFIG.FREQ_HZ {100000000} \
-   CONFIG.PHASE {0.000} \
- ] $sys_clock
 
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
@@ -209,53 +206,6 @@ proc create_root_design { parentCell } {
    CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_0
 
-  # Create instance: blk_mem_gen_1, and set properties
-  set blk_mem_gen_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_1 ]
-  set_property -dict [ list \
-   CONFIG.Byte_Size {9} \
-   CONFIG.EN_SAFETY_CKT {false} \
-   CONFIG.Enable_32bit_Address {false} \
-   CONFIG.Enable_A {Always_Enabled} \
-   CONFIG.Enable_B {Always_Enabled} \
-   CONFIG.Memory_Type {Simple_Dual_Port_RAM} \
-   CONFIG.Operating_Mode_A {NO_CHANGE} \
-   CONFIG.Port_B_Clock {100} \
-   CONFIG.Port_B_Enable_Rate {100} \
-   CONFIG.Read_Width_A {12} \
-   CONFIG.Read_Width_B {12} \
-   CONFIG.Register_PortA_Output_of_Memory_Primitives {false} \
-   CONFIG.Register_PortB_Output_of_Memory_Primitives {true} \
-   CONFIG.Use_Byte_Write_Enable {false} \
-   CONFIG.Use_RSTA_Pin {false} \
-   CONFIG.Write_Depth_A {153600} \
-   CONFIG.Write_Width_A {12} \
-   CONFIG.Write_Width_B {12} \
-   CONFIG.use_bram_block {Stand_Alone} \
- ] $blk_mem_gen_1
-
-  # Create instance: clk_wiz_0, and set properties
-  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
-  set_property -dict [ list \
-   CONFIG.CLKOUT1_JITTER {151.636} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50} \
-   CONFIG.CLKOUT2_JITTER {175.402} \
-   CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
-   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {25} \
-   CONFIG.CLKOUT2_USED {true} \
-   CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
-   CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} \
-   CONFIG.CLK_OUT1_PORT {clk_50} \
-   CONFIG.CLK_OUT2_PORT {clk_25} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {20.000} \
-   CONFIG.MMCM_CLKOUT1_DIVIDE {40} \
-   CONFIG.MMCM_DIVCLK_DIVIDE {1} \
-   CONFIG.NUM_OUT_CLKS {2} \
-   CONFIG.RESET_BOARD_INTERFACE {reset} \
-   CONFIG.RESET_PORT {resetn} \
-   CONFIG.RESET_TYPE {ACTIVE_LOW} \
-   CONFIG.USE_BOARD_FLOW {true} \
- ] $clk_wiz_0
-
   # Create instance: debounce_0, and set properties
   set debounce_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:debounce:1.0 debounce_0 ]
 
@@ -273,51 +223,41 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net Net [get_bd_ports ov7670_siod] [get_bd_pins ov7670_controller_0/siod]
-  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins ov7670_vga_0/frame_pixel]
-  connect_bd_net -net blk_mem_gen_1_doutb [get_bd_pins blk_mem_gen_1/doutb] [get_bd_pins finger_detection_0/dout]
-  connect_bd_net -net clk_wiz_0_clk_25 [get_bd_pins blk_mem_gen_1/clkb] [get_bd_pins clk_wiz_0/clk_25] [get_bd_pins finger_detection_0/clk] [get_bd_pins ov7670_vga_0/clk25]
-  connect_bd_net -net clk_wiz_0_clk_50 [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_50] [get_bd_pins debounce_0/clk] [get_bd_pins ov7670_controller_0/clk]
+  connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins finger_detection_0/dout] [get_bd_pins ov7670_vga_0/frame_pixel]
+  connect_bd_net -net clk_wiz_0_clk_25 [get_bd_ports clk_25] [get_bd_pins finger_detection_0/clk] [get_bd_pins ov7670_vga_0/clk25]
+  connect_bd_net -net clk_wiz_0_clk_50 [get_bd_ports clk_50] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins debounce_0/clk] [get_bd_pins ov7670_controller_0/clk]
   connect_bd_net -net d_0_1 [get_bd_ports ov7670_d] [get_bd_pins ov7670_capture_0/d]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets d_0_1]
   connect_bd_net -net debounce_0_o [get_bd_pins debounce_0/o] [get_bd_pins ov7670_controller_0/resend]
-  connect_bd_net -net finger_detection_0_addr [get_bd_pins blk_mem_gen_1/addrb] [get_bd_pins finger_detection_0/addr]
   connect_bd_net -net finger_detection_0_detect [get_bd_ports detect_0] [get_bd_pins finger_detection_0/detect]
   connect_bd_net -net href_0_1 [get_bd_ports ov7670_href] [get_bd_pins ov7670_capture_0/href]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets href_0_1]
   connect_bd_net -net i_0_1 [get_bd_ports button_debounce] [get_bd_pins debounce_0/i]
-  connect_bd_net -net ov7670_capture_0_addr [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins blk_mem_gen_1/addra] [get_bd_pins ov7670_capture_0/addr]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets ov7670_capture_0_addr]
-  connect_bd_net -net ov7670_capture_0_dout [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins blk_mem_gen_1/dina] [get_bd_pins ov7670_capture_0/dout]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets ov7670_capture_0_dout]
+  connect_bd_net -net ov7670_capture_0_addr [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins ov7670_capture_0/addr]
+  connect_bd_net -net ov7670_capture_0_dout [get_bd_pins blk_mem_gen_0/dina] [get_bd_pins ov7670_capture_0/dout]
   connect_bd_net -net ov7670_capture_0_we [get_bd_pins blk_mem_gen_0/wea] [get_bd_pins ov7670_capture_0/we]
-  set_property -dict [ list \
-HDL_ATTRIBUTE.DEBUG {true} \
- ] [get_bd_nets ov7670_capture_0_we]
   connect_bd_net -net ov7670_controller_0_config_finished [get_bd_ports led_config_finished] [get_bd_pins ov7670_controller_0/config_finished]
   connect_bd_net -net ov7670_controller_0_pwdn [get_bd_ports ov7670_pwdn] [get_bd_pins ov7670_controller_0/pwdn]
   connect_bd_net -net ov7670_controller_0_reset [get_bd_ports ov7670_reset] [get_bd_pins ov7670_controller_0/reset]
   connect_bd_net -net ov7670_controller_0_sioc [get_bd_ports ov7670_sioc] [get_bd_pins ov7670_controller_0/sioc]
   connect_bd_net -net ov7670_controller_0_xclk [get_bd_ports ov7670_xclk] [get_bd_pins ov7670_controller_0/xclk]
-  connect_bd_net -net ov7670_vga_0_frame_addr [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins ov7670_vga_0/frame_addr]
+  connect_bd_net -net ov7670_vga_0_frame_addr [get_bd_pins blk_mem_gen_0/addrb] [get_bd_pins finger_detection_0/addr] [get_bd_pins ov7670_vga_0/frame_addr]
+  set_property -dict [ list \
+HDL_ATTRIBUTE.DEBUG {true} \
+ ] [get_bd_nets ov7670_vga_0_frame_addr]
   connect_bd_net -net ov7670_vga_0_vga_blue [get_bd_ports BLUE_O] [get_bd_pins ov7670_vga_0/vga_blue]
   connect_bd_net -net ov7670_vga_0_vga_green [get_bd_ports GREEN_O] [get_bd_pins ov7670_vga_0/vga_green]
   connect_bd_net -net ov7670_vga_0_vga_hsync [get_bd_ports HSYNC_O] [get_bd_pins ov7670_vga_0/vga_hsync]
   connect_bd_net -net ov7670_vga_0_vga_red [get_bd_ports RED_O] [get_bd_pins ov7670_vga_0/vga_red]
   connect_bd_net -net ov7670_vga_0_vga_vsync [get_bd_ports VSYNC_O] [get_bd_pins ov7670_vga_0/vga_vsync]
-  connect_bd_net -net pclk_0_1 [get_bd_ports ov7670_pclk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins blk_mem_gen_1/clka] [get_bd_pins ov7670_capture_0/pclk]
+  connect_bd_net -net pclk_0_1 [get_bd_ports ov7670_pclk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins ov7670_capture_0/pclk]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets pclk_0_1]
-  connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins clk_wiz_0/resetn]
-  connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net vsync_0_1 [get_bd_ports ov7670_vsync] [get_bd_pins ov7670_capture_0/vsync]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
