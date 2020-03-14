@@ -161,8 +161,6 @@ set_property src_info {type:XDC file:1 line:123 export:INPUT save:INPUT read:REA
 set_property MARK_DEBUG false [get_nets {design_1_i/blk_mem_gen_1_doutb[10]}]
 set_property src_info {type:XDC file:1 line:124 export:INPUT save:INPUT read:READ} [current_design]
 set_property MARK_DEBUG false [get_nets {design_1_i/blk_mem_gen_1_doutb[11]}]
-set_property src_info {type:XDC file:1 line:169 export:INPUT save:INPUT read:READ} [current_design]
-set_property MARK_DEBUG false [get_nets design_1_i/clk_wiz_0_clk_25]
 set_property src_info {type:XDC file:1 line:181 export:INPUT save:INPUT read:READ} [current_design]
 set_property MARK_DEBUG false [get_nets {design_1_i/finger_detection_0/inst/not_white_reg[10]}]
 set_property src_info {type:XDC file:1 line:182 export:INPUT save:INPUT read:READ} [current_design]

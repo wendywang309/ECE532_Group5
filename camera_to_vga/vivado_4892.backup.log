@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Mar  9 16:18:14 2020
+# Process ID: 4892
+# Current directory: C:/ECE532/ECE532_Group5/camera_to_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7900 C:\ECE532\ECE532_Group5\camera_to_vga\camera_to_vga.xpr
+# Log file: C:/ECE532/ECE532_Group5/camera_to_vga/vivado.log
+# Journal file: C:/ECE532/ECE532_Group5/camera_to_vga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ov7670'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_capture:1.0'. The one found in IP location 'c:/ECE532/ov7670/capture' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/capture
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_controller:1.0'. The one found in IP location 'c:/ECE532/ov7670/controller' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/controller
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:debounce:1.0'. The one found in IP location 'c:/ECE532/ov7670/debounce' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/debounce
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_vga:1.0'. The one found in IP location 'c:/ECE532/ov7670/vga' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/vga
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 907.703 ; gain = 159.414
+update_compile_order -fileset sources_1
+open_bd_design {C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:user:ov7670_capture:1.0 - ov7670_capture_0
+Adding cell -- xilinx.com:user:ov7670_controller:1.0 - ov7670_controller_0
+Adding cell -- xilinx.com:user:ov7670_vga:1.0 - ov7670_vga_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:user:debounce:1.0 - debounce_0
+Adding cell -- xilinx.com:user:finger_detection:1.0 - finger_detection_0
+Successfully read diagram <design_1> from BD file <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.207 ; gain = 102.766
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+create_bd_cell: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1133.668 ; gain = 113.922
+endgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT2_USED {true} CONFIG.CLK_OUT1_PORT {clk_25} CONFIG.CLK_OUT2_PORT {clk_50} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {175.402} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset ( Reset ) " }  [get_bd_pins clk_wiz_0/resetn]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I reset -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset
+INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_0/resetn
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "sys_clock ( System Clock ) " }  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+endgroup

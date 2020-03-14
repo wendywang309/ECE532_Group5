@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Mon Mar  9 13:06:54 2020
+//Date        : Sat Mar 14 17:46:18 2020
 //Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=4,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=6,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (BLUE_O,
     GREEN_O,
@@ -17,8 +17,6 @@ module design_1
     RED_O,
     VSYNC_O,
     button_debounce,
-    clk_25,
-    clk_50,
     detect_0,
     led_config_finished,
     ov7670_d,
@@ -29,15 +27,15 @@ module design_1
     ov7670_sioc,
     ov7670_siod,
     ov7670_vsync,
-    ov7670_xclk);
+    ov7670_xclk,
+    reset,
+    sys_clock);
   output [4:0]BLUE_O;
   output [5:0]GREEN_O;
   output HSYNC_O;
   output [4:0]RED_O;
   output VSYNC_O;
   input button_debounce;
-  input clk_25;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_50 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_50, CLK_DOMAIN design_1_clk_0, FREQ_HZ 50000000, PHASE 0.0" *) input clk_50;
   output [10:0]detect_0;
   output led_config_finished;
   input [7:0]ov7670_d;
@@ -49,6 +47,8 @@ module design_1
   inout ov7670_siod;
   input ov7670_vsync;
   output ov7670_xclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESET RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESET, POLARITY ACTIVE_LOW" *) input reset;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN design_1_sys_clock, FREQ_HZ 100000000, PHASE 0.000" *) input sys_clock;
 
   wire Net;
   wire [11:0]blk_mem_gen_0_doutb;
@@ -74,6 +74,8 @@ module design_1
   wire [4:0]ov7670_vga_0_vga_red;
   wire ov7670_vga_0_vga_vsync;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire pclk_0_1;
+  wire reset_1;
+  wire sys_clock_1;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire vsync_0_1;
 
   assign BLUE_O[4:0] = ov7670_vga_0_vga_blue;
@@ -81,8 +83,6 @@ module design_1
   assign HSYNC_O = ov7670_vga_0_vga_hsync;
   assign RED_O[4:0] = ov7670_vga_0_vga_red;
   assign VSYNC_O = ov7670_vga_0_vga_vsync;
-  assign clk_wiz_0_clk_25 = clk_25;
-  assign clk_wiz_0_clk_50 = clk_50;
   assign d_0_1 = ov7670_d[7:0];
   assign detect_0[10:0] = finger_detection_0_detect;
   assign href_0_1 = ov7670_href;
@@ -93,6 +93,8 @@ module design_1
   assign ov7670_sioc = ov7670_controller_0_sioc;
   assign ov7670_xclk = ov7670_controller_0_xclk;
   assign pclk_0_1 = ov7670_pclk;
+  assign reset_1 = reset;
+  assign sys_clock_1 = sys_clock;
   assign vsync_0_1 = ov7670_vsync;
   design_1_blk_mem_gen_0_0 blk_mem_gen_0
        (.addra(ov7670_capture_0_addr),
@@ -102,6 +104,11 @@ module design_1
         .dina(ov7670_capture_0_dout),
         .doutb(blk_mem_gen_0_doutb),
         .wea(ov7670_capture_0_we));
+  design_1_clk_wiz_0_0 clk_wiz_0
+       (.clk_25(clk_wiz_0_clk_25),
+        .clk_50(clk_wiz_0_clk_50),
+        .clk_in1(sys_clock_1),
+        .resetn(reset_1));
   design_1_debounce_0_0 debounce_0
        (.clk(clk_wiz_0_clk_50),
         .i(i_0_1),

@@ -1,0 +1,507 @@
+/*
+
+Xilinx Vivado v2018.1 (64-bit) [Major: 2018, Minor: 1]
+SW Build: 2188600 on Wed Apr  4 18:40:38 MDT 2018
+IP Build: 2185939 on Wed Apr  4 20:55:05 MDT 2018
+
+Process ID: 4892
+License: Customer
+
+Current time: 	Mon Mar 09 16:18:29 EDT 2020
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 94 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.1/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Wendy
+User home directory: C:/Users/Wendy
+User working directory: C:/ECE532/ECE532_Group5/camera_to_vga
+User country: 	CA
+User language: 	en
+User locale: 	en_CA
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.1
+RDI_DATADIR: C:/Xilinx/Vivado/2018.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.1/bin
+
+Vivado preferences file location: C:/Users/Wendy/AppData/Roaming/Xilinx/Vivado/2018.1/vivado.xml
+Vivado preferences directory: C:/Users/Wendy/AppData/Roaming/Xilinx/Vivado/2018.1/
+Vivado layouts directory: C:/Users/Wendy/AppData/Roaming/Xilinx/Vivado/2018.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/ECE532/ECE532_Group5/camera_to_vga/vivado.log
+Vivado journal file location: 	C:/ECE532/ECE532_Group5/camera_to_vga/vivado.jou
+Engine tmp dir: 	C:/ECE532/ECE532_Group5/camera_to_vga/.Xil/Vivado-4892-DESKTOP-BBJD4E6
+
+GUI allocated memory:	204 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 611 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 63 MB (+63803kb) [00:00:05]
+// [Engine Memory]: 515 MB (+388266kb) [00:00:05]
+// Opening Vivado Project: C:\ECE532\ECE532_Group5\camera_to_vga\camera_to_vga.xpr. Version: Vivado v2018.1 
+// bv (ch):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [GUI Memory]: 75 MB (+9410kb) [00:00:08]
+// [Engine Memory]: 622 MB (+85380kb) [00:00:08]
+// HMemoryUtils.trashcanNow. Engine heap size: 645 MB. GUI used memory: 33 MB. Current time: 3/9/20 4:18:31 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 669 MB (+17227kb) [00:00:12]
+// Tcl Message: open_project C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ov7670'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'. 
+// [Engine Memory]: 705 MB (+2237kb) [00:00:15]
+// Project name: camera_to_vga; location: C:/ECE532/ECE532_Group5/camera_to_vga; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 907.703 ; gain = 159.414 
+dismissDialog("Open Project"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// a (ch): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 89 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (ch)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 1); // B (D, ch)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true); // B (D, ch) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // B (D, ch) - Double Click - Node
+// bv (ch):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Adding cell -- xilinx.com:user:ov7670_capture:1.0 - ov7670_capture_0 Adding cell -- xilinx.com:user:ov7670_controller:1.0 - ov7670_controller_0 Adding cell -- xilinx.com:user:ov7670_vga:1.0 - ov7670_vga_0 Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0 Adding cell -- xilinx.com:user:debounce:1.0 - debounce_0 Adding cell -- xilinx.com:user:finger_detection:1.0 - finger_detection_0 Successfully read diagram <design_1> from BD file <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 801 MB (+63681kb) [00:01:54]
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 828 MB. GUI used memory: 46 MB. Current time: 3/9/20 4:20:17 PM EDT
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.207 ; gain = 102.766 
+dismissDialog("Open Block Design"); // bv (ch)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /i_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_50 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// Elapsed time: 13 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField (Q, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "clock"); // OverlayTextField (Q, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 2, "Clocking Wizard", 0, false); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 2, "Clocking Wizard", 0, false); // O (O, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 2); // O (O, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Clocking Wizard", 2, "Clocking Wizard", 0, false, false, false, false, false, true); // O (O, ResizableWindow) - Double Click
+// bv (ch):  Add IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 
+// HMemoryUtils.trashcanNow. Engine heap size: 924 MB. GUI used memory: 47 MB. Current time: 3/9/20 4:20:36 PM EDT
+// [Engine Memory]: 924 MB (+86565kb) [00:02:16]
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1133.668 ; gain = 113.922 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bv (ch)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 81 MB (+2103kb) [00:02:20]
+// [Engine Memory]: 977 MB (+7247kb) [00:02:21]
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /d_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /d_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /href_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /href_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /vsync_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /vsync_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /vsync_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /vsync_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_we 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /blk_mem_gen_0_doutb 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (ch):  Re-customize IP : addNotify
+// r (ch): Re-customize IP: addNotify
+// [GUI Memory]: 91 MB (+5531kb) [00:02:41]
+// Elapsed time: 22 seconds
+dismissDialog("Re-customize IP"); // O (ch)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 65 MB. Current time: 3/9/20 4:21:06 PM EDT
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cI (C, r)
+setText("CLK OUT1 PORT", "clk_25"); // z (cJ)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT1 REQUESTED OUT FREQ", "25"); // z (cJ)
+selectCheckBox((HResource) null, "clk_out2", true); // g (bA, r): TRUE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLK OUT2 PORT", "clk_50"); // z (cJ)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+setText("CLKOUT2 REQUESTED OUT FREQ", "50"); // z (cJ, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Board", 0); // cI (C, r)
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cI (C, r)
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectRadioButton((HResource) null, "Active Low"); // cD
+selectRadioButton((HResource) null, "Active Low"); // cD (C, r)
+selectRadioButton((HResource) null, "Active Low"); // cD (C, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,023 MB. GUI used memory: 67 MB. Current time: 3/9/20 4:21:31 PM EDT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// Tcl Command: 'set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT2_USED {true} CONFIG.CLK_OUT1_PORT {clk_25} CONFIG.CLK_OUT2_PORT {clk_50} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {175.402} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]'
+dismissDialog("Re-customize IP"); // r (ch)
+// Tcl Message: set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.CLKOUT2_USED {true} CONFIG.CLK_OUT1_PORT {clk_25} CONFIG.CLK_OUT2_PORT {clk_50} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {175.402} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0] 
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// CommandFailedException: ERROR: [BD 41-147] Pin not found: /clk_wiz_0/clk_out1 
+// CommandFailedException: ERROR: [BD 41-147] Pin not found: /clk_wiz_0/clk_out1 
+// TclEventType: RSB_PROPERTY_CHANGE
+// [GUI Memory]: 95 MB (+44kb) [00:03:11]
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (ch): Re-customize IP: addNotify
+// bv (r):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+dismissDialog("Customize IP"); // bv (r)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /clk_wiz_0_clk_25 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_dout 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ov7670_capture_0_addr 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /pclk_0_1 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h (cr, ch)
+// w (ch): Run Connection Automation: addNotify
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (1 out of 7 selected), clk_wiz_0, clk_in1]", 8, false, true, ui.utils.TriState.True); // K (O, w)
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (2 out of 7 selected), clk_wiz_0, resetn]", 9, false, true, ui.utils.TriState.True); // K (O, w)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (w)
+dismissDialog("Run Connection Automation"); // w (ch)
+// TclEventType: RSB_SCRIPT_TASK
+// [GUI Memory]: 100 MB (+245kb) [00:03:25]
+// [Engine Memory]: 1,026 MB (+616kb) [00:03:25]
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset ( Reset ) " }  [get_bd_pins clk_wiz_0/resetn] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0] INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_0] INFO: [board_rule 100-100] create_bd_port -dir I reset -type rst INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_0/resetn INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "sys_clock ( System Clock ) " }  [get_bd_pins clk_wiz_0/clk_in1] 
+// Tcl Message: INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0] INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1 INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock 
+// Tcl Message: endgroup 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,026 MB. GUI used memory: 85 MB. Current time: 3/9/20 7:21:58 PM EDT
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.

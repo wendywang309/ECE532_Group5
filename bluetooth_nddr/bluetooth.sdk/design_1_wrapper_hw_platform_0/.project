@@ -7,11 +7,10 @@
 	<buildSpec>
 	</buildSpec>
 	<natures>
-		<nature>com.xilinx.sdk.hw.HwProject</nature>
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1582245421597</id>
+			<id>1583784698985</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -20,7 +19,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1582245421605</id>
+			<id>1583784699013</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -29,7 +28,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1582245421615</id>
+			<id>1583784699019</id>
 			<name></name>
 			<type>6</type>
 			<matcher>

@@ -164,12 +164,6 @@ proc create_root_design { parentCell } {
   set RED_O [ create_bd_port -dir O -from 4 -to 0 RED_O ]
   set VSYNC_O [ create_bd_port -dir O VSYNC_O ]
   set button_debounce [ create_bd_port -dir I button_debounce ]
-  set clk_25 [ create_bd_port -dir I clk_25 ]
-  set clk_50 [ create_bd_port -dir I -type clk clk_50 ]
-  set_property -dict [ list \
-   CONFIG.FREQ_HZ {50000000} \
-   CONFIG.PHASE {0.0} \
- ] $clk_50
   set detect_0 [ create_bd_port -dir O -from 10 -to 0 detect_0 ]
   set led_config_finished [ create_bd_port -dir O led_config_finished ]
   set ov7670_d [ create_bd_port -dir I -from 7 -to 0 ov7670_d ]
@@ -181,6 +175,15 @@ proc create_root_design { parentCell } {
   set ov7670_siod [ create_bd_port -dir IO ov7670_siod ]
   set ov7670_vsync [ create_bd_port -dir I ov7670_vsync ]
   set ov7670_xclk [ create_bd_port -dir O ov7670_xclk ]
+  set reset [ create_bd_port -dir I -type rst reset ]
+  set_property -dict [ list \
+   CONFIG.POLARITY {ACTIVE_LOW} \
+ ] $reset
+  set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
+  set_property -dict [ list \
+   CONFIG.FREQ_HZ {100000000} \
+   CONFIG.PHASE {0.000} \
+ ] $sys_clock
 
   # Create instance: blk_mem_gen_0, and set properties
   set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
@@ -206,6 +209,31 @@ proc create_root_design { parentCell } {
    CONFIG.use_bram_block {Stand_Alone} \
  ] $blk_mem_gen_0
 
+  # Create instance: clk_wiz_0, and set properties
+  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+  set_property -dict [ list \
+   CONFIG.CLKOUT1_JITTER {175.402} \
+   CONFIG.CLKOUT1_PHASE_ERROR {98.575} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} \
+   CONFIG.CLKOUT1_USED {true} \
+   CONFIG.CLKOUT2_JITTER {151.636} \
+   CONFIG.CLKOUT2_PHASE_ERROR {98.575} \
+   CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} \
+   CONFIG.CLKOUT2_USED {true} \
+   CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
+   CONFIG.CLK_OUT1_PORT {clk_25} \
+   CONFIG.CLK_OUT2_PORT {clk_50} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} \
+   CONFIG.MMCM_CLKOUT1_DIVIDE {20} \
+   CONFIG.MMCM_DIVCLK_DIVIDE {1} \
+   CONFIG.NUM_OUT_CLKS {2} \
+   CONFIG.RESET_BOARD_INTERFACE {reset} \
+   CONFIG.RESET_PORT {resetn} \
+   CONFIG.RESET_TYPE {ACTIVE_LOW} \
+   CONFIG.USE_BOARD_FLOW {true} \
+ ] $clk_wiz_0
+
   # Create instance: debounce_0, and set properties
   set debounce_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:debounce:1.0 debounce_0 ]
 
@@ -224,8 +252,8 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net Net [get_bd_ports ov7670_siod] [get_bd_pins ov7670_controller_0/siod]
   connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins finger_detection_0/dout] [get_bd_pins ov7670_vga_0/frame_pixel]
-  connect_bd_net -net clk_wiz_0_clk_25 [get_bd_ports clk_25] [get_bd_pins finger_detection_0/clk] [get_bd_pins ov7670_vga_0/clk25]
-  connect_bd_net -net clk_wiz_0_clk_50 [get_bd_ports clk_50] [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins debounce_0/clk] [get_bd_pins ov7670_controller_0/clk]
+  connect_bd_net -net clk_wiz_0_clk_25 [get_bd_pins clk_wiz_0/clk_25] [get_bd_pins finger_detection_0/clk] [get_bd_pins ov7670_vga_0/clk25]
+  connect_bd_net -net clk_wiz_0_clk_50 [get_bd_pins blk_mem_gen_0/clkb] [get_bd_pins clk_wiz_0/clk_50] [get_bd_pins debounce_0/clk] [get_bd_pins ov7670_controller_0/clk]
   connect_bd_net -net d_0_1 [get_bd_ports ov7670_d] [get_bd_pins ov7670_capture_0/d]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
@@ -258,6 +286,8 @@ HDL_ATTRIBUTE.DEBUG {true} \
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets pclk_0_1]
+  connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins clk_wiz_0/resetn]
+  connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
   connect_bd_net -net vsync_0_1 [get_bd_ports ov7670_vsync] [get_bd_pins ov7670_capture_0/vsync]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
