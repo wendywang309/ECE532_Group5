@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Sat Mar 14 17:49:14 2020
-| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Date         : Sat Mar 14 23:28:22 2020
+| Host         : SINCOL-PC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
 | Device       : xc7a100t
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    15 |
-| Unused register locations in slices containing registers |    51 |
+| Number of unique control sets                            |    20 |
+| Unused register locations in slices containing registers |    79 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,11 +34,13 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
+|      4 |            1 |
 |      8 |            1 |
+|      9 |            1 |
 |     10 |            1 |
 |     11 |            1 |
 |     12 |            1 |
-|    16+ |           11 |
+|    16+ |           14 |
 +--------+--------------+
 
 
@@ -48,12 +50,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              40 |           21 |
+| No           | No                    | No                     |              57 |           23 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              56 |           20 |
-| Yes          | No                    | No                     |              67 |           28 |
+| Yes          | No                    | No                     |              71 |           31 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             114 |           26 |
+| Yes          | Yes                   | No                     |             177 |           45 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -63,21 +65,26 @@ Table of Contents
 +-----------------------------------+---------------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+
 |            Clock Signal           |                               Enable Signal                               |                            Set/Reset Signal                           | Slice Load Count | Bel Load Count |
 +-----------------------------------+---------------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+
-|  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_ov7670_registers/divider_reg[7][0] |                                                                       |                2 |              8 |
-|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/ov7670_vga_0/U0/vCounter_1                                     |                                                                       |                3 |             10 |
+|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/finger_detection_0/inst/detected                               |                                                                       |                2 |              4 |
+|  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_ov7670_registers/divider_reg[7][0] |                                                                       |                3 |              8 |
+|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/finger_detection_0/inst/x_coord[8]_i_2_n_0                     | design_1_i/finger_detection_0/inst/x_coord_0                          |                3 |              9 |
+|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/ov7670_vga_0/U0/vCounter_1                                     |                                                                       |                4 |             10 |
 |  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr0                | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/data_sr[30]_i_1_n_0 |                2 |             11 |
-|  design_1_i/clk_wiz_0/inst/clk_25 |                                                                           | design_1_i/ov7670_vga_0/U0/blank                                      |                7 |             12 |
-|  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/E[0]                    | design_1_i/debounce_0/inst/o                                          |                3 |             16 |
-|  design_1_i/clk_wiz_0/inst/clk_25 |                                                                           |                                                                       |                6 |             18 |
-|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/finger_detection_0/inst/not_white[0]_i_2_n_0                   | design_1_i/finger_detection_0/inst/not_white                          |                5 |             18 |
+|  design_1_i/clk_wiz_0/inst/clk_25 |                                                                           | design_1_i/ov7670_vga_0/U0/blank                                      |                8 |             12 |
+|  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/E[0]                    | design_1_i/debounce_0/inst/o                                          |                4 |             16 |
+|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/finger_detection_0/inst/nw3                                    | design_1_i/finger_detection_0/inst/x_coord_0                          |                5 |             18 |
+|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/finger_detection_0/inst/nw4[0]_i_1_n_0                         | design_1_i/finger_detection_0/inst/x_coord_0                          |                5 |             18 |
+|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/finger_detection_0/inst/nw1[0]_i_1_n_0                         | design_1_i/finger_detection_0/inst/x_coord_0                          |                5 |             18 |
+|  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/finger_detection_0/inst/nw2                                    | design_1_i/finger_detection_0/inst/x_coord_0                          |                5 |             18 |
 |  ov7670_pclk_IBUF_BUFG            | design_1_i/ov7670_capture_0/U0/p_1_in                                     | ov7670_vsync_IBUF                                                     |                5 |             19 |
 |  design_1_i/clk_wiz_0/inst/clk_25 | design_1_i/ov7670_vga_0/U0/sel                                            | design_1_i/ov7670_vga_0/U0/clear                                      |                5 |             19 |
-|  ov7670_pclk_IBUF_BUFG            |                                                                           | ov7670_vsync_IBUF                                                     |                7 |             20 |
-|  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr0                |                                                                       |                4 |             21 |
+|  ov7670_pclk_IBUF_BUFG            |                                                                           | ov7670_vsync_IBUF                                                     |                6 |             20 |
+|  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr0                |                                                                       |                5 |             21 |
 |  design_1_i/clk_wiz_0/inst/clk_50 |                                                                           |                                                                       |               15 |             22 |
 |  design_1_i/clk_wiz_0/inst/clk_50 |                                                                           | design_1_i/debounce_0/inst/clear                                      |                6 |             24 |
-|  ov7670_pclk_IBUF_BUFG            | design_1_i/ov7670_capture_0/U0/p_0_in                                     |                                                                       |               19 |             28 |
+|  ov7670_pclk_IBUF_BUFG            | design_1_i/ov7670_capture_0/U0/p_0_in                                     |                                                                       |               17 |             28 |
 |  design_1_i/clk_wiz_0/inst/clk_50 | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr0                | design_1_i/ov7670_controller_0/U0/Inst_i2c_sender/busy_sr[31]_i_1_n_0 |                6 |             31 |
+|  design_1_i/clk_wiz_0/inst/clk_25 |                                                                           |                                                                       |                8 |             35 |
 +-----------------------------------+---------------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+----------------+
 
 

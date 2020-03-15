@@ -164,7 +164,7 @@ proc create_root_design { parentCell } {
   set RED_O [ create_bd_port -dir O -from 4 -to 0 RED_O ]
   set VSYNC_O [ create_bd_port -dir O VSYNC_O ]
   set button_debounce [ create_bd_port -dir I button_debounce ]
-  set detect_0 [ create_bd_port -dir O -from 10 -to 0 detect_0 ]
+  set detect_0 [ create_bd_port -dir O -from 3 -to 0 detect_0 ]
   set led_config_finished [ create_bd_port -dir O led_config_finished ]
   set ov7670_d [ create_bd_port -dir I -from 7 -to 0 ov7670_d ]
   set ov7670_href [ create_bd_port -dir I ov7670_href ]

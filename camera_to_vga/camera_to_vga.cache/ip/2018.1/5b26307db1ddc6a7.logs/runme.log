@@ -14,17 +14,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6276 
+INFO: Helper process launched with PID 1548 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 466.230 ; gain = 102.488
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 467.234 ; gain = 103.188
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_finger_detection_0_0' [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'finger_detection' [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:23]
-WARNING: [Synth 8-6014] Unused sequential element red_reg was removed.  [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:28]
-WARNING: [Synth 8-6014] Unused sequential element final_count_reg was removed.  [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'finger_detection' (1#1) [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:23]
-WARNING: [Synth 8-689] width (11) of port connection 'detect' does not match port width (1) of module 'finger_detection' [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:75]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_finger_detection_0_0' (2#1) [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_finger_detection_0_0' [d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'finger_detection' [d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:23]
+WARNING: [Synth 8-6014] Unused sequential element red_reg was removed.  [d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:28]
+WARNING: [Synth 8-6014] Unused sequential element final_count_reg was removed.  [d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'finger_detection' (1#1) [d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ipshared/4564/src/finger_detection.v:23]
+WARNING: [Synth 8-689] width (11) of port connection 'detect' does not match port width (1) of module 'finger_detection' [d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_finger_detection_0_0' (2#1) [d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/synth/design_1_finger_detection_0_0.v:57]
 INFO: [Synth 8-3917] design design_1_finger_detection_0_0 has port detect[10] driven by constant 0
 INFO: [Synth 8-3917] design design_1_finger_detection_0_0 has port detect[9] driven by constant 0
 INFO: [Synth 8-3917] design design_1_finger_detection_0_0 has port detect[8] driven by constant 0
@@ -40,7 +40,7 @@ WARNING: [Synth 8-3331] design finger_detection has unconnected port dout[10]
 WARNING: [Synth 8-3331] design finger_detection has unconnected port dout[9]
 WARNING: [Synth 8-3331] design finger_detection has unconnected port dout[8]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 520.352 ; gain = 156.609
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 522.086 ; gain = 158.039
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -53,10 +53,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 520.352 ; gain = 156.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.086 ; gain = 158.039
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 520.352 ; gain = 156.609
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 522.086 ; gain = 158.039
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -68,26 +68,26 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 836.691 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 837.340 ; gain = 0.375
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 836.691 ; gain = 472.949
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 837.340 ; gain = 473.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 836.691 ; gain = 472.949
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 837.340 ; gain = 473.293
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:45 . Memory (MB): peak = 836.691 ; gain = 472.949
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 837.340 ; gain = 473.293
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "not_white" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:46 . Memory (MB): peak = 836.691 ; gain = 472.949
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 837.340 ; gain = 473.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -154,7 +154,7 @@ INFO: [Synth 8-3332] Sequential element (inst/green_reg[0]) is unused and will b
 INFO: [Synth 8-3332] Sequential element (inst/blue_reg[1]) is unused and will be removed from module design_1_finger_detection_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/blue_reg[0]) is unused and will be removed from module design_1_finger_detection_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 836.691 ; gain = 472.949
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 837.340 ; gain = 473.293
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -166,13 +166,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:58 . Memory (MB): peak = 851.461 ; gain = 487.719
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 850.758 ; gain = 486.711
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:58 . Memory (MB): peak = 851.535 ; gain = 487.793
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 850.832 ; gain = 486.785
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -184,7 +184,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:58 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -208,7 +208,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -221,7 +221,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -233,25 +233,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -284,11 +284,11 @@ Report Instance Areas:
 |2     |  inst   |finger_detection |    41|
 +------+---------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 861.574 ; gain = 181.492
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:59 . Memory (MB): peak = 861.574 ; gain = 497.832
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 860.871 ; gain = 181.570
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:35 . Memory (MB): peak = 860.871 ; gain = 496.824
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -300,5 +300,5 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 41 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 870.973 ; gain = 518.703
-INFO: [Common 17-1381] The checkpoint 'C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 873.984 ; gain = 521.410
+INFO: [Common 17-1381] The checkpoint 'D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0.dcp' has been generated.

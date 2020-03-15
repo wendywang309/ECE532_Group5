@@ -1,8 +1,8 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Sat Mar 14 17:46:18 2020
-//Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+//Date        : Sat Mar 14 23:25:16 2020
+//Host        : SINCOL-PC running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
@@ -36,7 +36,7 @@ module design_1
   output [4:0]RED_O;
   output VSYNC_O;
   input button_debounce;
-  output [10:0]detect_0;
+  output [3:0]detect_0;
   output led_config_finished;
   input [7:0]ov7670_d;
   input ov7670_href;
@@ -56,7 +56,7 @@ module design_1
   wire clk_wiz_0_clk_50;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]d_0_1;
   wire debounce_0_o;
-  wire [10:0]finger_detection_0_detect;
+  wire [3:0]finger_detection_0_detect;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire href_0_1;
   wire i_0_1;
   wire [17:0]ov7670_capture_0_addr;
@@ -84,7 +84,7 @@ module design_1
   assign RED_O[4:0] = ov7670_vga_0_vga_red;
   assign VSYNC_O = ov7670_vga_0_vga_vsync;
   assign d_0_1 = ov7670_d[7:0];
-  assign detect_0[10:0] = finger_detection_0_detect;
+  assign detect_0[3:0] = finger_detection_0_detect;
   assign href_0_1 = ov7670_href;
   assign i_0_1 = button_debounce;
   assign led_config_finished = ov7670_controller_0_config_finished;

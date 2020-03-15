@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Mon Mar  9 12:53:29 2020
-| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Date         : Sat Mar 14 23:26:08 2020
+| Host         : SINCOL-PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_finger_detection_0_0_utilization_synth.rpt -pb design_1_finger_detection_0_0_utilization_synth.pb
 | Design       : design_1_finger_detection_0_0
 | Device       : 7a100tcsg324-1
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   13 |     0 |     63400 |  0.02 |
-|   LUT as Logic          |   13 |     0 |     63400 |  0.02 |
+| Slice LUTs*             |   53 |     0 |     63400 |  0.08 |
+|   LUT as Logic          |   53 |     0 |     63400 |  0.08 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |   23 |     0 |    126800 |  0.02 |
-|   Register as Flip Flop |   23 |     0 |    126800 |  0.02 |
+| Slice Registers         |  107 |     0 |    126800 |  0.08 |
+|   Register as Flip Flop |  107 |     0 |    126800 |  0.08 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 23    |          Yes |       Reset |            - |
+| 107   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -146,13 +146,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   23 |        Flop & Latch |
-| LUT4     |    7 |                 LUT |
-| CARRY4   |    5 |          CarryLogic |
-| LUT6     |    3 |                 LUT |
-| LUT5     |    1 |                 LUT |
-| LUT2     |    1 |                 LUT |
-| LUT1     |    1 |                 LUT |
+| FDRE     |  107 |        Flop & Latch |
+| LUT6     |   25 |                 LUT |
+| CARRY4   |   22 |          CarryLogic |
+| LUT4     |   16 |                 LUT |
+| LUT5     |    8 |                 LUT |
+| LUT1     |    4 |                 LUT |
+| LUT2     |    3 |                 LUT |
+| LUT3     |    1 |                 LUT |
 +----------+------+---------------------+
 
 

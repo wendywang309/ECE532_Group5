@@ -1,15 +1,15 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Mon Mar  9 12:52:10 2020
-//Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+//Date        : Sat Mar 14 23:25:16 2020
+//Host        : SINCOL-PC running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=4,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=7,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_board_cnt=6,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
    (BLUE_O,
     GREEN_O,
@@ -17,8 +17,6 @@ module design_1
     RED_O,
     VSYNC_O,
     button_debounce,
-    clk_25,
-    clk_50,
     detect_0,
     led_config_finished,
     ov7670_d,
@@ -38,9 +36,7 @@ module design_1
   output [4:0]RED_O;
   output VSYNC_O;
   input button_debounce;
-  input clk_25;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK_50 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK_50, CLK_DOMAIN design_1_clk_0, FREQ_HZ 50000000, PHASE 0.0" *) input clk_50;
-  output [10:0]detect_0;
+  output [3:0]detect_0;
   output led_config_finished;
   input [7:0]ov7670_d;
   input ov7670_href;
@@ -60,7 +56,7 @@ module design_1
   wire clk_wiz_0_clk_50;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]d_0_1;
   wire debounce_0_o;
-  wire [10:0]finger_detection_0_detect;
+  wire [3:0]finger_detection_0_detect;
   (* DEBUG = "true" *) (* MARK_DEBUG *) wire href_0_1;
   wire i_0_1;
   wire [17:0]ov7670_capture_0_addr;
@@ -88,7 +84,7 @@ module design_1
   assign RED_O[4:0] = ov7670_vga_0_vga_red;
   assign VSYNC_O = ov7670_vga_0_vga_vsync;
   assign d_0_1 = ov7670_d[7:0];
-  assign detect_0[10:0] = finger_detection_0_detect;
+  assign detect_0[3:0] = finger_detection_0_detect;
   assign href_0_1 = ov7670_href;
   assign i_0_1 = button_debounce;
   assign led_config_finished = ov7670_controller_0_config_finished;
@@ -107,13 +103,6 @@ module design_1
         .clkb(clk_wiz_0_clk_50),
         .dina(ov7670_capture_0_dout),
         .doutb(blk_mem_gen_0_doutb),
-        .wea(ov7670_capture_0_we));
-  design_1_blk_mem_gen_0_1 blk_mem_gen_1
-       (.addra(ov7670_capture_0_addr),
-        .addrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .clka(pclk_0_1),
-        .clkb(1'b0),
-        .dina(ov7670_capture_0_dout),
         .wea(ov7670_capture_0_we));
   design_1_clk_wiz_0_0 clk_wiz_0
        (.clk_25(clk_wiz_0_clk_25),

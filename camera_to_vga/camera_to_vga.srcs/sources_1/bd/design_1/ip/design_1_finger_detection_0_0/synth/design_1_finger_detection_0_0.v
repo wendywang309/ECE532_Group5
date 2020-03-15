@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:finger_detection:1.0
-// IP Revision: 18
+// IP Revision: 27
 
 (* X_CORE_INFO = "finger_detection,Vivado 2018.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_finger_detection_0_0,finger_detection,{}" *)
-(* CORE_GENERATION_INFO = "design_1_finger_detection_0_0,finger_detection,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=finger_detection,x_ipVersion=1.0,x_ipCoreRevision=18,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_finger_detection_0_0,finger_detection,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=finger_detection,x_ipVersion=1.0,x_ipCoreRevision=27,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_finger_detection_0_0 (
   clk,
@@ -66,7 +66,7 @@ module design_1_finger_detection_0_0 (
 input wire clk;
 input wire [11 : 0] dout;
 input wire [17 : 0] addr;
-output wire [10 : 0] detect;
+output wire [3 : 0] detect;
 
   finger_detection inst (
     .clk(clk),

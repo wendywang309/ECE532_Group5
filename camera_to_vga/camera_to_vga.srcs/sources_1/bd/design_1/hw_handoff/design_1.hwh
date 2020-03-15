@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Mar 14 17:46:18 2020" VIVADOVERSION="2018.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Mar 14 23:25:16 2020" VIVADOVERSION="2018.1">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys4_ddr:part0:1.1" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -85,19 +85,19 @@
         <CONNECTION INSTANCE="ov7670_controller_0" PORT="xclk"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" LEFT="10" NAME="detect_0" RIGHT="0" SIGIS="undef" SIGNAME="finger_detection_0_detect">
+    <PORT DIR="O" LEFT="3" NAME="detect_0" RIGHT="0" SIGIS="undef" SIGNAME="finger_detection_0_detect">
       <CONNECTIONS>
         <CONNECTION INSTANCE="finger_detection_0" PORT="detect"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="clk_wiz_0" PORT="resetn"/>
       </CONNECTIONS>
     </PORT>
     <PORT CLKFREQUENCY="100000000" DIR="I" NAME="sys_clock" SIGIS="clk" SIGNAME="External_Ports_sys_clock">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_in1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_wiz_0" PORT="resetn"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -901,7 +901,6 @@
             <CONNECTION INSTANCE="External_Ports" PORT="sys_clock"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="locked" SIGIS="undef"/>
         <PORT CLKFREQUENCY="25000000" DIR="O" NAME="clk_25" SIGIS="clk" SIGNAME="clk_wiz_0_clk_25">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ov7670_vga_0" PORT="clk25"/>
@@ -915,6 +914,7 @@
             <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clkb"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="O" NAME="locked" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -965,7 +965,7 @@
             <CONNECTION INSTANCE="ov7670_vga_0" PORT="frame_addr"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="10" NAME="detect" RIGHT="0" SIGIS="undef" SIGNAME="finger_detection_0_detect">
+        <PORT DIR="O" LEFT="3" NAME="detect" RIGHT="0" SIGIS="undef" SIGNAME="finger_detection_0_detect">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="detect_0"/>
           </CONNECTIONS>

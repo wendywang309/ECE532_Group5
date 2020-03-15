@@ -1,7 +1,7 @@
 {
    ExpandedHierarchyInLayout: "",
    PinnedPorts: "",
-   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS-threadsafe
 #  -string -flagsOSRD
 preplace port ov7670_reset -pg 1 -y 780 -defaultsOSRD
 preplace port ov7670_pclk -pg 1 -y 410 -defaultsOSRD
@@ -31,31 +31,32 @@ preplace inst ov7670_vga_0 -pg 1 -lvl 3 -y 330 -defaultsOSRD
 preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 80 -defaultsOSRD
 preplace netloc ov7670_controller_0_reset 1 4 1 1070J
 preplace netloc href_0_1 1 0 2 NJ 470 170
-preplace netloc ov7670_vga_0_frame_addr 1 2 2 450 440 740
+preplace netloc ov7670_vga_0_frame_addr 1 2 2 450 440 750
 preplace netloc pclk_0_1 1 0 4 N 410 190J 120 NJ 120 N
 preplace netloc sys_clock_1 1 0 1 NJ
 preplace netloc finger_detection_0_detect 1 3 2 NJ 630 1040J
 preplace netloc ov7670_controller_0_config_finished 1 4 1 1040J
 preplace netloc ov7670_vga_0_vga_vsync 1 3 2 NJ 360 NJ
 preplace netloc i_0_1 1 0 3 NJ 790 NJ 790 NJ
-preplace netloc ov7670_capture_0_addr 1 2 2 400J 100 N
+preplace netloc ov7670_capture_0_addr 1 2 2 390J 100 N
 preplace netloc ov7670_controller_0_xclk 1 4 1 1090J
 preplace netloc ov7670_controller_0_pwdn 1 4 1 1080J
-preplace netloc debounce_0_o 1 3 1 740
+preplace netloc debounce_0_o 1 3 1 750
 preplace netloc d_0_1 1 0 2 NJ 500 160
 preplace netloc ov7670_capture_0_dout 1 2 2 410J 140 N
-preplace netloc clk_wiz_0_clk_25 1 1 2 N 80 420
+preplace netloc clk_wiz_0_clk_25 1 1 2 N 60 420
 preplace netloc Net 1 4 1 1060J
-preplace netloc ov7670_vga_0_vga_red 1 3 2 750J 300 1040J
-preplace netloc ov7670_vga_0_vga_green 1 3 2 730J 310 1090J
+preplace netloc ov7670_vga_0_vga_red 1 3 2 760J 300 1040J
+preplace netloc ov7670_vga_0_vga_green 1 3 2 740J 310 1090J
 preplace netloc ov7670_vga_0_vga_blue 1 3 2 NJ 320 NJ
-preplace netloc blk_mem_gen_0_doutb 1 2 2 440 220 730
+preplace netloc blk_mem_gen_0_doutb 1 2 2 440 220 740
+preplace netloc reset_1 1 0 1 N
 preplace netloc ov7670_controller_0_sioc 1 4 1 1050J
 preplace netloc ov7670_vga_0_vga_hsync 1 3 2 NJ 340 NJ
-preplace netloc clk_wiz_0_clk_50 1 1 3 N 100 390 210 760
+preplace netloc clk_wiz_0_clk_50 1 1 3 N 80 400 210 770
 preplace netloc vsync_0_1 1 0 2 NJ 440 180
 preplace netloc ov7670_capture_0_we 1 2 2 430J 160 N
-levelinfo -pg 1 -60 70 290 590 930 1120 -top -70 -bot 1000
+levelinfo -pg 1 -60 70 290 600 930 1120 -top -70 -bot 1000
 ",
 }
 {

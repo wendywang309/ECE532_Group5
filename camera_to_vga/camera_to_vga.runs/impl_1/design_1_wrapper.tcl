@@ -60,27 +60,29 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.cache/wt [current_project]
-  set_property parent.project_path C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.xpr [current_project]
-  set_property ip_repo_paths c:/ECE532/ECE532_Group5/IP [current_project]
-  set_property ip_output_repo C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.cache/wt [current_project]
+  set_property parent.project_path D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.xpr [current_project]
+  set_property ip_repo_paths D:/GitHub/ECE532_Group5/IP [current_project]
+  set_property ip_output_repo D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd
+  add_files D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
-  read_xdc C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc
+  read_xdc D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7a100tcsg324-1
   set_param project.isImplRun false

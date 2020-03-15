@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date             : Sat Mar 14 17:50:39 2020
-| Host             : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Date             : Sat Mar 14 23:29:07 2020
+| Host             : SINCOL-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
 | Device           : xc7a100tcsg324-1
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      940 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      366 |     63400 |            0.58 |
-|   Register     |    <0.001 |      277 |    126800 |            0.22 |
-|   CARRY4       |    <0.001 |       21 |     15850 |            0.13 |
+| Clocks         |     0.003 |        6 |       --- |             --- |
+| Slice Logic    |    <0.001 |     1084 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      406 |     63400 |            0.64 |
+|   CARRY4       |    <0.001 |       38 |     15850 |            0.24 |
+|   Register     |    <0.001 |      361 |    126800 |            0.28 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |       63 |     63400 |            0.10 |
-|   Others       |     0.000 |      170 |       --- |             --- |
-| Signals        |     0.002 |      937 |       --- |             --- |
+|   Others       |     0.000 |      169 |       --- |             --- |
+| Signals        |     0.002 |     1060 |       --- |             --- |
 | Block RAM      |     0.005 |     52.5 |       135 |           38.89 |
 | MMCM           |     0.106 |        1 |         6 |           16.67 |
-| I/O            |     0.004 |       49 |       210 |           23.33 |
+| I/O            |     0.004 |       42 |       210 |           20.00 |
 | Static Power   |     0.100 |          |           |                 |
 | Total          |     0.219 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.026 |       0.009 |      0.017 |
+| Vccint    |       1.000 |     0.026 |       0.010 |      0.017 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
