@@ -1,0 +1,28 @@
+19:40:26 **** Auto Build of configuration Debug for project virtual_instruments ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../virtual_instruments_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:89:4: warning: implicit declaration of function 'NavDemo_Cleanup' [-Wimplicit-function-declaration]
+    NavDemo_Cleanup();
+    ^~~~~~~~~~~~~~~
+../src/main.c:65:5: warning: unused variable 'hit_buf' [-Wunused-variable]
+  u8 hit_buf[1] = "1";
+     ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: virtual_instruments.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../virtual_instruments_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "virtual_instruments.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: virtual_instruments.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size virtual_instruments.elf  |tee "virtual_instruments.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8040	    328	   3288	  11656	   2d88	virtual_instruments.elf
+'Finished building: virtual_instruments.elf.size'
+' '
+
+19:40:27 Build Finished (took 1s.0ms)
+

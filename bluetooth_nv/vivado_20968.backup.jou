@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Mar  9 13:50:35 2020
+# Process ID: 20968
+# Current directory: C:/ECE532/ECE532_Group5/bluetooth_nv
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20524 C:\ECE532\ECE532_Group5\bluetooth_nv\bluetooth.xpr
+# Log file: C:/ECE532/ECE532_Group5/bluetooth_nv/vivado.log
+# Journal file: C:/ECE532/ECE532_Group5/bluetooth_nv\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.srcs/sources_1/bd/design_1/design_1.bd}
+launch_sdk -workspace C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk -hwspec C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk/design_1_wrapper.hdf

@@ -2,84 +2,148 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sat Mar 14 17:35:39 2020
-# Process ID: 760
+# Start of session at: Sun Mar 15 17:26:42 2020
+# Process ID: 14548
 # Current directory: C:/ECE532/ECE532_Group5/camera_to_vga
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2096 C:\ECE532\ECE532_Group5\camera_to_vga\camera_to_vga.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11348 C:\ECE532\ECE532_Group5\camera_to_vga\camera_to_vga.xpr
 # Log file: C:/ECE532/ECE532_Group5/camera_to_vga/vivado.log
 # Journal file: C:/ECE532/ECE532_Group5/camera_to_vga\vivado.jou
 #-----------------------------------------------------------
-sstart_guiopen_project C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.xpr
-SScanning sources...FFinished scanning sourcesIINFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ov7670'.
-IINFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_capture:1.0'. The one found in IP location 'c:/ECE532/ov7670/capture' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/capture
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_controller:1.0'. The one found in IP location 'c:/ECE532/ov7670/controller' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/controller
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:debounce:1.0'. The one found in IP location 'c:/ECE532/ov7670/debounce' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/debounce
-CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_vga:1.0'. The one found in IP location 'c:/ECE532/ov7670/vga' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/vga
-open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 883.930 ; gain = 174.973
-update_compile_order -fileset sources_1
-set_property  ip_repo_paths  c:/ECE532/ECE532_Group5/IP [current_project]
-update_ip_catalog
+start_gui
+open_project C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.xpr
+INFO: [Project 1-313] Project file moved from 'D:/GitHub/ECE532_Group5/camera_to_vga' since last save.
+Scanning sources...
+Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.
-update_ip_catalog
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 873.691 ; gain = 178.551
+update_compile_order -fileset sources_1
 open_bd_design {C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd}
 Adding cell -- xilinx.com:user:ov7670_capture:1.0 - ov7670_capture_0
 Adding cell -- xilinx.com:user:ov7670_controller:1.0 - ov7670_controller_0
 Adding cell -- xilinx.com:user:ov7670_vga:1.0 - ov7670_vga_0
 Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
 Adding cell -- xilinx.com:user:debounce:1.0 - debounce_0
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
 Adding cell -- xilinx.com:user:finger_detection:1.0 - finger_detection_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_25(clk) and /ov7670_vga_0/clk25(undef)
 Successfully read diagram <design_1> from BD file <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 990.254 ; gain = 78.051
+open_bd_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 969.188 ; gain = 59.008
+save_project_as virtual_instruments C:/ECE532/ECE532_Group5/virtual_instruments -force
+Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+save_project_as: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 985.129 ; gain = 0.641
 startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
-create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1130.535 ; gain = 140.281
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:10.0 microblaze_0
 endgroup
 startgroup
-apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset ( Reset ) " }  [get_bd_pins clk_wiz_0/reset]
-INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
-INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_0]
-INFO: [board_rule 100-100] create_bd_port -dir I reset -type rst
-INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset
-INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_0/reset
+set_property -dict [list CONFIG.CLKOUT3_USED {true} CONFIG.CLK_OUT3_PORT {clk_100} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT2_DIVIDE {10} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT3_JITTER {130.958} CONFIG.CLKOUT3_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config {preset "None" local_mem "32KB" ecc "None" cache "None" debug_module "Debug Only" axi_periph "Enabled" axi_intc "1" clk "/clk_wiz_0/clk_100 (100 MHz)" }  [get_bd_cells microblaze_0]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+apply_bd_automation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1317.125 ; gain = 113.168
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset ( Reset ) " }  [get_bd_pins rst_clk_wiz_0_100M/ext_reset_in]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /rst_clk_wiz_0_100M]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /rst_clk_wiz_0_100M]
+INFO: [board_rule 100-100] connect_bd_net /reset /rst_clk_wiz_0_100M/ext_reset_in
 INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset
-apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "sys_clock ( System Clock ) " }  [get_bd_pins clk_wiz_0/clk_in1]
-INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
-INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk
-INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
-INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
-INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
-INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+connect_bd_net [get_bd_pins microblaze_0_xlconcat/In0] [get_bd_pins axi_uartlite_0/interrupt]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_100 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+</axi_uartlite_0/S_AXI/Reg> is being mapped into </microblaze_0/Data> at <0x40600000 [ 64K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "usb_uart ( USB UART ) " }  [get_bd_intf_pins axi_uartlite_0/UART]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /axi_uartlite_0]
+INFO: [board_rule 100-100] set_property CONFIG.UARTLITE_BOARD_INTERFACE usb_uart [get_bd_cells /axi_uartlite_0]
+INFO: [board_rule 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart
+INFO: [board_rule 100-100] connect_bd_intf_net /usb_uart /axi_uartlite_0/UART
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.1 mig_7series_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:mig_7series -config {Board_Interface "ddr2_sdram" }  [get_bd_cells mig_7series_0]
+INFO: [board_rule_mig 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 ddr2_sdram
+INFO: [board_rule_mig 100-100] connect_bd_intf_net /ddr2_sdram /mig_7series_0/DDR2
+INFO: [board_rule_mig 100-100] create_bd_port -dir I sys_clk_i -type clk
+can't read "board_if": no such variable
+ERROR: [BD 41-1273] Error running apply_rule TCL procedure: can't read "board_if": no such variable
+    ::xilinx.com_bd_rule_mig_7series::apply_rule Line 48
+INFO: [BD 5-145] Automation rule xilinx.com:bd_rule:mig_7series was not applied to object mig_7series_0
+apply_bd_automation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:24 . Memory (MB): peak = 1396.902 ; gain = 3.605
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:mig_7series -config {Board_Interface "ddr2_sdram" }  [get_bd_cells mig_7series_0]'
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_100 (100 MHz)} Clk_slave {/mig_7series_0/ui_clk (81 MHz)} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/mig_7series_0/S_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins mig_7series_0/S_AXI]
+</mig_7series_0/memmap/memaddr> is being mapped into </microblaze_0/Data> at <0x80000000 [ 128M ]>
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset ( Reset ) " }  [get_bd_pins mig_7series_0/sys_rst]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /mig_7series_0]
+INFO: [board_rule 100-100] connect_bd_net /reset /mig_7series_0/sys_rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset
+apply_bd_automation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1409.121 ; gain = 0.668
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/sys_clock (100 MHz)" }  [get_bd_pins mig_7series_0/sys_clk_i]
 endgroup
 startgroup
-set_property -dict [list CONFIG.CLKOUT1_USED {true} CONFIG.CLKOUT2_USED {true} CONFIG.CLK_OUT1_PORT {clk_25} CONFIG.CLK_OUT2_PORT {clk_50} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {175.402} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
-WARNING: [BD 41-1684] Pin /clk_wiz_0/reset is now disabled. All connections to this pin have been removed. 
-delete_bd_objs [get_bd_nets reset_1]
+set_property -dict [list CONFIG.C_I_AXI {1}] [get_bd_cells microblaze_0]
 endgroup
-delete_bd_objs [get_bd_ports clk_25]
-connect_bd_net [get_bd_pins clk_wiz_0/clk_25] [get_bd_pins ov7670_vga_0/clk25]
-WARNING: [BD 41-1731] Type mismatch between connected pins: /ov7670_vga_0/clk25(undef) and /clk_wiz_0/clk_25(clk)
-delete_bd_objs [get_bd_ports clk_50]
-connect_bd_net [get_bd_pins clk_wiz_0/clk_50] [get_bd_pins debounce_0/clk]
-save_bd_design
-Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-reset_run synth_1
-launch_runs synth_1 -jobs 4
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_100 (100 MHz)} Clk_slave {/clk_wiz_0/clk_100 (100 MHz)} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/microblaze_0/M_AXI_IP} Slave {/microblaze_0_axi_intc/s_axi} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_IP]
+</mig_7series_0/memmap/memaddr> is being mapped into </microblaze_0/Instruction> at <0x80000000 [ 128M ]>
+</axi_uartlite_0/S_AXI/Reg> is being mapped into </microblaze_0/Instruction> at <0x40600000 [ 64K ]>
+</microblaze_0_axi_intc/S_AXI/Reg> is being mapped into </microblaze_0/Instruction> at <0x41200000 [ 64K ]>
+validate_bd_design
+ERROR: [BD 41-1380] A connection to the interface 'DDR2' of '/mig_7series_0' is required.
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+validate_bd_design
+ERROR: [BD 41-1380] A connection to the interface 'DDR2' of '/mig_7series_0' is required.
+ERROR: [Common 17-39] 'validate_bd_design' failed due to earlier errors.
+apply_board_connection -board_interface "ddr2_sdram" -ip_intf "/mig_7series_0/mig_ddr_interface" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.BOARD_MIG_PARAM ddr2_sdram [get_bd_cells -quiet /mig_7series_0]
+INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 ddr2_sdram
+INFO: [board_interface 100-100] connect_bd_intf_net /ddr2_sdram /mig_7series_0/DDR2
+apply_board_connection: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1426.066 ; gain = 0.000
+undo
+INFO: [Common 17-17] undo 'apply_board_connection -board_interface "ddr2_sdram" -ip_intf "/mig_7series_0/mig_ddr_interface" -diagram "design_1" '
+undo: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1429.020 ; gain = 0.000
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins mig_7series_0/DDR2]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_intf_pins mig_7series_0/DDR2]'
+INFO: [Common 17-17] undo 'startgroup'
+apply_board_connection -board_interface "ddr2_sdram" -ip_intf "/mig_7series_0/mig_ddr_interface" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.BOARD_MIG_PARAM ddr2_sdram [get_bd_cells -quiet /mig_7series_0]
+INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddrx_rtl:1.0 ddr2_sdram
+INFO: [board_interface 100-100] connect_bd_intf_net /ddr2_sdram /mig_7series_0/DDR2
+apply_board_connection: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1435.719 ; gain = 6.656
+validate_bd_design
 WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
 Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
 For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
 WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
 	CLK_DOMAIN=/clk_wiz_0_clk_out1 
 WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
 	CLK_DOMAIN=/clk_wiz_0_clk_out1 
 WARNING: [BD 41-927] Following properties on pin /finger_detection_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
 	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
-VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1456.863 ; gain = 21.082
+save_bd_design
+Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_vga_0 .
@@ -87,159 +151,238 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_
 INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block finger_detection_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-Exporting to file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_clk_wiz_0_0, cache-ID = 57de594e5b3730da; cache size = 31.087 MB.
-[Sat Mar 14 17:40:24 2020] Launched synth_1...
-Run output will be captured here: C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/synth_1/runme.log
-launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:45 . Memory (MB): peak = 1298.645 ; gain = 74.410
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a100tcsg324-1
-INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0.dcp' for cell 'design_1_i/blk_mem_gen_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_debounce_0_0/design_1_debounce_0_0.dcp' for cell 'design_1_i/debounce_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.dcp' for cell 'design_1_i/finger_detection_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_ov7670_capture_0_0/design_1_ov7670_capture_0_0.dcp' for cell 'design_1_i/ov7670_capture_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_ov7670_controller_0_0/design_1_ov7670_controller_0_0.dcp' for cell 'design_1_i/ov7670_controller_0'
-INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_ov7670_vga_0_0/design_1_ov7670_vga_0_0.dcp' for cell 'design_1_i/ov7670_vga_0'
-INFO: [Netlist 29-17] Analyzing 153 Unisim elements for replacement
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+Exporting to file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Sun Mar 15 17:52:08 2020] Launched design_1_clk_wiz_0_0_synth_1, design_1_xbar_0_synth_1, design_1_microblaze_0_axi_intc_0_synth_1, design_1_mig_7series_0_0_synth_1, design_1_rst_mig_7series_0_81M_0_synth_1, design_1_mdm_1_0_synth_1, design_1_microblaze_0_0_synth_1, design_1_rst_clk_wiz_0_100M_0_synth_1, design_1_microblaze_0_xlconcat_0_synth_1, design_1_axi_uartlite_0_0_synth_1, design_1_auto_ds_1_synth_1, design_1_dlmb_v10_0_synth_1, design_1_auto_us_1_synth_1, design_1_lmb_bram_0_synth_1, design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_auto_us_0_synth_1, design_1_auto_ds_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_auto_cc_0_synth_1, design_1_auto_pc_0_synth_1, design_1_ilmb_v10_0_synth_1...
+Run output will be captured here:
+design_1_clk_wiz_0_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_xbar_0_synth_1/runme.log
+design_1_microblaze_0_axi_intc_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_microblaze_0_axi_intc_0_synth_1/runme.log
+design_1_mig_7series_0_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_mig_7series_0_0_synth_1/runme.log
+design_1_rst_mig_7series_0_81M_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_rst_mig_7series_0_81M_0_synth_1/runme.log
+design_1_mdm_1_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_mdm_1_0_synth_1/runme.log
+design_1_microblaze_0_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_microblaze_0_0_synth_1/runme.log
+design_1_rst_clk_wiz_0_100M_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_rst_clk_wiz_0_100M_0_synth_1/runme.log
+design_1_microblaze_0_xlconcat_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_microblaze_0_xlconcat_0_synth_1/runme.log
+design_1_axi_uartlite_0_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_axi_uartlite_0_0_synth_1/runme.log
+design_1_auto_ds_1_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_auto_ds_1_synth_1/runme.log
+design_1_dlmb_v10_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_dlmb_v10_0_synth_1/runme.log
+design_1_auto_us_1_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_auto_us_1_synth_1/runme.log
+design_1_lmb_bram_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_lmb_bram_0_synth_1/runme.log
+design_1_dlmb_bram_if_cntlr_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_auto_us_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_auto_us_0_synth_1/runme.log
+design_1_auto_ds_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_auto_ds_0_synth_1/runme.log
+design_1_ilmb_bram_if_cntlr_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_auto_cc_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_auto_cc_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_ilmb_v10_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_ilmb_v10_0_synth_1/runme.log
+[Sun Mar 15 17:52:10 2020] Launched synth_1...
+Run output will be captured here: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:23 ; elapsed = 00:01:53 . Memory (MB): peak = 1576.875 ; gain = 93.813
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.
+update_ip_catalog: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1867.871 ; gain = 72.082
+startgroup
+create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodBT2:1.0 PmodBT2_0
+apply_board_connection -board_interface "jc" -ip_intf "PmodBT2_0/Pmod_out" -diagram "design_1" 
+INFO: [board_interface 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /PmodBT2_0]
+INFO: [board_interface 100-100] set_property CONFIG.PMOD jc [get_bd_cells -quiet /PmodBT2_0]
+INFO: [board_interface 100-100] create_bd_intf_port -mode Master -vlnv digilentinc.com:interface:pmod_rtl:1.0 jc
+INFO: [board_interface 100-100] connect_bd_intf_net /jc /PmodBT2_0/Pmod_out
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_100 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/PmodBT2_0/AXI_LITE_UART} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins PmodBT2_0/AXI_LITE_UART]
+</PmodBT2_0/AXI_LITE_UART/Reg0> is being mapped into </microblaze_0/Data> at <0x00008000 [ 8K ]>
+</PmodBT2_0/AXI_LITE_UART/Reg0> is being mapped into </microblaze_0/Instruction> at <0x00008000 [ 8K ]>
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_100 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/PmodBT2_0/AXI_LITE_GPIO} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins PmodBT2_0/AXI_LITE_GPIO]
+</PmodBT2_0/AXI_LITE_GPIO/Reg0> is being mapped into </microblaze_0/Data> at <0x0000A000 [ 4K ]>
+</PmodBT2_0/AXI_LITE_GPIO/Reg0> is being mapped into </microblaze_0/Instruction> at <0x0000A000 [ 4K ]>
+endgroup
+validate_bd_design
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /microblaze_0_axi_intc: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /finger_detection_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1909.965 ; gain = 5.605
+save_bd_design
+Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_mig_7series_0_0_synth_1
+reset_run design_1_dlmb_bram_if_cntlr_0_synth_1
+reset_run design_1_ilmb_bram_if_cntlr_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block finger_detection_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodBT2_axi_uart16550_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodBT2_axi_uart16550_0_0 (AXI UART16550 2.0) from revision 17 to revision 18
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodBT2_axi_gpio_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodBT2_axi_gpio_0_0 (AXI GPIO 2.0) from revision 17 to revision 18
+CRITICAL WARNING: [IP_Flow 19-4965] IP PmodBT2_pmod_bridge_0_0 was packaged with board value 'digilentinc.com:arty:part0:1.1'. Current project's board value is 'digilentinc.com:nexys4_ddr:part0:1.1'. Please update the project settings to match the packaged IP.
+INFO: [IP_Flow 19-3422] Upgraded PmodBT2_pmod_bridge_0_0 (Pmod Bridge 1.0) from revision 9 to revision 12
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodBT2_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
+Exporting to file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_0, cache-ID = ff56782cc75ccbaf; cache size = 27.003 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_3, cache-ID = a6f078607fc7a9c5; cache size = 27.003 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = d831766163b4fdcc; cache size = 27.003 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bb75e3ab0d8740fc; cache size = 27.003 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = a6f078607fc7a9c5; cache size = 27.003 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = a6f078607fc7a9c5; cache size = 27.003 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = 06794b5ccec95d66; cache size = 27.003 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 3776a69cb724b2ca; cache size = 27.003 MB.
+[Sun Mar 15 18:15:57 2020] Launched design_1_xbar_0_synth_1, design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_PmodBT2_0_0_synth_1, design_1_auto_ds_2_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbar_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_xbar_0_synth_1/runme.log
+design_1_dlmb_bram_if_cntlr_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_ilmb_bram_if_cntlr_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log
+design_1_PmodBT2_0_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_PmodBT2_0_0_synth_1/runme.log
+design_1_auto_ds_2_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_auto_ds_2_synth_1/runme.log
+synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/runme.log
+[Sun Mar 15 18:15:58 2020] Launched impl_1...
+Run output will be captured here: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:01:51 . Memory (MB): peak = 1988.008 ; gain = 72.531
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 804 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2018.1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
-Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc:4]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-Finished Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
-get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2024.785 ; gain = 561.676
-Finished Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
-Parsing XDC File [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc]
-CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:91]
-CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_1' was not found. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:92]
-WARNING: [Vivado 12-507] No nets matched 'u_ila_1_clk_50'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:93]
-CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:93]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[0]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[2]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:96]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[9]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:97]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[15]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:98]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:98]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[10]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:99]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:99]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[11]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:100]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[17]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:101]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[3]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:102]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[4]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:103]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[6]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:104]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[7]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:105]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[8]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:106]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[12]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:107]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:107]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[13]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:108]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:108]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[16]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:109]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:109]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[1]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:110]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:110]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[5]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:111]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:111]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[14]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:112]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:112]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[1]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:113]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:113]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[3]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:114]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:114]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[4]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:115]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:115]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[7]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:116]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:116]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[0]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:117]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[2]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:118]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:118]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[5]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:119]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:119]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[6]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:120]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[8]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:121]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:121]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[9]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:122]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:122]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[10]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:123]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:123]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[11]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:124]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:124]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'design_1_i/clk_wiz_0/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.edf:369]
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2725.863 ; gain = 0.000
+Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2725.863 ; gain = 0.000
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 279 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 8 instances
+  IOBUFDS_INTERMDISABLE => IOBUFDS_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT, IBUFDS_INTERMDISABLE_INT, INV, OBUFTDS, OBUFTDS): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 74 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 144 instances
+  SRLC16E => SRL16E: 1 instances
+  SRLC32E => SRL16E: 1 instances
 
-open_run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 2026.316 ; gain = 727.672
-open_bd_design {C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd}
-connect_bd_net [get_bd_ports reset] [get_bd_pins clk_wiz_0/resetn]
-CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'ov7670_reset'; it is not accessible from the fabric routing.
+open_run: Time (s): cpu = 00:00:48 ; elapsed = 00:00:59 . Memory (MB): peak = 2802.434 ; gain = 814.426
+open_report: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2867.754 ; gain = 53.121
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+file mkdir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk
+file copy -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/design_1_wrapper.sysdef C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk -hwspec C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk -hwspec C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {1}] [get_bd_cells microblaze_0_xlconcat]
+endgroup
 save_bd_design
-Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
 reset_run synth_1
+reset_run design_1_microblaze_0_xlconcat_0_synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
 Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
 For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
 WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
 	CLK_DOMAIN=/clk_wiz_0_clk_out1 
 WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
 	CLK_DOMAIN=/clk_wiz_0_clk_out1 
 WARNING: [BD 41-927] Following properties on pin /finger_detection_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
 	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
-VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_vga_0 .
@@ -247,12 +390,64 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_
 INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block finger_detection_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-Exporting to file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
-[Sat Mar 14 17:46:56 2020] Launched synth_1...
-Run output will be captured here: C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/synth_1/runme.log
-[Sat Mar 14 17:46:56 2020] Launched impl_1...
-Run output will be captured here: C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:38 . Memory (MB): peak = 2169.270 ; gain = 37.039
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodBT2_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
+Exporting to file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_0, cache-ID = ff56782cc75ccbaf; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = 1b95db2f6b63bcf6; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_3, cache-ID = a6f078607fc7a9c5; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_2, cache-ID = ea23c0adaf5001fa; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = d831766163b4fdcc; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bb75e3ab0d8740fc; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = a6f078607fc7a9c5; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = a6f078607fc7a9c5; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = 06794b5ccec95d66; cache size = 29.357 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 3776a69cb724b2ca; cache size = 29.357 MB.
+[Sun Mar 15 19:29:19 2020] Launched design_1_microblaze_0_axi_intc_0_synth_1, design_1_microblaze_0_xlconcat_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_microblaze_0_axi_intc_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_microblaze_0_axi_intc_0_synth_1/runme.log
+design_1_microblaze_0_xlconcat_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_microblaze_0_xlconcat_0_synth_1/runme.log
+synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/runme.log
+[Sun Mar 15 19:29:20 2020] Launched impl_1...
+Run output will be captured here: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:35 ; elapsed = 00:01:26 . Memory (MB): peak = 2933.629 ; gain = 64.641
+file mkdir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk
+file copy -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/design_1_wrapper.sysdef C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk -hwspec C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk -hwspec C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 18:17:41 2020...

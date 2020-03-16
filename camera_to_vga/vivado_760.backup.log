@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sat Mar 14 17:35:39 2020
+# Process ID: 760
+# Current directory: C:/ECE532/ECE532_Group5/camera_to_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2096 C:\ECE532\ECE532_Group5\camera_to_vga\camera_to_vga.xpr
+# Log file: C:/ECE532/ECE532_Group5/camera_to_vga/vivado.log
+# Journal file: C:/ECE532/ECE532_Group5/camera_to_vga\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.xpr
+SScanning sources...FFinished scanning sourcesIINFO: [IP_Flow 19-234] Refreshing IP repositoriesINFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ov7670'.
+IINFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_capture:1.0'. The one found in IP location 'c:/ECE532/ov7670/capture' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/capture
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_controller:1.0'. The one found in IP location 'c:/ECE532/ov7670/controller' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/controller
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:debounce:1.0'. The one found in IP location 'c:/ECE532/ov7670/debounce' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/debounce
+CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ov7670_vga:1.0'. The one found in IP location 'c:/ECE532/ov7670/vga' will take precedence over the same IP in location c:/ECE532/ECE532_Group5/IP/vga
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 883.930 ; gain = 174.973
+update_compile_order -fileset sources_1
+set_property  ip_repo_paths  c:/ECE532/ECE532_Group5/IP [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.
+update_ip_catalog
+open_bd_design {C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:user:ov7670_capture:1.0 - ov7670_capture_0
+Adding cell -- xilinx.com:user:ov7670_controller:1.0 - ov7670_controller_0
+Adding cell -- xilinx.com:user:ov7670_vga:1.0 - ov7670_vga_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:user:debounce:1.0 - debounce_0
+Adding cell -- xilinx.com:user:finger_detection:1.0 - finger_detection_0
+Successfully read diagram <design_1> from BD file <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 990.254 ; gain = 78.051
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1130.535 ; gain = 140.281
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "reset ( Reset ) " }  [get_bd_pins clk_wiz_0/reset]
+INFO: [board_rule 100-100] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I reset -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset
+INFO: [board_rule 100-100] connect_bd_net /reset /clk_wiz_0/reset
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset
+apply_bd_automation -rule xilinx.com:bd_rule:board -config {Board_Interface "sys_clock ( System Clock ) " }  [get_bd_pins clk_wiz_0/clk_in1]
+INFO: [board_rule 100-100] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells /clk_wiz_0]
+INFO: [board_rule 100-100] create_bd_port -dir I sys_clock -type clk
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [board_rule 100-100] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [board_rule 100-100] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [board_rule 100-100] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_USED {true} CONFIG.CLKOUT2_USED {true} CONFIG.CLK_OUT1_PORT {clk_25} CONFIG.CLK_OUT2_PORT {clk_50} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {40.000} CONFIG.MMCM_CLKOUT1_DIVIDE {20} CONFIG.NUM_OUT_CLKS {2} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT1_JITTER {175.402} CONFIG.CLKOUT1_PHASE_ERROR {98.575} CONFIG.CLKOUT2_JITTER {151.636} CONFIG.CLKOUT2_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_0]
+WARNING: [BD 41-1684] Pin /clk_wiz_0/reset is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets reset_1]
+endgroup
+delete_bd_objs [get_bd_ports clk_25]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_25] [get_bd_pins ov7670_vga_0/clk25]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ov7670_vga_0/clk25(undef) and /clk_wiz_0/clk_25(clk)
+delete_bd_objs [get_bd_ports clk_50]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_50] [get_bd_pins debounce_0/clk]
+save_bd_design
+Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /finger_detection_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block finger_detection_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_clk_wiz_0_0, cache-ID = 57de594e5b3730da; cache size = 31.087 MB.
+[Sat Mar 14 17:40:24 2020] Launched synth_1...
+Run output will be captured here: C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:45 . Memory (MB): peak = 1298.645 ; gain = 74.410
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0.dcp' for cell 'design_1_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'design_1_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_debounce_0_0/design_1_debounce_0_0.dcp' for cell 'design_1_i/debounce_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.dcp' for cell 'design_1_i/finger_detection_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_ov7670_capture_0_0/design_1_ov7670_capture_0_0.dcp' for cell 'design_1_i/ov7670_capture_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_ov7670_controller_0_0/design_1_ov7670_controller_0_0.dcp' for cell 'design_1_i/ov7670_controller_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_ov7670_vga_0_0/design_1_ov7670_vga_0_0.dcp' for cell 'design_1_i/ov7670_vga_0'
+INFO: [Netlist 29-17] Analyzing 153 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+CRITICAL WARNING: [Netlist 29-160] Cannot set property 'BOARD_PIN', because the property does not exist for objects of type 'pin'. [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc:4]
+Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2024.785 ; gain = 561.676
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1_i/clk_wiz_0/inst'
+Parsing XDC File [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_0' was not found. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:91]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'u_ila_1' was not found. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:92]
+WARNING: [Vivado 12-507] No nets matched 'u_ila_1_clk_50'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:93]
+CRITICAL WARNING: [Vivado 12-1419] Debug core 'dbg_hub' was not found. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:93]
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[0]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[2]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[9]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[15]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[10]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[11]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[17]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[3]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[4]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[6]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[7]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[8]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[12]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[13]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[16]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[1]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[5]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[14]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[1]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[3]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[4]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[7]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[0]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[2]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[5]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[6]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[8]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[9]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[10]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[11]'. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:35 ; elapsed = 00:00:52 . Memory (MB): peak = 2026.316 ; gain = 727.672
+open_bd_design {C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd}
+connect_bd_net [get_bd_ports reset] [get_bd_pins clk_wiz_0/resetn]
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'ov7670_reset'; it is not accessible from the fabric routing.
+save_bd_design
+Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
+Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
+For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
+WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+WARNING: [BD 41-927] Following properties on pin /finger_detection_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=/clk_wiz_0_clk_out1 
+Wrote  : <C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_vga_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block finger_detection_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Mar 14 17:46:56 2020] Launched synth_1...
+Run output will be captured here: C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/synth_1/runme.log
+[Sat Mar 14 17:46:56 2020] Launched impl_1...
+Run output will be captured here: C:/ECE532/ECE532_Group5/camera_to_vga/camera_to_vga.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:38 . Memory (MB): peak = 2169.270 ; gain = 37.039

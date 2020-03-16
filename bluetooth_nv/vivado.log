@@ -2,10 +2,10 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Mon Mar  9 13:50:35 2020
-# Process ID: 20968
+# Start of session at: Sun Mar 15 19:48:10 2020
+# Process ID: 12940
 # Current directory: C:/ECE532/ECE532_Group5/bluetooth_nv
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20524 C:\ECE532\ECE532_Group5\bluetooth_nv\bluetooth.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7144 C:\ECE532\ECE532_Group5\bluetooth_nv\bluetooth.xpr
 # Log file: C:/ECE532/ECE532_Group5/bluetooth_nv/vivado.log
 # Journal file: C:/ECE532/ECE532_Group5/bluetooth_nv\vivado.jou
 #-----------------------------------------------------------
@@ -18,41 +18,11 @@ INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/ECE532/ECE5
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/diligent_library/vivado-library'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
-open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 971.883 ; gain = 260.023
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 960.082 ; gain = 260.527
 update_compile_order -fileset sources_1
-open_bd_design {C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.srcs/sources_1/bd/design_1/design_1.bd}
-Adding cell -- digilentinc.com:IP:PmodNAV:1.0 - PmodNAV_0
-Adding cell -- digilentinc.com:IP:PmodBT2:1.0 - PmodBT2_0
-Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_buttons
-Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_leds
-Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
-Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
-Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
-Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
-Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
-Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
-Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
-Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - axi_bram_ctrl_0
-Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
-Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
-Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
-Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
-Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
-Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
-Successfully read diagram <design_1> from BD file <C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1064.605 ; gain = 92.723
 launch_sdk -workspace C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk -hwspec C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
 INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk -hwspec C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 18:17:29 2020...
