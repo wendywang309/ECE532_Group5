@@ -1,21 +1,6 @@
-// Top Level Verilog File: all2.v
-// The audio Module to be instatiated:
+Top Level Verilog File: top.v
+Audio IP: audio_core.v
 
+Include all of the verilog files into the project except top.v for the audio_core to work.
 
-  HDL_DUT u_HDL_DUT (.clk(clk),           // 100MHz clock input
-                     .reset(~resetn),     // reset: active high
-                     .clk_enable(1),      // enable always
-                     .ce_out(),           // ignore
-                     .Input1(SW[0]),      // C6 = 1046.50
-                     .Input2(SW[1]),      // D6 = 1174.66
-                     .Input3(SW[2]),      // E6 = 1318.51
-                     .Input4(SW[3]),      // F6 = 1396.91
-                     .run_drum(SW[4]),    // Drum Enable
-                     .out1(PDM_mid),      // Pulse Density Modulated output
-                     .out(),  // ignore
-                     .out2(),  // ignore
-                     .out3(),  // ignore
-                     .out4(),  // ignore
-                     .Integrator(),  // ignore
-                     .Unmodulated()  // ignore
-                     );
+XDC file included
