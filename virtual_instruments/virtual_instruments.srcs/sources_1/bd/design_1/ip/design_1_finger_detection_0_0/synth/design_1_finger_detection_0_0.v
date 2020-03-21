@@ -48,17 +48,20 @@
 
 
 // IP VLNV: xilinx.com:user:finger_detection:1.0
-// IP Revision: 27
+// IP Revision: 28
 
 (* X_CORE_INFO = "finger_detection,Vivado 2018.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_finger_detection_0_0,finger_detection,{}" *)
-(* CORE_GENERATION_INFO = "design_1_finger_detection_0_0,finger_detection,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=finger_detection,x_ipVersion=1.0,x_ipCoreRevision=27,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_finger_detection_0_0,finger_detection,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=finger_detection,x_ipVersion=1.0,x_ipCoreRevision=28,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_finger_detection_0_0 (
   clk,
   dout,
   addr,
-  detect
+  c,
+  d,
+  e,
+  f
 );
 
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 25000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1" *)
@@ -66,12 +69,18 @@ module design_1_finger_detection_0_0 (
 input wire clk;
 input wire [11 : 0] dout;
 input wire [17 : 0] addr;
-output wire [3 : 0] detect;
+output wire c;
+output wire d;
+output wire e;
+output wire f;
 
   finger_detection inst (
     .clk(clk),
     .dout(dout),
     .addr(addr),
-    .detect(detect)
+    .c(c),
+    .d(d),
+    .e(e),
+    .f(f)
   );
 endmodule

@@ -16,7 +16,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 create_project -in_memory -part xc7a100tcsg324-1
@@ -25,16 +24,16 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.cache/wt [current_project]
-set_property parent.project_path D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.xpr [current_project]
+set_property webtalk.parent_dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.cache/wt [current_project]
+set_property parent.project_path C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_repo_paths d:/GitHub/ECE532_Group5/IP [current_project]
-set_property ip_output_repo d:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.cache/ip [current_project]
+set_property ip_repo_paths c:/ECE532/ECE532_Group5/IP [current_project]
+set_property ip_output_repo c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_ip -quiet D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.xci
+read_ip -quiet C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.xci
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -46,7 +45,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 set_param ips.enableIPCacheLiteLoad 0
 
-set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1 -new_name design_1_finger_detection_0_0 -ip [get_ips design_1_finger_detection_0_0]]
+set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1 -new_name design_1_finger_detection_0_0 -ip [get_ips design_1_finger_detection_0_0]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
@@ -86,32 +85,32 @@ write_checkpoint -force -noxdef design_1_finger_detection_0_0.dcp
 create_report "design_1_finger_detection_0_0_synth_1_synth_report_utilization_0" "report_utilization -file design_1_finger_detection_0_0_utilization_synth.rpt -pb design_1_finger_detection_0_0_utilization_synth.pb"
 
 if { [catch {
-  file copy -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0.dcp D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.dcp
+  file copy -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0.dcp C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.v
+  write_verilog -force -mode synth_stub C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.vhdl
+  write_vhdl -force -mode synth_stub C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.v
+  write_verilog -force -mode funcsim C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -121,47 +120,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0.dcp D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.dcp
+  file copy -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0.dcp C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_stub.v D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.v
+  file rename -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_stub.v C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_stub.vhdl D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.vhdl
+  file rename -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_stub.vhdl C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_sim_netlist.v D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.v
+  file rename -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_sim_netlist.v C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_sim_netlist.vhdl D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.vhdl
+  file rename -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1/design_1_finger_detection_0_0_sim_netlist.vhdl C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.ip_user_files/ip/design_1_finger_detection_0_0]} {
+if {[file isdir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.ip_user_files/ip/design_1_finger_detection_0_0]} {
   catch { 
-    file copy -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.v D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.ip_user_files/ip/design_1_finger_detection_0_0
+    file copy -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.v C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.ip_user_files/ip/design_1_finger_detection_0_0
   }
 }
 
-if {[file isdir D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.ip_user_files/ip/design_1_finger_detection_0_0]} {
+if {[file isdir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.ip_user_files/ip/design_1_finger_detection_0_0]} {
   catch { 
-    file copy -force D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.vhdl D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.ip_user_files/ip/design_1_finger_detection_0_0
+    file copy -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_stub.vhdl C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.ip_user_files/ip/design_1_finger_detection_0_0
   }
 }
 file delete __synthesis_is_running__

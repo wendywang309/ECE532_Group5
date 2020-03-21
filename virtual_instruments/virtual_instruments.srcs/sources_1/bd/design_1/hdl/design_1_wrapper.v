@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Sun Mar 15 19:28:07 2020
+//Date        : Sat Mar 21 16:05:20 2020
 //Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -10,12 +10,16 @@
 `timescale 1 ps / 1 ps
 
 module design_1_wrapper
-   (BLUE_O,
+   (AUD_PWM,
+    AUD_SD,
+    BLUE_O,
     GREEN_O,
     HSYNC_O,
     RED_O,
     VSYNC_O,
     button_debounce,
+    c_0,
+    d_0,
     ddr2_sdram_addr,
     ddr2_sdram_ba,
     ddr2_sdram_cas_n,
@@ -30,7 +34,8 @@ module design_1_wrapper
     ddr2_sdram_odt,
     ddr2_sdram_ras_n,
     ddr2_sdram_we_n,
-    detect_0,
+    e_0,
+    f_0,
     jc_pin10_io,
     jc_pin1_io,
     jc_pin2_io,
@@ -52,13 +57,18 @@ module design_1_wrapper
     reset,
     sys_clock,
     usb_uart_rxd,
-    usb_uart_txd);
+    usb_uart_txd,
+    volume_ctrl_0);
+  output AUD_PWM;
+  output [0:0]AUD_SD;
   output [4:0]BLUE_O;
   output [5:0]GREEN_O;
   output HSYNC_O;
   output [4:0]RED_O;
   output VSYNC_O;
   input button_debounce;
+  output c_0;
+  output d_0;
   output [12:0]ddr2_sdram_addr;
   output [2:0]ddr2_sdram_ba;
   output ddr2_sdram_cas_n;
@@ -73,7 +83,8 @@ module design_1_wrapper
   output [0:0]ddr2_sdram_odt;
   output ddr2_sdram_ras_n;
   output ddr2_sdram_we_n;
-  output [3:0]detect_0;
+  output e_0;
+  output f_0;
   inout jc_pin10_io;
   inout jc_pin1_io;
   inout jc_pin2_io;
@@ -96,13 +107,18 @@ module design_1_wrapper
   input sys_clock;
   input usb_uart_rxd;
   output usb_uart_txd;
+  input [7:0]volume_ctrl_0;
 
+  wire AUD_PWM;
+  wire [0:0]AUD_SD;
   wire [4:0]BLUE_O;
   wire [5:0]GREEN_O;
   wire HSYNC_O;
   wire [4:0]RED_O;
   wire VSYNC_O;
   wire button_debounce;
+  wire c_0;
+  wire d_0;
   wire [12:0]ddr2_sdram_addr;
   wire [2:0]ddr2_sdram_ba;
   wire ddr2_sdram_cas_n;
@@ -117,7 +133,8 @@ module design_1_wrapper
   wire [0:0]ddr2_sdram_odt;
   wire ddr2_sdram_ras_n;
   wire ddr2_sdram_we_n;
-  wire [3:0]detect_0;
+  wire e_0;
+  wire f_0;
   wire jc_pin10_i;
   wire jc_pin10_io;
   wire jc_pin10_o;
@@ -164,14 +181,19 @@ module design_1_wrapper
   wire sys_clock;
   wire usb_uart_rxd;
   wire usb_uart_txd;
+  wire [7:0]volume_ctrl_0;
 
   design_1 design_1_i
-       (.BLUE_O(BLUE_O),
+       (.AUD_PWM(AUD_PWM),
+        .AUD_SD(AUD_SD),
+        .BLUE_O(BLUE_O),
         .GREEN_O(GREEN_O),
         .HSYNC_O(HSYNC_O),
         .RED_O(RED_O),
         .VSYNC_O(VSYNC_O),
         .button_debounce(button_debounce),
+        .c_0(c_0),
+        .d_0(d_0),
         .ddr2_sdram_addr(ddr2_sdram_addr),
         .ddr2_sdram_ba(ddr2_sdram_ba),
         .ddr2_sdram_cas_n(ddr2_sdram_cas_n),
@@ -186,7 +208,8 @@ module design_1_wrapper
         .ddr2_sdram_odt(ddr2_sdram_odt),
         .ddr2_sdram_ras_n(ddr2_sdram_ras_n),
         .ddr2_sdram_we_n(ddr2_sdram_we_n),
-        .detect_0(detect_0),
+        .e_0(e_0),
+        .f_0(f_0),
         .jc_pin10_i(jc_pin10_i),
         .jc_pin10_o(jc_pin10_o),
         .jc_pin10_t(jc_pin10_t),
@@ -224,7 +247,8 @@ module design_1_wrapper
         .reset(reset),
         .sys_clock(sys_clock),
         .usb_uart_rxd(usb_uart_rxd),
-        .usb_uart_txd(usb_uart_txd));
+        .usb_uart_txd(usb_uart_txd),
+        .volume_ctrl_0(volume_ctrl_0));
   IOBUF jc_pin10_iobuf
        (.I(jc_pin10_o),
         .IO(jc_pin10_io),

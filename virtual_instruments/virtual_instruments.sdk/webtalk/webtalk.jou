@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# 
+# Start of session at: Sat Mar 21 17:20:37 2020
+# Process ID: 9052
+# Current directory: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/webtalk/webtalk.log
+# Journal file: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

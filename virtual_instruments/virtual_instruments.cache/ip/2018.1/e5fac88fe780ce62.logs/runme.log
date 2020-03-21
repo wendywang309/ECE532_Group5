@@ -1,0 +1,1088 @@
+
+*** Running vivado
+    with args -log design_1_audio_core_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_audio_core_0_0.tcl
+
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_audio_core_0_0.tcl -notrace
+Command: synth_design -top design_1_audio_core_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16960 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 496.918 ; gain = 101.438
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_audio_core_0_0' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/synth/design_1_audio_core_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'audio_core' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:40]
+INFO: [Synth 8-6157] synthesizing module 'Drum' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Drum.v:21]
+INFO: [Synth 8-6157] synthesizing module 'alpha370Hz_Sin' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/alpha370Hz_Sin.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sin4' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:21]
+WARNING: [Synth 8-6014] Unused sequential element x5_p_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'Sin4' (1#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'alpha370Hz_Sin' (2#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/alpha370Hz_Sin.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fader_1_0_16ms' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_1_0_16ms.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'fader_1_0_16ms' (3#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_1_0_16ms.v:21]
+INFO: [Synth 8-6157] synthesizing module 'alpha190Hz_Trig' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/alpha190Hz_Trig.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Trig1' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Trig1.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Trig1' (4#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Trig1.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'alpha190Hz_Trig' (5#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/alpha190Hz_Trig.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fader_2_0_16ms' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_2_0_16ms.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'fader_2_0_16ms' (6#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_2_0_16ms.v:21]
+INFO: [Synth 8-6157] synthesizing module 'alpha285Hz_Trig1' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/alpha285Hz_Trig1.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Trig1_block' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Trig1_block.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Trig1_block' (7#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Trig1_block.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'alpha285Hz_Trig1' (8#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/alpha285Hz_Trig1.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fader_3_0_16ms' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_3_0_16ms.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'fader_3_0_16ms' (9#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_3_0_16ms.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Drum' (10#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Drum.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sin3' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:21]
+WARNING: [Synth 8-6014] Unused sequential element x5_p_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'Sin3' (11#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sin2' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:21]
+WARNING: [Synth 8-6014] Unused sequential element x5_p_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'Sin2' (12#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sin1' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:21]
+WARNING: [Synth 8-6014] Unused sequential element x5_p_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'Sin1' (13#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Sin' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:21]
+WARNING: [Synth 8-6014] Unused sequential element x5_p_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:368]
+INFO: [Synth 8-6155] done synthesizing module 'Sin' (14#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:21]
+INFO: [Synth 8-6157] synthesizing module 'DeltaSigma' [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/DeltaSigma.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'DeltaSigma' (15#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/DeltaSigma.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'audio_core' (16#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_audio_core_0_0' (17#1) [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/synth/design_1_audio_core_0_0.v:57]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[23]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[22]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[21]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[20]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[19]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[18]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[1]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 554.359 ; gain = 158.879
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 554.359 ; gain = 158.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 554.359 ; gain = 158.879
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc] for cell 'inst'
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CLK100MHZ'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:5]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports CLK100MHZ]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:5]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'AUD_PWM'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'AUD_SD'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[0]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[1]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[2]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[3]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[12]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[13]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[14]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[15]'. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/all.xdc] for cell 'inst'
+Parsing XDC File [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_audio_core_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_audio_core_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.256 . Memory (MB): peak = 911.555 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:57 . Memory (MB): peak = 911.555 ; gain = 516.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:57 . Memory (MB): peak = 911.555 ; gain = 516.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_audio_core_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:57 . Memory (MB): peak = 911.555 ; gain = 516.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:139]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:190]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:192]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:194]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:247]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:245]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:249]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:300]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:302]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:304]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin4.v:357]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_1_0_16ms.v:180]
+WARNING: [Synth 8-6014] Unused sequential element Product1_out1_1_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_1_0_16ms.v:228]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_2_0_16ms.v:157]
+WARNING: [Synth 8-6014] Unused sequential element Product1_out1_1_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_2_0_16ms.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_3_0_16ms.v:157]
+WARNING: [Synth 8-6014] Unused sequential element Product1_out1_1_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_3_0_16ms.v:187]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Drum.v:207]
+WARNING: [Synth 8-6014] Unused sequential element Gain1_out1_1_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Drum.v:213]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:139]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:190]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:192]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:194]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:247]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:245]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:249]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:300]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:302]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:304]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin3.v:357]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:139]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:190]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:192]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:194]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:247]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:245]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:249]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:300]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:302]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:304]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin2.v:357]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:139]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:190]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:192]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:194]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:247]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:245]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:249]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:300]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:302]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:304]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin1.v:357]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:107]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:105]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:139]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:190]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:192]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:194]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:247]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:245]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:249]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:300]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:302]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:304]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Sin.v:357]
+INFO: [Synth 8-5545] ROM "HDL_Counter4_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HDL_Counter1_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HDL_Counter2_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HDL_Counter3_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:01:00 . Memory (MB): peak = 911.555 ; gain = 516.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 32    
+	   3 Input     32 Bit       Adders := 28    
+	   2 Input     30 Bit       Adders := 8     
+	   2 Input     29 Bit       Adders := 3     
+	   2 Input     23 Bit       Adders := 3     
+	   2 Input     22 Bit       Adders := 2     
+	   3 Input     22 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 8     
+	   3 Input     21 Bit       Adders := 7     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               78 Bit    Registers := 1     
+	               70 Bit    Registers := 2     
+	               48 Bit    Registers := 8     
+	               35 Bit    Registers := 2     
+	               32 Bit    Registers := 76    
+	               29 Bit    Registers := 3     
+	               23 Bit    Registers := 3     
+	               22 Bit    Registers := 4     
+	               21 Bit    Registers := 15    
+	               20 Bit    Registers := 24    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 14    
+	                6 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                 9x70  Multipliers := 1     
+	                35x35  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 41    
+	   2 Input     31 Bit        Muxes := 8     
+	   3 Input     30 Bit        Muxes := 4     
+	   2 Input     30 Bit        Muxes := 12    
+	   2 Input     29 Bit        Muxes := 10    
+	   2 Input     28 Bit        Muxes := 4     
+	   2 Input     23 Bit        Muxes := 2     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 9     
+	   2 Input     20 Bit        Muxes := 8     
+	   3 Input     19 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Sin4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 7     
+	   3 Input     21 Bit       Adders := 7     
+	   2 Input     19 Bit       Adders := 2     
++---Registers : 
+	               21 Bit    Registers := 14    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 8     
+	   2 Input     20 Bit        Muxes := 2     
+	   3 Input     19 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 3     
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module alpha370Hz_Sin 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+Module fader_1_0_16ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               29 Bit    Registers := 1     
+	               20 Bit    Registers := 8     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Trig1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               22 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+Module fader_2_0_16ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               29 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Trig1_block 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               23 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+Module alpha285Hz_Trig1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     23 Bit       Adders := 1     
++---Registers : 
+	               23 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 1     
+Module fader_3_0_16ms 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     29 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               29 Bit    Registers := 1     
+	               20 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Drum 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     22 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 2     
+	               22 Bit    Registers := 2     
+	               20 Bit    Registers := 12    
+Module Sin3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 7     
+	   2 Input     30 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     31 Bit        Muxes := 2     
+	   3 Input     30 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 3     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Sin2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 7     
+	   2 Input     30 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     31 Bit        Muxes := 2     
+	   3 Input     30 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 3     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Sin1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 7     
+	   2 Input     30 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     31 Bit        Muxes := 2     
+	   3 Input     30 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 3     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Sin 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 7     
+	   2 Input     30 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 14    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input     31 Bit        Muxes := 2     
+	   3 Input     30 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 3     
+	   2 Input     29 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module DeltaSigma 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+Module audio_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
++---Registers : 
+	               78 Bit    Registers := 1     
+	               70 Bit    Registers := 2     
+	               35 Bit    Registers := 2     
+	               32 Bit    Registers := 20    
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 13    
++---Multipliers : 
+	                 9x70  Multipliers := 1     
+	                35x35  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP u_fader_2_0_16ms/Product1_out1, operation Mode is: A*B.
+DSP Report: operator u_fader_2_0_16ms/Product1_out1 is absorbed into DSP u_fader_2_0_16ms/Product1_out1.
+DSP Report: operator u_fader_2_0_16ms/Product1_out1 is absorbed into DSP u_fader_2_0_16ms/Product1_out1.
+DSP Report: Generating DSP u_fader_3_0_16ms/Product1_out1, operation Mode is: A*B.
+DSP Report: operator u_fader_3_0_16ms/Product1_out1 is absorbed into DSP u_fader_3_0_16ms/Product1_out1.
+DSP Report: operator u_fader_3_0_16ms/Product1_out1 is absorbed into DSP u_fader_3_0_16ms/Product1_out1.
+DSP Report: Generating DSP u_fader_1_0_16ms/Product1_out1, operation Mode is: A*B.
+DSP Report: operator u_fader_1_0_16ms/Product1_out1 is absorbed into DSP u_fader_1_0_16ms/Product1_out1.
+DSP Report: operator u_fader_1_0_16ms/Product1_out1 is absorbed into DSP u_fader_1_0_16ms/Product1_out1.
+DSP Report: Generating DSP Gain1_out1, operation Mode is: A*B.
+DSP Report: operator Gain1_out1 is absorbed into DSP Gain1_out1.
+DSP Report: operator Gain1_out1 is absorbed into DSP Gain1_out1.
+INFO: [Synth 8-5545] ROM "HDL_Counter4_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HDL_Counter1_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HDL_Counter2_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "HDL_Counter3_out1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:505]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:582]
+WARNING: [Synth 8-6014] Unused sequential element HwModeRegister_reg_reg[0] was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:511]
+WARNING: [Synth 8-6014] Unused sequential element Product_out1_1_reg was removed.  [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:589]
+DSP Report: Generating DSP Gain_out1, operation Mode is: A*B.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: Generating DSP Gain_out1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: Generating DSP Gain_out1, operation Mode is: A*B.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: Generating DSP Gain_out1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: operator Gain_out1 is absorbed into DSP Gain_out1.
+DSP Report: Generating DSP Product_mul_temp, operation Mode is: A*B.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+DSP Report: Generating DSP Product_mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+DSP Report: Generating DSP Product_mul_temp, operation Mode is: A*B.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+DSP Report: Generating DSP Product_mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+DSP Report: operator Product_mul_temp is absorbed into DSP Product_mul_temp.
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[23]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[22]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[21]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[20]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[19]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[18]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[1]
+WARNING: [Synth 8-3331] design DeltaSigma has unconnected port Mixed_Signal[0]
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/z0_p_reg[0]' (FDCE) to 'inst/u_Sin2/z0_p_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/z0_p_reg[1]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/z0_p_reg[0]' (FDCE) to 'inst/u_Sin3/z0_p_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/z0_p_reg[1]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/z0_p_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/z0_p_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin/z0_p_reg[0]' (FDCE) to 'inst/u_Sin/z0_p_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin/z0_p_reg[1]' (FDCE) to 'inst/u_Sin/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin1/z0_p_reg[0]' (FDCE) to 'inst/u_Sin1/z0_p_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin1/z0_p_reg[1]' (FDCE) to 'inst/u_Sin1/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[0]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[0]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[1]' (FDCE) to 'inst/u_Sin2/y1_p_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[1]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[2]' (FDCE) to 'inst/u_Sin2/y1_p_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[2]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[3]' (FDCE) to 'inst/u_Sin2/y1_p_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[3]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[4]' (FDCE) to 'inst/u_Sin2/y1_p_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[4]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[5]' (FDCE) to 'inst/u_Sin2/y1_p_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[5]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[6]' (FDCE) to 'inst/u_Sin2/y1_p_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[6]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[7]' (FDCE) to 'inst/u_Sin2/y1_p_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[7]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[8]' (FDCE) to 'inst/u_Sin2/y1_p_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[8]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[9]' (FDCE) to 'inst/u_Sin2/y1_p_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[9]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[10]' (FDCE) to 'inst/u_Sin2/y1_p_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[10]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[11]' (FDCE) to 'inst/u_Sin2/y1_p_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[11]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[12]' (FDCE) to 'inst/u_Sin2/y1_p_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[12]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[13]' (FDCE) to 'inst/u_Sin2/y1_p_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[13]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[14]' (FDCE) to 'inst/u_Sin2/y1_p_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[14]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[15]' (FDCE) to 'inst/u_Sin2/y1_p_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[15]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[16]' (FDCE) to 'inst/u_Sin2/y1_p_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[16]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[17]' (FDCE) to 'inst/u_Sin2/y1_p_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[17]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[18]' (FDCE) to 'inst/u_Sin2/y1_p_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[18]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[19]' (FDCE) to 'inst/u_Sin2/y1_p_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[19]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[20]' (FDCE) to 'inst/u_Sin2/y1_p_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[20]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[21]' (FDCE) to 'inst/u_Sin2/y1_p_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[21]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[22]' (FDCE) to 'inst/u_Sin2/y1_p_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[22]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[23]' (FDCE) to 'inst/u_Sin2/y1_p_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[23]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[24]' (FDCE) to 'inst/u_Sin2/y1_p_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[24]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[25]' (FDCE) to 'inst/u_Sin2/y1_p_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[25]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[26]' (FDCE) to 'inst/u_Sin2/y1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[26]' (FDCE) to 'inst/u_Sin2/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[27]' (FDCE) to 'inst/u_Sin2/y1_p_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[27]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[28]' (FDCE) to 'inst/u_Sin2/y1_p_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[28]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/y1_p_reg[30]' (FDCE) to 'inst/u_Sin2/y1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin2/x1_p_reg[30]' (FDCE) to 'inst/u_Sin2/x1_p_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Sin2/\x1_p_reg[31] )
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[0]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[0]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[1]' (FDCE) to 'inst/u_Sin3/y1_p_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[1]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[2]' (FDCE) to 'inst/u_Sin3/y1_p_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[2]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[3]' (FDCE) to 'inst/u_Sin3/y1_p_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[3]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[4]' (FDCE) to 'inst/u_Sin3/y1_p_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[4]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[5]' (FDCE) to 'inst/u_Sin3/y1_p_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[5]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[6]' (FDCE) to 'inst/u_Sin3/y1_p_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[6]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[7]' (FDCE) to 'inst/u_Sin3/y1_p_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[7]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[8]' (FDCE) to 'inst/u_Sin3/y1_p_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[8]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[9]' (FDCE) to 'inst/u_Sin3/y1_p_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[9]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[10]' (FDCE) to 'inst/u_Sin3/y1_p_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[10]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[11]' (FDCE) to 'inst/u_Sin3/y1_p_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[11]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[12]' (FDCE) to 'inst/u_Sin3/y1_p_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[12]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[13]' (FDCE) to 'inst/u_Sin3/y1_p_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[13]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[14]' (FDCE) to 'inst/u_Sin3/y1_p_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[14]' (FDCE) to 'inst/u_Sin3/x1_p_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/y1_p_reg[15]' (FDCE) to 'inst/u_Sin3/y1_p_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/u_Sin3/x1_p_reg[15]' (FDCE) to 'inst/u_Sin3/x1_p_reg[29]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Sin3/\x1_p_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\u_370Hz_Sin/u_Sin4/x1_p_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Sin/\x1_p_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Sin1/\x1_p_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/\kconst_1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\kconst_1_reg[34] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_DeltaSigma/i_0/\Discrete_Time_Integrator_x_reg_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (u_fader_1_0_16ms/HDL_Counter5_out1_reg[1]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_1_0_16ms/HDL_Counter5_out1_reg[0]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/HDL_Counter5_out1_reg[1]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/HDL_Counter5_out1_reg[0]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_3_0_16ms/HDL_Counter5_out1_reg[1]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_3_0_16ms/HDL_Counter5_out1_reg[0]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[21]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[19]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[17]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[15]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[14]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[13]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[8]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[6]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[2]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[1]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (kconst_1_reg[0]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_190Hz_Trig/u_Trig1/Delay1_out1_reg[21]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_190Hz_Trig/u_Trig1/Delay1_out1_reg[0]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_190Hz_Trig/u_Trig1/Delay2_out1_reg[21]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_190Hz_Trig/u_Trig1/Delay2_out1_reg[0]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[47]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[46]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[45]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[44]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[43]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[42]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[41]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[40]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[39]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[38]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[37]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[36]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[35]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[34]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[33]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[32]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[31]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[30]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[29]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[28]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[27]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[26]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[25]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[24]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[23]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[22]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[21]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[20]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[19]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[18]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[17]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[15]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[14]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[13]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[12]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[11]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[10]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[9]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[8]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[7]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[6]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[5]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[4]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[3]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[2]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[1]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[0]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[47]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[46]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[45]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[44]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[43]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[42]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[41]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[40]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[39]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[38]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[37]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[36]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[35]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[34]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[33]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[32]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[31]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[30]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[29]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[28]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[27]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[26]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[25]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[24]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[23]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[22]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[21]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[20]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_fader_2_0_16ms/Product1_out1_1_reg[19]__0) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_285Hz_Trig1/u_Trig1/Delay1_out1_reg[22]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_285Hz_Trig1/u_Trig1/Delay1_out1_reg[1]) is unused and will be removed from module Drum.
+WARNING: [Synth 8-3332] Sequential element (u_285Hz_Trig1/u_Trig1/Delay1_out1_reg[0]) is unused and will be removed from module Drum.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/u_Drum/i_1/\u_190Hz_Trig/HDL_Counter6_out1_reg[21] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:15 . Memory (MB): peak = 911.555 ; gain = 516.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fader_2_0_16ms | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fader_3_0_16ms | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fader_1_0_16ms | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Drum           | A*B            | 22     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | (PCIN>>17)+A*B | 19     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | A*B            | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|audio_core     | (PCIN>>17)+A*B | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++---------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:32 . Memory (MB): peak = 953.504 ; gain = 558.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:34 . Memory (MB): peak = 961.059 ; gain = 565.578
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:511]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:511]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:589]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:589]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_2_0_16ms.v:146]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_2_0_16ms.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_3_0_16ms.v:146]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_3_0_16ms.v:121]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_1_0_16ms.v:148]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/fader_1_0_16ms.v:123]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Drum.v:196]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/Drum.v:207]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:141]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:494]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:141]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:494]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:141]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:494]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:141]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:494]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:511]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:531]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:511]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:531]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:511]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:531]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:511]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4dff/audio_core.v:531]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:36 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:37 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:37 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:38 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:38 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:38 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:38 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|audio_core  | u_Drum/u_370Hz_Sin/u_Sin4/negate_reg_reg_reg[5]        | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|audio_core  | u_Drum/delayMatch_reg_reg[5][19]                       | 6      | 20    | YES          | NO                 | YES               | 20     | 0       | 
+|audio_core  | u_Drum/delayMatch1_reg_reg[5][19]                      | 6      | 20    | YES          | NO                 | YES               | 20     | 0       | 
+|audio_core  | u_Drum/u_fader_1_0_16ms/HwModeRegister1_reg_reg[6][19] | 7      | 20    | YES          | NO                 | YES               | 20     | 0       | 
+|audio_core  | u_Drum/u_fader_1_0_16ms/delayMatch1_reg_reg[7]         | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|audio_core  | u_Sin3/negate_reg_reg_reg[5]                           | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|audio_core  | u_Sin2/negate_reg_reg_reg[5]                           | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|audio_core  | u_Sin1/negate_reg_reg_reg[5]                           | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|audio_core  | u_Sin/negate_reg_reg_reg[5]                            | 6      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|audio_core  | delayMatch1_reg_reg[3][31]                             | 4      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|audio_core  | delayMatch2_reg_reg[3][31]                             | 4      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|audio_core  | delayMatch3_reg_reg[3][31]                             | 4      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|audio_core  | delayMatch4_reg_reg[3][31]                             | 4      | 32    | YES          | NO                 | YES               | 32     | 0       | 
+|audio_core  | delayMatch_reg_reg[9]                                  | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|audio_core  | HwModeRegister1_reg_reg[12][7]                         | 13     | 8     | YES          | NO                 | YES               | 8      | 0       | 
++------------+--------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   889|
+|2     |DSP48E1 |    12|
+|3     |LUT1    |   747|
+|4     |LUT2    |  1972|
+|5     |LUT3    |  1429|
+|6     |LUT4    |   244|
+|7     |LUT5    |   129|
+|8     |LUT6    |   236|
+|9     |SRL16E  |   203|
+|10    |FDCE    |  2521|
+|11    |FDPE    |    82|
+|12    |FDRE    |   203|
++------+--------+------+
+
+Report Instance Areas: 
++------+-----------------------+-----------------+------+
+|      |Instance               |Module           |Cells |
++------+-----------------------+-----------------+------+
+|1     |top                    |                 |  8667|
+|2     |  inst                 |audio_core       |  8667|
+|3     |    u_DeltaSigma       |DeltaSigma       |   171|
+|4     |    u_Drum             |Drum             |  2474|
+|5     |      u_190Hz_Trig     |alpha190Hz_Trig  |   134|
+|6     |        u_Trig1        |Trig1            |    91|
+|7     |      u_285Hz_Trig1    |alpha285Hz_Trig1 |   159|
+|8     |        u_Trig1        |Trig1_block      |   100|
+|9     |      u_370Hz_Sin      |alpha370Hz_Sin   |   820|
+|10    |        u_Sin4         |Sin4             |   763|
+|11    |      u_fader_1_0_16ms |fader_1_0_16ms   |   386|
+|12    |      u_fader_2_0_16ms |fader_2_0_16ms   |   288|
+|13    |      u_fader_3_0_16ms |fader_3_0_16ms   |   288|
+|14    |    u_Sin              |Sin              |  1108|
+|15    |    u_Sin1             |Sin1             |  1108|
+|16    |    u_Sin2             |Sin2             |  1066|
+|17    |    u_Sin3             |Sin3             |  1108|
++------+-----------------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:38 . Memory (MB): peak = 980.746 ; gain = 585.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 722 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:59 . Memory (MB): peak = 980.746 ; gain = 228.070
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:38 . Memory (MB): peak = 980.746 ; gain = 585.266
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 901 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+299 Infos, 148 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:01:43 . Memory (MB): peak = 980.746 ; gain = 596.734
+INFO: [Common 17-1381] The checkpoint 'C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_audio_core_0_0_synth_1/design_1_audio_core_0_0.dcp' has been generated.

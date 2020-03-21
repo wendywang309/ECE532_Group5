@@ -9,5 +9,5 @@
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source design_1_ilmb_bram_if_cntlr_0.tcl -notrace
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_bram_if_cntlr_0, cache-ID = c0ff16fc733a368e.
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 15 18:17:04 2020...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_bram_if_cntlr_0, cache-ID = 8b01802b5a2ba05a.
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 16:08:11 2020...

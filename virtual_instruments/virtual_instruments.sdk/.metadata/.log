@@ -1,62 +1,72 @@
-!SESSION 2020-03-15 19:38:40.830 -----------------------------------------------
+!SESSION 2020-03-21 16:20:00.749 -----------------------------------------------
 eclipse.buildId=2018.1
 java.version=1.8.0_112
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_CA
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk
 
-!ENTRY org.eclipse.ui 2 0 2020-03-15 19:38:43.023
+!ENTRY org.eclipse.ui 2 0 2020-03-21 16:20:21.936
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2020-03-15 19:38:43.024
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-03-21 16:20:21.936
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY org.eclipse.ui 2 0 2020-03-15 19:38:43.714
+!ENTRY org.eclipse.ui 2 0 2020-03-21 16:20:22.587
 !MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
-!SUBENTRY 1 org.eclipse.ui 2 0 2020-03-15 19:38:43.714
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-03-21 16:20:22.587
 !MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:50.459
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:20:44.495
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-8
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:20:44.509
 !MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:50.475
-!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:50.494
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:20:44.555
 !MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:50.512
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:20:44.561
 !MESSAGE XSCT Command: [setws C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk], Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:51.156
-!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:01.118
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-8
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:51.161
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:01.126
 !MESSAGE XSCT command with result: [setws C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk], Result: [null, ]. Thread: Thread-14
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:51.253
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:01.312
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.093
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-8
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.019
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.119
-!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.074
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.126
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.081
 !MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"device": "7a100t",
 "family": "artix7",
-"timestamp": "Sun Mar 15 19:29:00 2020",
+"timestamp": "Sat Mar 21 16:06:14 2020",
 "vivado_version": "2018.1",
 "part": "xc7a100tcsg324-1",
-}]. Thread: Worker-8
+}]. Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.132
-!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-8
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.102
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.145
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.116
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"PmodBT2_0": {"hier_name": "PmodBT2_0",
 "type": "PmodBT2",
 "version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"audio_core_0": {"hier_name": "audio_core_0",
+"type": "audio_core",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axi_gpio_drum": {"hier_name": "axi_gpio_drum",
+"type": "axi_gpio",
+"version": "2.0",
 "ip_type": "PERIPHERAL",
 },
 "axi_uartlite_0": {"hier_name": "axi_uartlite_0",
@@ -164,12 +174,27 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/ECE532/ECE532
 "version": "5.0",
 "ip_type": "PERIPHERAL",
 },
-}]. Thread: Worker-8
+"util_vector_logic_0": {"hier_name": "util_vector_logic_0",
+"type": "util_vector_logic",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_1": {"hier_name": "xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-6
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.268
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.343
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.285
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.358
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"PmodBT2_0_AXI_LITE_UART": {"name": "PmodBT2_0",
 "base": "0x00008000",
 "high": "0x00009FFF",
@@ -186,6 +211,17 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/ECE532/ECE532
 "high": "0x0000AFFF",
 "size": "4096",
 "slaveintf": "AXI_LITE_GPIO",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_gpio_drum_S_AXI": {"name": "axi_gpio_drum",
+"base": "0x40000000",
+"high": "0x4000FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
 "type": "REGISTER",
 "flags": "3",
 "segment": "",
@@ -238,17 +274,194 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/ECE532/ECE532
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.326
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.424
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.333
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.430
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, {}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.355
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.458
 !MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:38:53.383
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:12.488
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"PmodBT2_0": {},
+"axi_gpio_drum": {"GPIO_DATA": {"description": "Channel-1 AXI GPIO Data register",
+"address_offset": "0x0",
+"access": "read-write",
+"size": "1",
+"fields": {"Channel-1 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO_TRI": {"description": "Channel-1 AXI GPIO 3-State Control register",
+"address_offset": "0x4",
+"access": "read-write",
+"size": "1",
+"fields": {"Channel-1 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_DATA": {"description": "Channel-2 AXI GPIO Data register",
+"address_offset": "0x8",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO DATA": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO Data Register.
+For each I/O bit programmed as input
+  R - Reads value on the input pin.
+  W - No effect.
+For each I/O bit programmed as output
+  R - Reads value on GPIO_O pins
+  W - Writes value to the corresponding AXI GPIO 
+      data register bit and output pin
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GPIO2_TRI": {"description": "Channel-2 AXI GPIO 3-State Control register",
+"address_offset": "0xC",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-2 GPIO TRI": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "AXI GPIO 3-State Control Register
+Each I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"GIER": {"description": "Global Interrupt Enable register",
+"address_offset": "0x11C",
+"access": "read-write",
+"size": "32",
+"fields": {"Global Interrupt Enable": {"access": "read-write",
+"bit_offset": "31",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output
+  0 - Disabled
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_IER": {"description": "IP Interrupt Enable register",
+"address_offset": "0x128",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Enable": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 2 Interrupt
+  0 - Disabled (masked)
+  1 - Enabled
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+"IP_ISR": {"description": "IP Interrupt Status register",
+"address_offset": "0x120",
+"access": "read-write",
+"size": "32",
+"fields": {"Channel-1 Interrupt Status": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 Interrupt Status
+  0 - No Channel 1 input interrupt
+  1 - Channel 1 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"Channel-2 Interrupt Status": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 2 Interrupt Status
+  0 - No Channel 2 input interrupt
+  1 - Channel 2 input interrupt
+",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+},
+},
 "axi_uartlite_0": {"RX_FIFO": {"description": "Receive data FIFO",
 "address_offset": "0x0",
 "access": "read-only",
@@ -674,10 +887,10 @@ For each bit:
 "mig_7series_0": {},
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.095
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.328
 !MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.107
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.340
 !MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"freertos10_xilinx_v1_0": {"name": "freertos10_xilinx",
 "version": "1.0",
 "desc": "FreeRTOS is a market leading open source RTOS",
@@ -695,46 +908,46 @@ For each bit:
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.125
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.371
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.132
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.378
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.142
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.391
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.148
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.397
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.154
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.402
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.163
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.408
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.169
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.414
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.176
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.420
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.182
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.425
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.189
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.431
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.202
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.445
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.209
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.451
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.214
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.456
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.660
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.908
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
 "description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
 "supp_proc": "psu_cortexr5",
@@ -974,136 +1187,220 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.669
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.916
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.685
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.950
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.692
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.971
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:32.707
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:37.990
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app hello_world -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.247
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.193
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.257
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.202
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.306
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.315
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.313
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.336
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.386
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.381
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.398
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.403
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.599
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.584
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.622
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:46.597
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.706
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.125
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.712
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.172
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.792
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.363
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.807
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.375
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.908
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.420
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:37.931
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.426
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:38.125
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.621
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:38.131
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.640
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:38.383
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.901
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:38.405
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:47.908
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:38.464
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:48.062
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:38.486
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:48.082
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.021
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:48.110
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.044
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:48.121
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.186
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:50.460
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.200
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:50.470
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.252
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:50.637
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.274
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:50.659
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.364
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:50.776
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.386
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:50.797
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.556
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.132
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.584
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.153
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.654
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.225
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.676
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.246
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.733
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.466
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.756
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.479
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.818
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.930
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.825
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:51.953
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.934
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.096
 !MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:39.956
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.117
 !MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:44.577
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.202
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.208
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.283
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.289
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.479
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.491
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.620
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.641
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.756
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:52.766
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.346
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.355
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.526
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.549
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.715
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.735
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.879
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:54.900
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.061
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.082
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.629
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.650
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.802
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.823
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.949
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:55.955
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:56.096
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:21:56.116
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:00.297
 !MESSAGE XSCT Command: [::hsi::utils::get_all_app_details -json], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:45.021
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:00.796
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_app_details -json], Result: [null, {"ddr_self_refresh": {"userdefname": "DDR self refresh",
 "description": "This DDR self refresh application provides a simple demonstration of how to enter to/exit from DDR self refresh mode. This application runs on R5 out of TCM.",
 "supp_proc": "psu_cortexr5",
@@ -1343,66 +1640,114 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:45.028
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:00.804
 !MESSAGE XSCT Command: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app empty_application -sw {} -arch {}], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:45.042
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:00.825
 !MESSAGE XSCT command with result: [::hsi::utils::is_app_supported_on_hw_sw  -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -os standalone -processor microblaze_0 -app empty_application -sw {} -arch {}], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:45.898
-!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw virtual_instruments_bsp -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp -processor microblaze_0 -os standalone -app empty_application], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:01.745
+!MESSAGE XSCT Command: [::hsi::utils::write_sw_mss -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw drumstick_bsp -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp -processor microblaze_0 -os standalone -app empty_application], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:45.918
-!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw virtual_instruments_bsp -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp -processor microblaze_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:01.804
+!MESSAGE XSCT command with result: [::hsi::utils::write_sw_mss -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw drumstick_bsp -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp -processor microblaze_0 -os standalone -app empty_application], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:46.095
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:02.094
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:46.102
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:02.101
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:46.107
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:02.107
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:46.114
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:02.114
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.6",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:46.120
-!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:02.120
+!MESSAGE XSCT Command: [::hsi::utils::generate_bsp_sources C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.399
-!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:15.441
+!MESSAGE XSCT command with result: [::hsi::utils::generate_bsp_sources C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.942
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.594
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.949
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.600
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.954
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.605
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.962
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
-"osname": "standalone",
-"osver": "6.6",
-}]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.611
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.985
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.616
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.622
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.627
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.634
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.640
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.646
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.652
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.658
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.664
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.670
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.675
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.683
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.691
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.698
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.704
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.713
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.719
 !MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.991
-!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, PmodBT2_0 axi_uartlite_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr mig_7series_0]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.727
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, PmodBT2_0 axi_gpio_drum axi_uartlite_0 microblaze_0_axi_intc microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr mig_7series_0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:48.997
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.733
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.005
-!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {"PmodBT2_0": {"name": "PmodBT2",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.743
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {"PmodBT2_0": {"name": "PmodBT2",
 "ver": "1.0",
+},
+"axi_gpio_drum": {"name": "gpio",
+"ver": "4.3",
 },
 "axi_uartlite_0": {"name": "uartlite",
 "ver": "3.2",
@@ -1424,10 +1769,10 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.011
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.748
 !MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.073
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.827
 !MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"PmodBT2_0": {"version": "1.0",
 "driver_info": {"generic": {"name": "generic",
 "version": "2.0",
@@ -1436,6 +1781,26 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 "PmodBT2_v1_0": {"name": "PmodBT2",
 "version": "1.0",
 "repo": "C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/drivers/PmodBT2_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"audio_core_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_gpio_drum": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpio_v4_3": {"name": "gpio",
+"version": "4.3",
+"repo": "C:/Xilinx/SDK/2018.1/data/embeddedsw/XilinxProcessorIPLib/drivers/gpio_v4_3",
 "compilerflags": "",
 "linkerflags": "",
 },
@@ -1636,101 +2001,104 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 },
 },
+"util_vector_logic_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_1": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.1/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.329
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.832
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.349
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.839
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.360
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.845
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.377
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.852
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.857
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.863
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.900
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.907
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.911
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.918
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.6",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.408
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.925
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.438
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.931
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.534
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.935
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:49.540
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.941
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.869
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:19.946
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss -app empty_application -processor microblaze_0 -os standalone -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick/src], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.876
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_REORDER_INSTR], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:20.125
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss -app empty_application -processor microblaze_0 -os standalone -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick/src], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.882
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.404
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.888
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_ENDIANNESS], Result: [null, 1]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.414
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.894
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.420
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.901
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_BARREL], Result: [null, 0]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.430
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+"osname": "standalone",
+"osver": "6.6",
+}]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.906
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.457
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.913
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_PCMP_INSTR], Result: [null, 0]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.918
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.925
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_DIV], Result: [null, 0]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.930
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.937
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_FPU], Result: [null, 0]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.943
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.949
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_USE_HW_MUL], Result: [null, 0]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.955
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.962
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_AREA_OPTIMIZED], Result: [null, 0]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.971
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.979
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.984
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.991
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:52.998
-!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.007
-!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {"PmodBT2_0": {"name": "PmodBT2",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.469
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {"PmodBT2_0": {"name": "PmodBT2",
 "ver": "1.0",
+},
+"axi_gpio_drum": {"name": "gpio",
+"ver": "4.3",
 },
 "axi_uartlite_0": {"name": "uartlite",
 "ver": "3.2",
@@ -1752,85 +2120,61 @@ Don't forget to modify blconfig.h to reflect the offset where your SREC image re
 },
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.013
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.784
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.020
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.791
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.025
-!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.795
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.032
-!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {}]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.038
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.045
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.089
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.100
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.105
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.112
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.803
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.6",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.117
-!MESSAGE XSCT Command: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.812
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.123
-!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.819
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.131
-!MESSAGE XSCT Command: [::hsi::utils::opensw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.898
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.137
-!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:21.904
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.142
-!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss -app empty_application -processor microblaze_0 -os standalone -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments/src], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.400
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.338
-!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss -app empty_application -processor microblaze_0 -os standalone -dir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments/src], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.407
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss ], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.857
-!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.412
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.867
-!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss ], Result: [null, ]. Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.873
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.883
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.421
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, {"procname": "microblaze_0",
 "osname": "standalone",
 "osver": "6.6",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.894
-!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.431
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.904
-!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.437
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.941
-!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.488
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:39:53.948
-!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments_bsp/system.mss], Result: [null, ]. Thread: main
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:22:22.498
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick_bsp/system.mss], Result: [null, ]. Thread: main
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:54.573
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:22.794
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1857,10 +2201,7 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 1 0 2020-03-15 19:39:56.035
-!MESSAGE Indexed 'virtual_instruments_bsp' (55 sources, 48 headers) in 1.72 sec: 1,556 declarations; 8,389 references; 25 unresolved inclusions; 3 syntax errors; 24 unresolved names (0.24%)
-
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.131
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:24.784
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1871,7 +2212,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.144
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:24.810
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1882,7 +2223,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.499
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:25.358
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1893,7 +2234,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.529
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:25.366
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1904,7 +2245,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.621
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:25.750
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1915,7 +2256,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.634
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:25.762
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1926,7 +2267,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.740
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:26.086
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1937,7 +2278,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.776
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:26.100
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1948,7 +2289,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.880
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:26.414
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1959,7 +2300,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:56.890
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:26.428
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1970,7 +2311,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:57.435
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:26.677
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1981,7 +2322,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:57.446
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:26.697
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -1992,7 +2333,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:57.546
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:27.471
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2003,7 +2344,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:57.557
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:27.489
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2014,7 +2355,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:57.612
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:27.804
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2025,7 +2366,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:58.900
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:27.825
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2036,7 +2377,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.031
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:27.976
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2047,7 +2388,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.041
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:29.986
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2058,7 +2399,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.104
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:30.242
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2069,7 +2410,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.274
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:30.269
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2080,7 +2421,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.286
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:30.409
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2091,7 +2432,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.340
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:30.794
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2102,7 +2443,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.919
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:30.803
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2113,7 +2454,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.932
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:30.950
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2124,7 +2465,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:39:59.985
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:32.258
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2135,7 +2476,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:00.787
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:32.266
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2146,7 +2487,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:00.796
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:32.425
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2157,7 +2498,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:00.960
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:33.618
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2168,7 +2509,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:01.673
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:33.626
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2179,7 +2520,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:01.681
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:33.768
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2190,7 +2531,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:01.689
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:35.334
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2201,7 +2542,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:03.998
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:35.343
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2212,7 +2553,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:04.009
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:35.609
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2223,7 +2564,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:04.067
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:37.010
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2234,7 +2575,7 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:04.746
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:37.048
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2245,7 +2586,62 @@ java.lang.NullPointerException
 	at java.io.OutputStream.write(OutputStream.java:75)
 	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
 
-!ENTRY org.eclipse.cdt.core 4 0 2020-03-15 19:40:04.782
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:37.054
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:41.661
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:41.669
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:41.819
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:43.076
+!MESSAGE Error
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.processLine(ConsoleOutputSniffer.java:178)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.access$0(ConsoleOutputSniffer.java:174)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.checkLine(ConsoleOutputSniffer.java:99)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.write(ConsoleOutputSniffer.java:58)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.run(ProcessClosure.java:57)
+
+!ENTRY org.eclipse.cdt.core 4 0 2020-03-21 16:22:43.134
 !MESSAGE Error
 !STACK 0
 java.lang.NullPointerException
@@ -2270,572 +2666,312 @@ java.lang.NullPointerException
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
-!ENTRY org.eclipse.cdt.core 1 0 2020-03-15 19:40:05.110
-!MESSAGE Indexed 'virtual_instruments' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-21 16:22:43.456
+!MESSAGE Indexed 'drumstick' (0 sources, 0 headers) in 0.003 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:03.336
+!ENTRY org.eclipse.cdt.core 1 0 2020-03-21 16:22:44.842
+!MESSAGE Indexed 'drumstick_bsp' (61 sources, 97 headers) in 1.37 sec: 2,465 declarations; 10,028 references; 38 unresolved inclusions; 5 syntax errors; 35 unresolved names (0.28%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:31.458
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:03.345
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:31.464
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf bit], Result: [null, design_1_wrapper.bit]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:03.352
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:31.471
 !MESSAGE XSCT Command: [::hsi::utils::get_addr_tag_info -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:03.359
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:31.478
 !MESSAGE XSCT command with result: [::hsi::utils::get_addr_tag_info -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, {"microblaze_0": "design_1_i/microblaze_0:design_1_i/microblaze_0",
 }]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:14.749
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:17.705
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:17.712
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:21.346
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:21.365
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:21.378
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:21.383
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:21.406
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:21.412
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Thread: Worker-3
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:21.436
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Result: [null,      4  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: Worker-3
-
-!ENTRY org.eclipse.ui 4 0 2020-03-15 19:48:21.446
-!MESSAGE Unhandled event loop exception
-!STACK 0
-org.eclipse.swt.SWTException: Failed to execute runnable (org.eclipse.swt.SWTException: Widget is disposed)
-	at org.eclipse.swt.SWT.error(SWT.java:4533)
-	at org.eclipse.swt.SWT.error(SWT.java:4448)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4203)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3819)
-	at org.eclipse.jface.window.Window.runEventLoop(Window.java:818)
-	at org.eclipse.jface.window.Window.open(Window.java:794)
-	at com.xilinx.sdk.targetmanager.ui.configfpga.ProgramFPGAHandler.launchFpgaDialog(ProgramFPGAHandler.java:72)
-	at com.xilinx.sdk.targetmanager.ui.configfpga.ProgramFPGAHandler.execute(ProgramFPGAHandler.java:64)
-	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:295)
-	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:282)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:264)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
-	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
-	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
-	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
-	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:433)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:454)
-	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem$3.handleEvent(AbstractContributionItem.java:482)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4410)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4228)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3816)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
-Caused by: org.eclipse.swt.SWTException: Widget is disposed
-	at org.eclipse.swt.SWT.error(SWT.java:4533)
-	at org.eclipse.swt.SWT.error(SWT.java:4448)
-	at org.eclipse.swt.SWT.error(SWT.java:4419)
-	at org.eclipse.swt.widgets.Widget.error(Widget.java:482)
-	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:354)
-	at org.eclipse.swt.widgets.Combo.setItems(Combo.java:2110)
-	at com.xilinx.sdk.targetmanager.ui.MultiCableDevicesListDialog$1$1.run(MultiCableDevicesListDialog.java:149)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
-	... 49 more
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:27.881
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:27.909
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:27.932
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:27.959
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:27.973
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:27.995
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:28.008
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:28.053
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:28.064
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:28.110
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Result: [null,      4  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: Worker-2
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:35.388
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:35.788
 !MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:35.396
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:35.796
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:35.405
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:35.803
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:35.411
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:35.810
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_BASE_VECTORS], Result: [null, 0x0000000000000000]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:56.967
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:31:57.640
 !MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:56.973
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:00.351
 !MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:56.979
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:00.360
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:56.990
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:01.484
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:56.996
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:01.498
 !MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.007
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: ModalContext
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:01.509
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.012
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:01.514
 !MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.039
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:01.537
 !MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.044
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.069
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Result: [null,      4  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: ModalContext
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.075
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:01.543
 !MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==0} -index 0], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.103
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:02.247
 !MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==0} -index 0], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:57.109
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:02.252
 !MESSAGE XSCT Command: [fpga -file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/download.bit], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:48:59.307
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:04.492
 !MESSAGE XSCT command with result: [fpga -file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/download.bit], Result: [null, ]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:49:00.113
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:05.310
 !MESSAGE XSCT Command: [::hsi::utils::get_bram_blocks C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:49:00.124
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:32:05.317
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:39.490
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:12.760
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_ENABLED], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:39.497
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:12.766
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_ENABLED], Result: [null, 1]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:39.502
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:12.771
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_PROFILE_SIZE], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:39.508
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:12.778
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_PROFILE_SIZE], Result: [null, 0]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:39.513
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:12.783
 !MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_FREQ], Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:39.520
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:12.789
 !MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_FREQ], Result: [null, 100000000]. Thread: main
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.116
-!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.770
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.128
-!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {}]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.779
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {}]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.133
-!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.784
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.141
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.793
 !MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"microblaze_0": {"bscan": "2",
 "index": "0",
 },
-}]. Thread: Worker-2
+}]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.149
-!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.831
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.156
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.838
 !MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, {"microblaze_0": {},
-}]. Thread: Worker-2
+}]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.161
-!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.843
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.170
-!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, microblaze_0]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.849
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf mdm_1], Result: [null, microblaze_0]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.175
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.854
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.185
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.861
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_EVENT_COUNTERS], Result: [null, 5]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.191
-!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.865
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.198
-!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.872
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0 C_DEBUG_COUNTER_WIDTH], Result: [null, 32]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.204
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.876
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.210
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.882
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.216
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.887
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.227
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.898
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.232
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.903
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.243
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.914
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.248
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.919
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.271
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.943
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.276
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.948
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==0} -index 0], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.300
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Result: [null,      4  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.980
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==0} -index 0], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.306
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==0} -index 0], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:18.986
+!MESSAGE XSCT Command: [fpga -state], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.331
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==0} -index 0], Result: [null, ]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.021
+!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.337
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.027
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.344
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.034
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.349
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.039
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.355
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.050
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.360
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.055
+!MESSAGE XSCT Command: [version -server], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.371
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.062
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.1]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.377
-!MESSAGE XSCT Command: [version -server], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.067
+!MESSAGE XSCT Command: [version], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.384
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.1]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.072
+!MESSAGE XSCT command with result: [version], Result: [null, 2018.1]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.389
-!MESSAGE XSCT Command: [version], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.084
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.395
-!MESSAGE XSCT command with result: [version], Result: [null, 2018.1]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.095
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.402
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.100
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.412
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.123
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.418
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.129
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.441
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.140
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.446
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.146
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.470
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Result: [null,      4  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.169
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.475
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.175
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.486
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.186
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.492
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.191
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.525
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.214
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.534
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.220
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.578
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Result: [null,      4  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.231
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.584
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.236
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.596
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A
-  3  Digilent Nexys Video 210276723614B]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.259
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.605
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.264
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292646209A" && level == 0}], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.661
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.287
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292646209A" && level == 0}], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.666
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.293
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:53:51.695
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys Video 210276723614B" && level==1}], Result: [null,      4  xc7a200t (idcode 13636093 irlen 6 fpga)]. Thread: Worker-2
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.300
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.650
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.304
+!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.658
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.665
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.676
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.682
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.693
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.699
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.721
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:34.727
-!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==0} -index 0], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.427
-!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==0} -index 0], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.432
-!MESSAGE XSCT Command: [fpga -state], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.462
-!MESSAGE XSCT command with result: [fpga -state], Result: [null, FPGA is configured]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.467
-!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.472
-!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#1]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.477
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.488
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.493
-!MESSAGE XSCT Command: [version -server], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.499
-!MESSAGE XSCT command with result: [version -server], Result: [null, 2018.1]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.504
-!MESSAGE XSCT Command: [version], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.509
-!MESSAGE XSCT command with result: [version], Result: [null, 2018.1]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.514
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.524
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.529
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.552
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.557
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.568
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.573
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.596
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.602
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.613
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.618
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.644
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.652
-!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.672
-!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Nexys4DDR 210292646209A]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.681
-!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.724
-!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A" && level==1}], Result: [null,      2  xc7a100t (idcode 13631093 irlen 6 fpga)]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.731
-!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292646209A" && level == 0}], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.755
-!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Nexys4DDR 210292646209A" && level == 0}], Result: [null, ]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.760
-!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.766
-!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.772
-!MESSAGE XSCT Command: [::hsi::utils::get_clock_info -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Thread: Worker-11
-
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.779
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.312
 !MESSAGE XSCT command with result: [::hsi::utils::get_clock_info -json C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper_hw_platform_0/system.hdf microblaze_0], Result: [null, {"Clk": "100000000",
 "Dbg_Clk": "",
-}]. Thread: Worker-11
+}]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.785
-!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.317
+!MESSAGE XSCT Command: [configparams mdm-detect-bscan-mask 2], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.795
-!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.323
+!MESSAGE XSCT command with result: [configparams mdm-detect-bscan-mask 2], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:35.805
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.328
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:36.570
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Result: [null, ]. Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.365
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:36.576
-!MESSAGE XSCT Command: [rst -processor], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.370
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:36.593
-!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.387
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:36.598
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.392
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:36.958
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Result: [null, ]. Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.430
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:36.963
-!MESSAGE XSCT Command: [dow C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments/Debug/virtual_instruments.elf], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.436
+!MESSAGE XSCT Command: [dow C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick/Debug/drumstick.elf], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:37.043
-!MESSAGE XSCT command with result: [dow C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/virtual_instruments/Debug/virtual_instruments.elf], Result: [null, ]. Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.506
+!MESSAGE XSCT command with result: [dow C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/drumstick/Debug/drumstick.elf], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:37.077
-!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.651
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:37.834
-!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Result: [null, ]. Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.728
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4DDR 210292646209A"} -index 0], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:37.839
-!MESSAGE XSCT Command: [con], Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.734
+!MESSAGE XSCT Command: [con], Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:37.851
-!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-11
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.746
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-9
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:37.860
-!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-176
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.754
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-197
 
-!ENTRY com.xilinx.sdk.utils 0 0 2020-03-15 19:54:37.870
-!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-176
+!ENTRY com.xilinx.sdk.utils 0 0 2020-03-21 16:37:19.761
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-197
+
+!ENTRY com.xilinx.sdk.utils 1 0 2020-03-21 17:20:36.088
+!MESSAGE Executed Webtalk command

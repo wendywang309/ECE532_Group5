@@ -2,13 +2,13 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sun Mar 15 18:16:49 2020
-# Process ID: 15152
+# Start of session at: Sat Mar 21 16:07:57 2020
+# Process ID: 1544
 # Current directory: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_ilmb_bram_if_cntlr_0_synth_1
 # Command line: vivado.exe -log design_1_ilmb_bram_if_cntlr_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ilmb_bram_if_cntlr_0.tcl
 # Log file: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/design_1_ilmb_bram_if_cntlr_0.vds
 # Journal file: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_ilmb_bram_if_cntlr_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_ilmb_bram_if_cntlr_0.tcl -notrace
-INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_bram_if_cntlr_0, cache-ID = c0ff16fc733a368e.
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 15 18:17:04 2020...
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_ilmb_bram_if_cntlr_0, cache-ID = 8b01802b5a2ba05a.
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 16:08:11 2020...

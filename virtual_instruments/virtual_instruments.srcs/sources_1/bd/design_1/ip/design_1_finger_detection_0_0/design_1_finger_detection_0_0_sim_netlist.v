@@ -1,10 +1,10 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-// Date        : Sat Mar 14 23:26:08 2020
-// Host        : SINCOL-PC running 64-bit major release  (build 9200)
+// Date        : Sat Mar 21 14:38:50 2020
+// Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.v
+//               C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.v
 // Design      : design_1_finger_detection_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -18,59 +18,68 @@ module design_1_finger_detection_0_0
    (clk,
     dout,
     addr,
-    detect);
+    c,
+    d,
+    e,
+    f);
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, FREQ_HZ 25000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_0_clk_out1" *) input clk;
   input [11:0]dout;
   input [17:0]addr;
-  output [3:0]detect;
+  output c;
+  output d;
+  output e;
+  output f;
 
   wire [17:0]addr;
+  wire c;
   wire clk;
-  wire [3:0]detect;
+  wire d;
   wire [11:0]dout;
+  wire e;
+  wire f;
 
   design_1_finger_detection_0_0_finger_detection inst
-       (.addr(addr),
+       (.Q({f,e,d,c}),
+        .addr(addr),
         .clk(clk),
-        .detect(detect),
         .dout({dout[7:6],dout[3:2]}));
 endmodule
 
 (* ORIG_REF_NAME = "finger_detection" *) 
 module design_1_finger_detection_0_0_finger_detection
-   (detect,
+   (Q,
     addr,
     clk,
     dout);
-  output [3:0]detect;
+  output [3:0]Q;
   input [17:0]addr;
   input clk;
   input [3:0]dout;
 
+  wire [3:0]Q;
   wire [17:0]addr;
   wire [3:2]blue;
   wire clk;
-  wire [3:0]detect;
   wire detected;
   wire detected0;
-  wire \detected[0]_i_2_n_0 ;
+  wire \detected[0]_i_10_n_0 ;
+  wire \detected[0]_i_11_n_0 ;
+  wire \detected[0]_i_12_n_0 ;
+  wire \detected[0]_i_13_n_0 ;
+  wire \detected[0]_i_14_n_0 ;
+  wire \detected[0]_i_15_n_0 ;
+  wire \detected[0]_i_16_n_0 ;
+  wire \detected[0]_i_17_n_0 ;
+  wire \detected[0]_i_18_n_0 ;
   wire \detected[0]_i_3_n_0 ;
+  wire \detected[0]_i_4_n_0 ;
+  wire \detected[0]_i_5_n_0 ;
+  wire \detected[0]_i_6_n_0 ;
+  wire \detected[0]_i_7_n_0 ;
+  wire \detected[0]_i_8_n_0 ;
+  wire \detected[0]_i_9_n_0 ;
   wire \detected[2]_i_2_n_0 ;
   wire \detected[2]_i_3_n_0 ;
-  wire \detected[3]_i_10_n_0 ;
-  wire \detected[3]_i_11_n_0 ;
-  wire \detected[3]_i_12_n_0 ;
-  wire \detected[3]_i_13_n_0 ;
-  wire \detected[3]_i_14_n_0 ;
-  wire \detected[3]_i_15_n_0 ;
-  wire \detected[3]_i_16_n_0 ;
-  wire \detected[3]_i_3_n_0 ;
-  wire \detected[3]_i_4_n_0 ;
-  wire \detected[3]_i_5_n_0 ;
-  wire \detected[3]_i_6_n_0 ;
-  wire \detected[3]_i_7_n_0 ;
-  wire \detected[3]_i_8_n_0 ;
-  wire \detected[3]_i_9_n_0 ;
   wire [3:0]dout;
   wire [3:2]green;
   wire \nw1[0]_i_1_n_0 ;
@@ -285,41 +294,178 @@ module design_1_finger_detection_0_0_finger_detection
         .Q(blue[3]),
         .R(1'b0));
   LUT6 #(
-    .INIT(64'hFFFEFFFCFFFEFFFE)) 
+    .INIT(64'hAAAAAAAA8AAAAAAA)) 
     \detected[0]_i_1 
+       (.I0(x_coord_0),
+        .I1(\detected[0]_i_3_n_0 ),
+        .I2(\detected[0]_i_4_n_0 ),
+        .I3(\detected[0]_i_5_n_0 ),
+        .I4(\detected[0]_i_6_n_0 ),
+        .I5(\detected[0]_i_7_n_0 ),
+        .O(detected));
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
+    \detected[0]_i_10 
+       (.I0(nw4_reg[15]),
+        .I1(nw4_reg[17]),
+        .I2(nw4_reg[16]),
+        .I3(nw4_reg[14]),
+        .I4(nw2_reg[14]),
+        .O(\detected[0]_i_10_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \detected[0]_i_11 
+       (.I0(nw3_reg[14]),
+        .I1(nw3_reg[15]),
+        .I2(nw3_reg[17]),
+        .I3(nw3_reg[16]),
+        .O(\detected[0]_i_11_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \detected[0]_i_12 
+       (.I0(nw4_reg[2]),
+        .I1(nw4_reg[1]),
+        .I2(nw4_reg[7]),
+        .I3(nw4_reg[4]),
+        .O(\detected[0]_i_12_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \detected[0]_i_13 
+       (.I0(nw4_reg[10]),
+        .I1(nw4_reg[9]),
+        .I2(nw4_reg[8]),
+        .I3(nw4_reg[11]),
+        .I4(nw4_reg[12]),
+        .I5(nw4_reg[13]),
+        .O(\detected[0]_i_13_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \detected[0]_i_14 
+       (.I0(nw2_reg[2]),
+        .I1(nw2_reg[1]),
+        .I2(nw2_reg[7]),
+        .I3(nw2_reg[4]),
+        .O(\detected[0]_i_14_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \detected[0]_i_15 
+       (.I0(nw2_reg[10]),
+        .I1(nw2_reg[9]),
+        .I2(nw2_reg[8]),
+        .I3(nw2_reg[11]),
+        .I4(nw2_reg[12]),
+        .I5(nw2_reg[13]),
+        .O(\detected[0]_i_15_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \detected[0]_i_16 
+       (.I0(nw1_reg[3]),
+        .I1(nw1_reg[1]),
+        .I2(nw1_reg[6]),
+        .I3(nw1_reg[4]),
+        .O(\detected[0]_i_16_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \detected[0]_i_17 
        (.I0(nw1_reg[14]),
         .I1(nw1_reg[15]),
         .I2(nw1_reg[17]),
         .I3(nw1_reg[16]),
-        .I4(\detected[0]_i_2_n_0 ),
-        .I5(\detected[0]_i_3_n_0 ),
+        .O(\detected[0]_i_17_n_0 ));
+  LUT4 #(
+    .INIT(16'hFFFE)) 
+    \detected[0]_i_18 
+       (.I0(nw3_reg[3]),
+        .I1(nw3_reg[1]),
+        .I2(nw3_reg[6]),
+        .I3(nw3_reg[4]),
+        .O(\detected[0]_i_18_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFEFFFCFFFEFFFE)) 
+    \detected[0]_i_2 
+       (.I0(nw1_reg[14]),
+        .I1(nw1_reg[15]),
+        .I2(nw1_reg[17]),
+        .I3(nw1_reg[16]),
+        .I4(\detected[0]_i_8_n_0 ),
+        .I5(\detected[0]_i_9_n_0 ),
         .O(p_0_in[0]));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \detected[0]_i_2 
+    \detected[0]_i_3 
+       (.I0(\detected[0]_i_10_n_0 ),
+        .I1(nw2_reg[16]),
+        .I2(nw2_reg[17]),
+        .I3(nw2_reg[15]),
+        .I4(\detected[0]_i_8_n_0 ),
+        .I5(\detected[0]_i_11_n_0 ),
+        .O(\detected[0]_i_3_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    \detected[0]_i_4 
+       (.I0(\detected[0]_i_12_n_0 ),
+        .I1(nw4_reg[3]),
+        .I2(nw4_reg[0]),
+        .I3(nw4_reg[6]),
+        .I4(nw4_reg[5]),
+        .I5(\detected[0]_i_13_n_0 ),
+        .O(\detected[0]_i_4_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    \detected[0]_i_5 
+       (.I0(\detected[0]_i_14_n_0 ),
+        .I1(nw2_reg[3]),
+        .I2(nw2_reg[0]),
+        .I3(nw2_reg[6]),
+        .I4(nw2_reg[5]),
+        .I5(\detected[0]_i_15_n_0 ),
+        .O(\detected[0]_i_5_n_0 ));
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
+    \detected[0]_i_6 
+       (.I0(\detected[0]_i_16_n_0 ),
+        .I1(nw1_reg[7]),
+        .I2(nw1_reg[5]),
+        .I3(nw1_reg[2]),
+        .I4(nw1_reg[0]),
+        .I5(\detected[0]_i_17_n_0 ),
+        .O(\detected[0]_i_6_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFEFFFFFFFF)) 
+    \detected[0]_i_7 
+       (.I0(\detected[0]_i_18_n_0 ),
+        .I1(nw3_reg[7]),
+        .I2(nw3_reg[5]),
+        .I3(nw3_reg[2]),
+        .I4(nw3_reg[0]),
+        .I5(\detected[2]_i_3_n_0 ),
+        .O(\detected[0]_i_7_n_0 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+    \detected[0]_i_8 
        (.I0(nw1_reg[10]),
         .I1(nw1_reg[9]),
         .I2(nw1_reg[8]),
         .I3(nw1_reg[11]),
         .I4(nw1_reg[12]),
         .I5(nw1_reg[13]),
-        .O(\detected[0]_i_2_n_0 ));
+        .O(\detected[0]_i_8_n_0 ));
   LUT5 #(
     .INIT(32'h00000001)) 
-    \detected[0]_i_3 
+    \detected[0]_i_9 
        (.I0(nw1_reg[0]),
         .I1(nw1_reg[2]),
         .I2(nw1_reg[5]),
         .I3(nw1_reg[7]),
-        .I4(\detected[3]_i_14_n_0 ),
-        .O(\detected[0]_i_3_n_0 ));
+        .I4(\detected[0]_i_16_n_0 ),
+        .O(\detected[0]_i_9_n_0 ));
   LUT5 #(
     .INIT(32'hFEFFFEFE)) 
     \detected[1]_i_1 
        (.I0(nw2_reg[15]),
         .I1(nw2_reg[17]),
         .I2(nw2_reg[16]),
-        .I3(\detected[3]_i_5_n_0 ),
+        .I3(\detected[0]_i_5_n_0 ),
         .I4(nw2_reg[14]),
         .O(p_0_in[1]));
   LUT6 #(
@@ -339,7 +485,7 @@ module design_1_finger_detection_0_0_finger_detection
         .I1(nw3_reg[2]),
         .I2(nw3_reg[5]),
         .I3(nw3_reg[7]),
-        .I4(\detected[3]_i_16_n_0 ),
+        .I4(\detected[0]_i_18_n_0 ),
         .O(\detected[2]_i_2_n_0 ));
   LUT6 #(
     .INIT(64'h0000000000000001)) 
@@ -351,159 +497,22 @@ module design_1_finger_detection_0_0_finger_detection
         .I4(nw3_reg[12]),
         .I5(nw3_reg[13]),
         .O(\detected[2]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'hAAAAAAAA8AAAAAAA)) 
-    \detected[3]_i_1 
-       (.I0(x_coord_0),
-        .I1(\detected[3]_i_3_n_0 ),
-        .I2(\detected[3]_i_4_n_0 ),
-        .I3(\detected[3]_i_5_n_0 ),
-        .I4(\detected[3]_i_6_n_0 ),
-        .I5(\detected[3]_i_7_n_0 ),
-        .O(detected));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \detected[3]_i_10 
-       (.I0(nw4_reg[2]),
-        .I1(nw4_reg[1]),
-        .I2(nw4_reg[7]),
-        .I3(nw4_reg[4]),
-        .O(\detected[3]_i_10_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \detected[3]_i_11 
-       (.I0(nw4_reg[10]),
-        .I1(nw4_reg[9]),
-        .I2(nw4_reg[8]),
-        .I3(nw4_reg[11]),
-        .I4(nw4_reg[12]),
-        .I5(nw4_reg[13]),
-        .O(\detected[3]_i_11_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \detected[3]_i_12 
-       (.I0(nw2_reg[2]),
-        .I1(nw2_reg[1]),
-        .I2(nw2_reg[7]),
-        .I3(nw2_reg[4]),
-        .O(\detected[3]_i_12_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \detected[3]_i_13 
-       (.I0(nw2_reg[10]),
-        .I1(nw2_reg[9]),
-        .I2(nw2_reg[8]),
-        .I3(nw2_reg[11]),
-        .I4(nw2_reg[12]),
-        .I5(nw2_reg[13]),
-        .O(\detected[3]_i_13_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \detected[3]_i_14 
-       (.I0(nw1_reg[3]),
-        .I1(nw1_reg[1]),
-        .I2(nw1_reg[6]),
-        .I3(nw1_reg[4]),
-        .O(\detected[3]_i_14_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \detected[3]_i_15 
-       (.I0(nw1_reg[14]),
-        .I1(nw1_reg[15]),
-        .I2(nw1_reg[17]),
-        .I3(nw1_reg[16]),
-        .O(\detected[3]_i_15_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \detected[3]_i_16 
-       (.I0(nw3_reg[3]),
-        .I1(nw3_reg[1]),
-        .I2(nw3_reg[6]),
-        .I3(nw3_reg[4]),
-        .O(\detected[3]_i_16_n_0 ));
   LUT5 #(
     .INIT(32'hFEFFFEFE)) 
-    \detected[3]_i_2 
+    \detected[3]_i_1 
        (.I0(nw4_reg[15]),
         .I1(nw4_reg[17]),
         .I2(nw4_reg[16]),
-        .I3(\detected[3]_i_4_n_0 ),
+        .I3(\detected[0]_i_4_n_0 ),
         .I4(nw4_reg[14]),
         .O(detected0));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \detected[3]_i_3 
-       (.I0(\detected[3]_i_8_n_0 ),
-        .I1(nw2_reg[16]),
-        .I2(nw2_reg[17]),
-        .I3(nw2_reg[15]),
-        .I4(\detected[0]_i_2_n_0 ),
-        .I5(\detected[3]_i_9_n_0 ),
-        .O(\detected[3]_i_3_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \detected[3]_i_4 
-       (.I0(\detected[3]_i_10_n_0 ),
-        .I1(nw4_reg[3]),
-        .I2(nw4_reg[0]),
-        .I3(nw4_reg[6]),
-        .I4(nw4_reg[5]),
-        .I5(\detected[3]_i_11_n_0 ),
-        .O(\detected[3]_i_4_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \detected[3]_i_5 
-       (.I0(\detected[3]_i_12_n_0 ),
-        .I1(nw2_reg[3]),
-        .I2(nw2_reg[0]),
-        .I3(nw2_reg[6]),
-        .I4(nw2_reg[5]),
-        .I5(\detected[3]_i_13_n_0 ),
-        .O(\detected[3]_i_5_n_0 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \detected[3]_i_6 
-       (.I0(\detected[3]_i_14_n_0 ),
-        .I1(nw1_reg[7]),
-        .I2(nw1_reg[5]),
-        .I3(nw1_reg[2]),
-        .I4(nw1_reg[0]),
-        .I5(\detected[3]_i_15_n_0 ),
-        .O(\detected[3]_i_6_n_0 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFEFFFFFFFF)) 
-    \detected[3]_i_7 
-       (.I0(\detected[3]_i_16_n_0 ),
-        .I1(nw3_reg[7]),
-        .I2(nw3_reg[5]),
-        .I3(nw3_reg[2]),
-        .I4(nw3_reg[0]),
-        .I5(\detected[2]_i_3_n_0 ),
-        .O(\detected[3]_i_7_n_0 ));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    \detected[3]_i_8 
-       (.I0(nw4_reg[15]),
-        .I1(nw4_reg[17]),
-        .I2(nw4_reg[16]),
-        .I3(nw4_reg[14]),
-        .I4(nw2_reg[14]),
-        .O(\detected[3]_i_8_n_0 ));
-  LUT4 #(
-    .INIT(16'hFFFE)) 
-    \detected[3]_i_9 
-       (.I0(nw3_reg[14]),
-        .I1(nw3_reg[15]),
-        .I2(nw3_reg[17]),
-        .I3(nw3_reg[16]),
-        .O(\detected[3]_i_9_n_0 ));
   FDRE #(
     .INIT(1'b0)) 
     \detected_reg[0] 
        (.C(clk),
         .CE(detected),
         .D(p_0_in[0]),
-        .Q(detect[0]),
+        .Q(Q[0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -511,7 +520,7 @@ module design_1_finger_detection_0_0_finger_detection
        (.C(clk),
         .CE(detected),
         .D(p_0_in[1]),
-        .Q(detect[1]),
+        .Q(Q[1]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -519,7 +528,7 @@ module design_1_finger_detection_0_0_finger_detection
        (.C(clk),
         .CE(detected),
         .D(p_0_in[2]),
-        .Q(detect[2]),
+        .Q(Q[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -527,7 +536,7 @@ module design_1_finger_detection_0_0_finger_detection
        (.C(clk),
         .CE(detected),
         .D(detected0),
-        .Q(detect[3]),
+        .Q(Q[3]),
         .R(1'b0));
   FDRE \green_reg[2] 
        (.C(clk),

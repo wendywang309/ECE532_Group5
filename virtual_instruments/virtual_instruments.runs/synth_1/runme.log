@@ -12,129 +12,147 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
-add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 445.434 ; gain = 126.594
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 445.711 ; gain = 127.043
 Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 380 
+INFO: Helper process launched with PID 3516 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 549.777 ; gain = 104.344
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 552.223 ; gain = 106.512
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_PmodBT2_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_PmodBT2_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_PmodBT2_0_0' (1#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_PmodBT2_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'PmodBT2_0' of module 'design_1_PmodBT2_0_0' requires 61 connections, but only 60 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:428]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (2#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_axi_uartlite_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (3#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (4#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'design_1_debounce_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_debounce_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_debounce_0_0' (5#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_debounce_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_finger_detection_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_finger_detection_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_finger_detection_0_0' (6#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_finger_detection_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (7#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_mdm_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (8#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_1_microblaze_0_0' requires 71 connections, but only 64 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:549]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (9#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:911]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1940]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (10#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_0' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2099]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (11#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1940]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2140]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (12#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_1_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_1' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2299]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (13#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2140]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2340]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_cc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (14#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_cc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (15#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 54 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2629]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (16#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2340]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (17#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_2_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_2' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2845]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (18#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2686]
-INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2886]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_3' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_3' (19#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_3_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_3' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3045]
-INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (20#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2886]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3320]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (21#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_us_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (22#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3320]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_2REGHR' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3530]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (23#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_auto_us_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_2REGHR' (24#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3530]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (25#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_xbar_0_stub.v:6]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_awready' does not match port width (2) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1925]
-WARNING: [Synth 8-689] width (2) of port connection 's_axi_bresp' does not match port width (4) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1928]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_bvalid' does not match port width (2) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1929]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_wready' does not match port width (2) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1935]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (26#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:911]
-INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3086]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (27#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_dlmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (28#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_dlmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3232]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (29#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ilmb_v10_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (30#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ilmb_v10_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3278]
-INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_lmb_bram_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (31#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_lmb_bram_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3303]
-INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (32#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3086]
-INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (33#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_mig_7series_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (34#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_mig_7series_0_0_stub.v:5]
-WARNING: [Synth 8-350] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' requires 66 connections, but only 55 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:810]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_capture_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ov7670_capture_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_capture_0_0' (35#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ov7670_capture_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_controller_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ov7670_controller_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_controller_0_0' (36#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ov7670_controller_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_vga_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ov7670_vga_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_vga_0_0' (37#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_ov7670_vga_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (38#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' requires 10 connections, but only 9 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:892]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_81M_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_81M_0' (39#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-15968-DESKTOP-BBJD4E6/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'rst_mig_7series_0_81M' of module 'design_1_rst_mig_7series_0_81M_0' requires 10 connections, but only 6 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:902]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ov7670_capture_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:866]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ov7670_vga_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:883]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'finger_detection_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:531]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'blk_mem_gen_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:512]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (40#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_PmodBT2_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_PmodBT2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_PmodBT2_0_0' (1#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_PmodBT2_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'PmodBT2_0' of module 'design_1_PmodBT2_0_0' requires 61 connections, but only 60 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:472]
+INFO: [Synth 8-6157] synthesizing module 'design_1_audio_core_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_audio_core_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_audio_core_0_0' (2#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_audio_core_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'audio_core_0' of module 'design_1_audio_core_0_0' requires 11 connections, but only 10 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:533]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_gpio_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_gpio_0_0' (3#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_uartlite_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_uartlite_0_0' (4#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_blk_mem_gen_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_blk_mem_gen_0_0' (5#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (6#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'design_1_debounce_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_debounce_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_debounce_0_0' (7#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_debounce_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_finger_detection_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_finger_detection_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_finger_detection_0_0' (8#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_finger_detection_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mdm_1_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mdm_1_0' (9#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_mdm_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_0' (10#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'microblaze_0' of module 'design_1_microblaze_0_0' requires 71 connections, but only 64 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:628]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_intc_0' (11#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_axi_intc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1016]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2181]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (12#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_0' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2340]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_8RVYHO' (13#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2181]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2381]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (14#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_1' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2540]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (15#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2381]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_7ANRHB' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2581]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_cc_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_cc_0' (16#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_cc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (17#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 54 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2870]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_7ANRHB' (18#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2581]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1W07O72' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2927]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (19#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_2' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3086]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1W07O72' (20#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2927]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_5LX7BU' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3127]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_3' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_3' (21#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_3_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_3' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3286]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_5LX7BU' (22#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3127]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3327]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_4' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_4_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_4' (23#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_ds_4_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_4' requires 40 connections, but only 38 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3486]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (24#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3327]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1RZP34U' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3761]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_0' (25#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_us_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1RZP34U' (26#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3761]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_2REGHR' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_us_1' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_us_1' (27#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_auto_us_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_2REGHR' (28#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3971]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (29#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_awready' does not match port width (2) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2166]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_bresp' does not match port width (4) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2169]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_bvalid' does not match port width (2) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2170]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_wready' does not match port width (2) of module 'design_1_xbar_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:2176]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (30#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1016]
+INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3527]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_bram_if_cntlr_0' (31#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_dlmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dlmb_v10_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_dlmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dlmb_v10_0' (32#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_dlmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dlmb_v10' of module 'design_1_dlmb_v10_0' requires 25 connections, but only 24 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3673]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_bram_if_cntlr_0' (33#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ilmb_bram_if_cntlr_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ilmb_v10_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ilmb_v10_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ilmb_v10_0' (34#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ilmb_v10_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ilmb_v10' of module 'design_1_ilmb_v10_0' requires 25 connections, but only 24 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3719]
+INFO: [Synth 8-6157] synthesizing module 'design_1_lmb_bram_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_lmb_bram_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_lmb_bram_0' (35#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_lmb_bram_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'lmb_bram' of module 'design_1_lmb_bram_0' requires 16 connections, but only 14 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3744]
+INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (36#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:3527]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (37#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_microblaze_0_xlconcat_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mig_7series_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_mig_7series_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mig_7series_0_0' (38#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_mig_7series_0_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'mig_7series_0' of module 'design_1_mig_7series_0_0' requires 66 connections, but only 55 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:908]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_capture_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ov7670_capture_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_capture_0_0' (39#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ov7670_capture_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_controller_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ov7670_controller_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_controller_0_0' (40#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ov7670_controller_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ov7670_vga_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ov7670_vga_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ov7670_vga_0_0' (41#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_ov7670_vga_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_clk_wiz_0_100M_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_clk_wiz_0_100M_0' (42#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_rst_clk_wiz_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_clk_wiz_0_100M' of module 'design_1_rst_clk_wiz_0_100M_0' requires 10 connections, but only 9 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:990]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_mig_7series_0_81M_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_mig_7series_0_81M_0' (43#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_rst_mig_7series_0_81M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_mig_7series_0_81M' of module 'design_1_rst_mig_7series_0_81M_0' requires 10 connections, but only 6 given [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:1000]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (44#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (45#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_xlconstant_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_xlconstant_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (46#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/.Xil/Vivado-18272-DESKTOP-BBJD4E6/realtime/design_1_xlconstant_1_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ov7670_capture_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:964]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ov7670_vga_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:981]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'finger_detection_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:607]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'blk_mem_gen_0'. This will prevent further optimization [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:588]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (47#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:22659]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (41#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:22659]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (42#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (48#1) [C:/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:22659]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (49#1) [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design s01_couplers_imp_2REGHR has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s01_couplers_imp_2REGHR has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1XR4ZAZ has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design m04_couplers_imp_5LX7BU has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design m03_couplers_imp_1W07O72 has unconnected port M_ACLK
@@ -182,7 +200,7 @@ WARNING: [Synth 8-3331] design m01_couplers_imp_1UTB3Y5 has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 605.242 ; gain = 159.809
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 606.645 ; gain = 160.934
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -195,10 +213,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 605.242 ; gain = 159.809
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 606.645 ; gain = 160.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 605.242 ; gain = 159.809
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 606.645 ; gain = 160.934
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -251,6 +269,18 @@ Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instrument
 Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
 Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_PmodBT2_0_0/design_1_PmodBT2_0_0/design_1_PmodBT2_0_0_in_context.xdc] for cell 'design_1_i/PmodBT2_0'
 Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_PmodBT2_0_0/design_1_PmodBT2_0_0/design_1_PmodBT2_0_0_in_context.xdc] for cell 'design_1_i/PmodBT2_0'
+Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/design_1_audio_core_0_0/design_1_audio_core_0_0_in_context.xdc] for cell 'design_1_i/audio_core_0'
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_audio_core_0_0/design_1_audio_core_0_0/design_1_audio_core_0_0_in_context.xdc] for cell 'design_1_i/audio_core_0'
+Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/xlconstant_1'
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0/design_1_xlconstant_0_0_in_context.xdc] for cell 'design_1_i/xlconstant_1'
+Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0/design_1_util_vector_logic_0_0_in_context.xdc] for cell 'design_1_i/util_vector_logic_0'
+Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_drum'
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_drum'
+Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_4/design_1_auto_ds_4/design_1_auto_ds_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m05_couplers/auto_ds'
+Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_4/design_1_auto_ds_4/design_1_auto_ds_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m05_couplers/auto_ds'
 Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3/design_1_auto_ds_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds'
 Finished Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3/design_1_auto_ds_1_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds'
 Parsing XDC File [c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2/design_1_auto_ds_2_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds'
@@ -276,61 +306,6 @@ WARNING: [Vivado 12-584] No ports matched 'detect_0[7]'. [C:/ECE532/ECE532_Group
 WARNING: [Vivado 12-584] No ports matched 'detect_0[8]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:87]
 WARNING: [Vivado 12-584] No ports matched 'detect_0[9]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:88]
 WARNING: [Vivado 12-584] No ports matched 'detect_0[10]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:89]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[0]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:95]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[2]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:96]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[9]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:97]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[15]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:98]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[10]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:99]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[11]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:100]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[17]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:101]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[3]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:102]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[4]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:103]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[6]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:104]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[7]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:105]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[8]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:106]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[12]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:107]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[13]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:108]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[16]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:109]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[1]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:110]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[5]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:111]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0_addr[14]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:112]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[1]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:113]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[3]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:114]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[4]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:115]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[7]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:116]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[0]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:117]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[2]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:118]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[5]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:119]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[6]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:120]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[8]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:121]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[9]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:122]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[10]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:123]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/blk_mem_gen_1_doutb[11]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:124]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/detect_0[4]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:171]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/detect_0[9]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:172]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/detect_0[5]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:174]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/detect_0[6]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:175]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/detect_0[7]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:176]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/detect_0[8]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:177]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/detect_0[10]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:178]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[10]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:181]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[11]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:182]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[15]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:183]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[16]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:184]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[7]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:185]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[8]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:186]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[9]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:187]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[12]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:188]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[13]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:189]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[14]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:190]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[17]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:191]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[1]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:210]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[2]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:211]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[0]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:212]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[3]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:213]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[6]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:214]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[4]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:215]
-WARNING: [Vivado 12-507] No nets matched 'design_1_i/finger_detection_0/inst/not_white_reg[5]'. [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc:216]
 Finished Parsing XDC File [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -343,17 +318,17 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 941.234 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 944.320 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:48 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:48 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -476,6 +451,12 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/PmodBT2_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/audio_core_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_gpio_drum. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m05_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m04_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m03_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m02_couplers/auto_cc. (constraint file  auto generated constraint, line ).
@@ -485,10 +466,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/m0
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/s01_couplers/auto_us. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_axi_periph/s00_couplers/auto_us. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:48 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:49 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -531,8 +512,10 @@ WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnecte
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M03_ARESETN
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M04_ACLK
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M04_ARESETN
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M05_ACLK
+WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port M05_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:49 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -558,13 +541,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_l
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
 INFO: [Synth 8-5819] Moved 13 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -576,7 +559,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:43 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:01:01 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -600,7 +583,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -613,7 +596,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -625,25 +608,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:44 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -660,29 +643,35 @@ Report BlackBoxes:
 |5     |design_1_auto_pc_0               |         1|
 |6     |design_1_auto_ds_2               |         1|
 |7     |design_1_auto_ds_3               |         1|
-|8     |design_1_auto_us_0               |         1|
-|9     |design_1_auto_us_1               |         1|
-|10    |design_1_PmodBT2_0_0             |         1|
-|11    |design_1_axi_uartlite_0_0        |         1|
-|12    |design_1_blk_mem_gen_0_0         |         1|
-|13    |design_1_clk_wiz_0_0             |         1|
-|14    |design_1_debounce_0_0            |         1|
-|15    |design_1_finger_detection_0_0    |         1|
-|16    |design_1_mdm_1_0                 |         1|
-|17    |design_1_microblaze_0_0          |         1|
-|18    |design_1_microblaze_0_axi_intc_0 |         1|
-|19    |design_1_microblaze_0_xlconcat_0 |         1|
-|20    |design_1_mig_7series_0_0         |         1|
-|21    |design_1_ov7670_capture_0_0      |         1|
-|22    |design_1_ov7670_controller_0_0   |         1|
-|23    |design_1_ov7670_vga_0_0          |         1|
-|24    |design_1_rst_clk_wiz_0_100M_0    |         1|
-|25    |design_1_rst_mig_7series_0_81M_0 |         1|
-|26    |design_1_dlmb_bram_if_cntlr_0    |         1|
-|27    |design_1_dlmb_v10_0              |         1|
-|28    |design_1_ilmb_bram_if_cntlr_0    |         1|
-|29    |design_1_ilmb_v10_0              |         1|
-|30    |design_1_lmb_bram_0              |         1|
+|8     |design_1_auto_ds_4               |         1|
+|9     |design_1_auto_us_0               |         1|
+|10    |design_1_auto_us_1               |         1|
+|11    |design_1_PmodBT2_0_0             |         1|
+|12    |design_1_audio_core_0_0          |         1|
+|13    |design_1_axi_gpio_0_0            |         1|
+|14    |design_1_axi_uartlite_0_0        |         1|
+|15    |design_1_blk_mem_gen_0_0         |         1|
+|16    |design_1_clk_wiz_0_0             |         1|
+|17    |design_1_debounce_0_0            |         1|
+|18    |design_1_finger_detection_0_0    |         1|
+|19    |design_1_mdm_1_0                 |         1|
+|20    |design_1_microblaze_0_0          |         1|
+|21    |design_1_microblaze_0_axi_intc_0 |         1|
+|22    |design_1_microblaze_0_xlconcat_0 |         1|
+|23    |design_1_mig_7series_0_0         |         1|
+|24    |design_1_ov7670_capture_0_0      |         1|
+|25    |design_1_ov7670_controller_0_0   |         1|
+|26    |design_1_ov7670_vga_0_0          |         1|
+|27    |design_1_rst_clk_wiz_0_100M_0    |         1|
+|28    |design_1_rst_mig_7series_0_81M_0 |         1|
+|29    |design_1_util_vector_logic_0_0   |         1|
+|30    |design_1_xlconstant_0_0          |         1|
+|31    |design_1_xlconstant_1_0          |         1|
+|32    |design_1_dlmb_bram_if_cntlr_0    |         1|
+|33    |design_1_dlmb_v10_0              |         1|
+|34    |design_1_ilmb_bram_if_cntlr_0    |         1|
+|35    |design_1_ilmb_v10_0              |         1|
+|36    |design_1_lmb_bram_0              |         1|
 +------+---------------------------------+----------+
 
 Report Cell Usage: 
@@ -690,64 +679,71 @@ Report Cell Usage:
 |      |Cell                             |Count |
 +------+---------------------------------+------+
 |1     |design_1_PmodBT2_0_0             |     1|
-|2     |design_1_auto_cc_0               |     1|
-|3     |design_1_auto_ds_0               |     1|
-|4     |design_1_auto_ds_1               |     1|
-|5     |design_1_auto_ds_2               |     1|
-|6     |design_1_auto_ds_3               |     1|
-|7     |design_1_auto_pc_0               |     1|
-|8     |design_1_auto_us_0               |     1|
-|9     |design_1_auto_us_1               |     1|
-|10    |design_1_axi_uartlite_0_0        |     1|
-|11    |design_1_blk_mem_gen_0_0         |     1|
-|12    |design_1_clk_wiz_0_0             |     1|
-|13    |design_1_debounce_0_0            |     1|
-|14    |design_1_dlmb_bram_if_cntlr_0    |     1|
-|15    |design_1_dlmb_v10_0              |     1|
-|16    |design_1_finger_detection_0_0    |     1|
-|17    |design_1_ilmb_bram_if_cntlr_0    |     1|
-|18    |design_1_ilmb_v10_0              |     1|
-|19    |design_1_lmb_bram_0              |     1|
-|20    |design_1_mdm_1_0                 |     1|
-|21    |design_1_microblaze_0_0          |     1|
-|22    |design_1_microblaze_0_axi_intc_0 |     1|
-|23    |design_1_microblaze_0_xlconcat_0 |     1|
-|24    |design_1_mig_7series_0_0         |     1|
-|25    |design_1_ov7670_capture_0_0      |     1|
-|26    |design_1_ov7670_controller_0_0   |     1|
-|27    |design_1_ov7670_vga_0_0          |     1|
-|28    |design_1_rst_clk_wiz_0_100M_0    |     1|
-|29    |design_1_rst_mig_7series_0_81M_0 |     1|
-|30    |design_1_xbar_0                  |     1|
-|31    |IBUF                             |    14|
-|32    |IOBUF                            |     8|
-|33    |OBUF                             |    28|
+|2     |design_1_audio_core_0_0          |     1|
+|3     |design_1_auto_cc_0               |     1|
+|4     |design_1_auto_ds_0               |     1|
+|5     |design_1_auto_ds_1               |     1|
+|6     |design_1_auto_ds_2               |     1|
+|7     |design_1_auto_ds_3               |     1|
+|8     |design_1_auto_ds_4               |     1|
+|9     |design_1_auto_pc_0               |     1|
+|10    |design_1_auto_us_0               |     1|
+|11    |design_1_auto_us_1               |     1|
+|12    |design_1_axi_gpio_0_0            |     1|
+|13    |design_1_axi_uartlite_0_0        |     1|
+|14    |design_1_blk_mem_gen_0_0         |     1|
+|15    |design_1_clk_wiz_0_0             |     1|
+|16    |design_1_debounce_0_0            |     1|
+|17    |design_1_dlmb_bram_if_cntlr_0    |     1|
+|18    |design_1_dlmb_v10_0              |     1|
+|19    |design_1_finger_detection_0_0    |     1|
+|20    |design_1_ilmb_bram_if_cntlr_0    |     1|
+|21    |design_1_ilmb_v10_0              |     1|
+|22    |design_1_lmb_bram_0              |     1|
+|23    |design_1_mdm_1_0                 |     1|
+|24    |design_1_microblaze_0_0          |     1|
+|25    |design_1_microblaze_0_axi_intc_0 |     1|
+|26    |design_1_microblaze_0_xlconcat_0 |     1|
+|27    |design_1_mig_7series_0_0         |     1|
+|28    |design_1_ov7670_capture_0_0      |     1|
+|29    |design_1_ov7670_controller_0_0   |     1|
+|30    |design_1_ov7670_vga_0_0          |     1|
+|31    |design_1_rst_clk_wiz_0_100M_0    |     1|
+|32    |design_1_rst_mig_7series_0_81M_0 |     1|
+|33    |design_1_util_vector_logic_0_0   |     1|
+|34    |design_1_xbar_0                  |     1|
+|35    |design_1_xlconstant_0_0          |     1|
+|36    |design_1_xlconstant_1_0          |     1|
+|37    |IBUF                             |    22|
+|38    |IOBUF                            |     8|
+|39    |OBUF                             |    30|
 +------+---------------------------------+------+
 
 Report Instance Areas: 
 +------+------------------------------+--------------------------------------+------+
 |      |Instance                      |Module                                |Cells |
 +------+------------------------------+--------------------------------------+------+
-|1     |top                           |                                      |  3659|
-|2     |  design_1_i                  |design_1                              |  3609|
-|3     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |  2333|
+|1     |top                           |                                      |  4047|
+|2     |  design_1_i                  |design_1                              |  3987|
+|3     |    microblaze_0_axi_periph   |design_1_microblaze_0_axi_periph_0    |  2664|
 |4     |      m00_couplers            |m00_couplers_imp_8RVYHO               |   184|
 |5     |      m01_couplers            |m01_couplers_imp_1UTB3Y5              |   184|
 |6     |      m02_couplers            |m02_couplers_imp_7ANRHB               |   493|
 |7     |      m03_couplers            |m03_couplers_imp_1W07O72              |   146|
 |8     |      m04_couplers            |m04_couplers_imp_5LX7BU               |   184|
-|9     |      s00_couplers            |s00_couplers_imp_1RZP34U              |   188|
-|10    |      s01_couplers            |s01_couplers_imp_2REGHR               |    73|
-|11    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
+|9     |      m05_couplers            |m05_couplers_imp_1XR4ZAZ              |   184|
+|10    |      s00_couplers            |s00_couplers_imp_1RZP34U              |   188|
+|11    |      s01_couplers            |s01_couplers_imp_2REGHR               |    73|
+|12    |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 941.234 ; gain = 495.801
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 941.234 ; gain = 159.809
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 941.234 ; gain = 495.801
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 944.320 ; gain = 160.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 944.320 ; gain = 498.609
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -756,10 +752,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-119 Infos, 140 Warnings, 0 Critical Warnings and 0 Errors encountered.
+133 Infos, 91 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:50 . Memory (MB): peak = 959.934 ; gain = 514.500
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:09 . Memory (MB): peak = 957.957 ; gain = 512.246
 INFO: [Common 17-1381] The checkpoint 'C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 960.219 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Mar 15 19:31:31 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 958.273 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 16:09:45 2020...

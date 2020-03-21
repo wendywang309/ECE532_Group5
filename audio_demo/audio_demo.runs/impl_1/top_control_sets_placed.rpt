@@ -1,0 +1,97 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
+| Date         : Sat Mar 21 15:29:34 2020
+| Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |    66 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|    16+ |           33 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             203 |           57 |
+| No           | No                    | Yes                    |            2483 |          684 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             144 |           38 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------+----------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|     Clock Signal     |                          Enable Signal                         |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++----------------------+----------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[4]                                                     | sound/u_Drum/u_fader_2_0_16ms/HDL_Counter5_out1_reg[2]_0      |                5 |             19 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[4]                                                     | sound/u_Drum/u_370Hz_Sin/u_Sin4/x1_p_reg[0]_0                 |                5 |             21 |
+|  CLK100MHZ_IBUF_BUFG | SW_IBUF[4]                                                     | sound/u_Drum/u_285Hz_Trig1/u_Trig1/Delay1_out1_reg[2]_0       |               10 |             23 |
+|  CLK100MHZ_IBUF_BUFG | sound/u_Drum/u_fader_3_0_16ms/HDL_Counter5_out1[28]_i_1__1_n_0 | sound/u_Drum/u_fader_3_0_16ms/HDL_Counter5_out1[28]_i_3_n_0   |                6 |             27 |
+|  CLK100MHZ_IBUF_BUFG | sound/u_Drum/u_fader_2_0_16ms/HDL_Counter5_out1[28]_i_1__0_n_0 | sound/u_Drum/u_fader_2_0_16ms/HDL_Counter5_out1_reg[2]_0      |                5 |             27 |
+|  CLK100MHZ_IBUF_BUFG | sound/u_Drum/u_fader_1_0_16ms/HDL_Counter5_out1[28]_i_1_n_0    | sound/u_Drum/u_fader_1_0_16ms/HDL_Counter5_out1_reg[27]_0     |                7 |             27 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_fader_3_0_16ms/HDL_Counter5_out1[28]_i_3_n_0   |                8 |             40 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_285Hz_Trig1/u_Trig1/Delay1_out1_reg[2]_0       |               11 |             41 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_DeltaSigma/Discrete_Time_Integrator_x_reg_reg[2]_0    |               16 |             47 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_fader_2_0_16ms/HDL_Counter5_out1_reg[2]_0      |               15 |             78 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_fader_1_0_16ms/HDL_Counter5_out1_reg[27]_0     |               30 |             92 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin2/x1_p_reg[29]_0                                   |               25 |             94 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin/x1_p_reg[29]_0                                    |               26 |             95 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin1/z0_p_reg[2]_0                                    |               23 |             95 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin3/z0_p_reg[2]_0                                    |               28 |             95 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin1/z3_p[31]_i_2_n_0                                 |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin2/z2_p[31]_i_2__1_n_0                              |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin2/z3_p[31]_i_2__1_n_0                              |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin1/z2_p[31]_i_2_n_0                                 |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin3/z2_p[31]_i_2__0_n_0                              |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin3/z3_p[31]_i_2__0_n_0                              |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin/z3_p[31]_i_2__2_n_0                               |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin/z2_p[31]_i_2__2_n_0                               |               26 |             96 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_370Hz_Sin/u_Sin4/z3_p[20]_i_2__3_n_0           |               30 |            102 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/kconst_1_reg[33]_0                                      |               37 |            105 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_370Hz_Sin/u_Sin4/x1_p_reg[0]_0                 |               30 |            117 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_fader_1_0_16ms/HwModeRegister1_reg_reg[6][0]_0 |               33 |            119 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin1/y5_p_reg[31]_0                                   |               29 |            119 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin2/x4_p_reg[4]_0                                    |               35 |            119 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Sin1/y4_p_reg[0]_0                                    |               35 |            119 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/Gain1_out1_1_reg[0]__0_0                         |               33 |            119 |
+|  CLK100MHZ_IBUF_BUFG |                                                                | sound/u_Drum/u_fader_1_0_16ms/delayMatch1_reg_reg[7]_0        |               32 |            119 |
+|  CLK100MHZ_IBUF_BUFG |                                                                |                                                               |              114 |            406 |
++----------------------+----------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+
+

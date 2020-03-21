@@ -244,13 +244,18 @@ proc create_root_design { parentCell } {
   set usb_uart [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:uart_rtl:1.0 usb_uart ]
 
   # Create ports
+  set AUD_PWM [ create_bd_port -dir O AUD_PWM ]
+  set AUD_SD [ create_bd_port -dir O -from 0 -to 0 AUD_SD ]
   set BLUE_O [ create_bd_port -dir O -from 4 -to 0 BLUE_O ]
   set GREEN_O [ create_bd_port -dir O -from 5 -to 0 GREEN_O ]
   set HSYNC_O [ create_bd_port -dir O HSYNC_O ]
   set RED_O [ create_bd_port -dir O -from 4 -to 0 RED_O ]
   set VSYNC_O [ create_bd_port -dir O VSYNC_O ]
   set button_debounce [ create_bd_port -dir I button_debounce ]
-  set detect_0 [ create_bd_port -dir O -from 3 -to 0 detect_0 ]
+  set c_0 [ create_bd_port -dir O c_0 ]
+  set d_0 [ create_bd_port -dir O d_0 ]
+  set e_0 [ create_bd_port -dir O e_0 ]
+  set f_0 [ create_bd_port -dir O f_0 ]
   set led_config_finished [ create_bd_port -dir O led_config_finished ]
   set ov7670_d [ create_bd_port -dir I -from 7 -to 0 ov7670_d ]
   set ov7670_href [ create_bd_port -dir I ov7670_href ]
@@ -270,6 +275,7 @@ proc create_root_design { parentCell } {
    CONFIG.FREQ_HZ {100000000} \
    CONFIG.PHASE {0.000} \
  ] $sys_clock
+  set volume_ctrl_0 [ create_bd_port -dir I -from 7 -to 0 volume_ctrl_0 ]
 
   # Create instance: PmodBT2_0, and set properties
   set PmodBT2_0 [ create_bd_cell -type ip -vlnv digilentinc.com:IP:PmodBT2:1.0 PmodBT2_0 ]
@@ -277,6 +283,16 @@ proc create_root_design { parentCell } {
    CONFIG.PMOD {jc} \
    CONFIG.USE_BOARD_FLOW {true} \
  ] $PmodBT2_0
+
+  # Create instance: audio_core_0, and set properties
+  set audio_core_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:audio_core:1.0 audio_core_0 ]
+
+  # Create instance: axi_gpio_drum, and set properties
+  set axi_gpio_drum [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_drum ]
+  set_property -dict [ list \
+   CONFIG.C_ALL_OUTPUTS {1} \
+   CONFIG.C_GPIO_WIDTH {1} \
+ ] $axi_gpio_drum
 
   # Create instance: axi_uartlite_0, and set properties
   set axi_uartlite_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 ]
@@ -367,7 +383,7 @@ proc create_root_design { parentCell } {
   # Create instance: microblaze_0_axi_periph, and set properties
   set microblaze_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 microblaze_0_axi_periph ]
   set_property -dict [ list \
-   CONFIG.NUM_MI {5} \
+   CONFIG.NUM_MI {6} \
    CONFIG.NUM_SI {2} \
  ] $microblaze_0_axi_periph
 
@@ -406,6 +422,20 @@ proc create_root_design { parentCell } {
   # Create instance: rst_mig_7series_0_81M, and set properties
   set rst_mig_7series_0_81M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_mig_7series_0_81M ]
 
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_0
+
+  # Create instance: xlconstant_0, and set properties
+  set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+
+  # Create instance: xlconstant_1, and set properties
+  set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+
   # Create interface connections
   connect_bd_intf_net -intf_net PmodBT2_0_Pmod_out [get_bd_intf_ports jc] [get_bd_intf_pins PmodBT2_0/Pmod_out]
   connect_bd_intf_net -intf_net axi_uartlite_0_UART [get_bd_intf_ports usb_uart] [get_bd_intf_pins axi_uartlite_0/UART]
@@ -415,6 +445,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M02_AXI [get_bd_intf_pins microblaze_0_axi_periph/M02_AXI] [get_bd_intf_pins mig_7series_0/S_AXI]
   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M03_AXI [get_bd_intf_pins PmodBT2_0/AXI_LITE_UART] [get_bd_intf_pins microblaze_0_axi_periph/M03_AXI]
   connect_bd_intf_net -intf_net microblaze_0_axi_periph_M04_AXI [get_bd_intf_pins PmodBT2_0/AXI_LITE_GPIO] [get_bd_intf_pins microblaze_0_axi_periph/M04_AXI]
+  connect_bd_intf_net -intf_net microblaze_0_axi_periph_M05_AXI [get_bd_intf_pins axi_gpio_drum/S_AXI] [get_bd_intf_pins microblaze_0_axi_periph/M05_AXI]
   connect_bd_intf_net -intf_net microblaze_0_debug [get_bd_intf_pins mdm_1/MBDEBUG_0] [get_bd_intf_pins microblaze_0/DEBUG]
   connect_bd_intf_net -intf_net microblaze_0_dlmb_1 [get_bd_intf_pins microblaze_0/DLMB] [get_bd_intf_pins microblaze_0_local_memory/DLMB]
   connect_bd_intf_net -intf_net microblaze_0_ilmb_1 [get_bd_intf_pins microblaze_0/ILMB] [get_bd_intf_pins microblaze_0_local_memory/ILMB]
@@ -424,6 +455,8 @@ proc create_root_design { parentCell } {
 
   # Create port connections
   connect_bd_net -net Net [get_bd_ports ov7670_siod] [get_bd_pins ov7670_controller_0/siod]
+  connect_bd_net -net audio_core_0_out_PDM [get_bd_ports AUD_PWM] [get_bd_pins audio_core_0/out_PDM]
+  connect_bd_net -net axi_gpio_0_gpio_io_o [get_bd_pins audio_core_0/run_drum] [get_bd_pins axi_gpio_drum/gpio_io_o]
   connect_bd_net -net axi_uartlite_0_interrupt [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins microblaze_0_xlconcat/In0]
   connect_bd_net -net blk_mem_gen_0_doutb [get_bd_pins blk_mem_gen_0/doutb] [get_bd_pins finger_detection_0/dout] [get_bd_pins ov7670_vga_0/frame_pixel]
   connect_bd_net -net clk_wiz_0_clk_25 [get_bd_pins clk_wiz_0/clk_25] [get_bd_pins finger_detection_0/clk] [get_bd_pins ov7670_vga_0/clk25]
@@ -434,14 +467,17 @@ proc create_root_design { parentCell } {
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets d_0_1]
   connect_bd_net -net debounce_0_o [get_bd_pins debounce_0/o] [get_bd_pins ov7670_controller_0/resend]
-  connect_bd_net -net finger_detection_0_detect [get_bd_ports detect_0] [get_bd_pins finger_detection_0/detect]
+  connect_bd_net -net finger_detection_0_c [get_bd_ports c_0] [get_bd_pins audio_core_0/note_c6] [get_bd_pins finger_detection_0/c]
+  connect_bd_net -net finger_detection_0_d [get_bd_ports d_0] [get_bd_pins audio_core_0/note_d6] [get_bd_pins finger_detection_0/d]
+  connect_bd_net -net finger_detection_0_e [get_bd_ports e_0] [get_bd_pins audio_core_0/note_e6] [get_bd_pins finger_detection_0/e]
+  connect_bd_net -net finger_detection_0_f [get_bd_ports f_0] [get_bd_pins audio_core_0/note_f6] [get_bd_pins finger_detection_0/f]
   connect_bd_net -net href_0_1 [get_bd_ports ov7670_href] [get_bd_pins ov7670_capture_0/href]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets href_0_1]
   connect_bd_net -net i_0_1 [get_bd_ports button_debounce] [get_bd_pins debounce_0/i]
   connect_bd_net -net mdm_1_debug_sys_rst [get_bd_pins mdm_1/Debug_SYS_Rst] [get_bd_pins rst_clk_wiz_0_100M/mb_debug_sys_rst]
-  connect_bd_net -net microblaze_0_Clk [get_bd_pins PmodBT2_0/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_100] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M03_ACLK] [get_bd_pins microblaze_0_axi_periph/M04_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_axi_periph/S01_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_0_100M/slowest_sync_clk]
+  connect_bd_net -net microblaze_0_Clk [get_bd_pins PmodBT2_0/s_axi_aclk] [get_bd_pins audio_core_0/clk] [get_bd_pins axi_gpio_drum/s_axi_aclk] [get_bd_pins axi_uartlite_0/s_axi_aclk] [get_bd_pins clk_wiz_0/clk_100] [get_bd_pins microblaze_0/Clk] [get_bd_pins microblaze_0_axi_intc/processor_clk] [get_bd_pins microblaze_0_axi_intc/s_axi_aclk] [get_bd_pins microblaze_0_axi_periph/ACLK] [get_bd_pins microblaze_0_axi_periph/M00_ACLK] [get_bd_pins microblaze_0_axi_periph/M01_ACLK] [get_bd_pins microblaze_0_axi_periph/M03_ACLK] [get_bd_pins microblaze_0_axi_periph/M04_ACLK] [get_bd_pins microblaze_0_axi_periph/M05_ACLK] [get_bd_pins microblaze_0_axi_periph/S00_ACLK] [get_bd_pins microblaze_0_axi_periph/S01_ACLK] [get_bd_pins microblaze_0_local_memory/LMB_Clk] [get_bd_pins rst_clk_wiz_0_100M/slowest_sync_clk]
   connect_bd_net -net microblaze_0_intr [get_bd_pins microblaze_0_axi_intc/intr] [get_bd_pins microblaze_0_xlconcat/dout]
   connect_bd_net -net mig_7series_0_mmcm_locked [get_bd_pins mig_7series_0/mmcm_locked] [get_bd_pins rst_mig_7series_0_81M/dcm_locked]
   connect_bd_net -net mig_7series_0_ui_clk [get_bd_pins microblaze_0_axi_periph/M02_ACLK] [get_bd_pins mig_7series_0/ui_clk] [get_bd_pins rst_mig_7series_0_81M/slowest_sync_clk]
@@ -471,19 +507,25 @@ HDL_ATTRIBUTE.DEBUG {true} \
   connect_bd_net -net rst_clk_wiz_0_100M_bus_struct_reset [get_bd_pins microblaze_0_local_memory/SYS_Rst] [get_bd_pins rst_clk_wiz_0_100M/bus_struct_reset]
   connect_bd_net -net rst_clk_wiz_0_100M_interconnect_aresetn [get_bd_pins microblaze_0_axi_periph/ARESETN] [get_bd_pins rst_clk_wiz_0_100M/interconnect_aresetn]
   connect_bd_net -net rst_clk_wiz_0_100M_mb_reset [get_bd_pins microblaze_0/Reset] [get_bd_pins microblaze_0_axi_intc/processor_rst] [get_bd_pins rst_clk_wiz_0_100M/mb_reset]
-  connect_bd_net -net rst_clk_wiz_0_100M_peripheral_aresetn [get_bd_pins PmodBT2_0/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins microblaze_0_axi_intc/s_axi_aresetn] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/M04_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins microblaze_0_axi_periph/S01_ARESETN] [get_bd_pins rst_clk_wiz_0_100M/peripheral_aresetn]
+  connect_bd_net -net rst_clk_wiz_0_100M_peripheral_aresetn [get_bd_pins PmodBT2_0/s_axi_aresetn] [get_bd_pins axi_gpio_drum/s_axi_aresetn] [get_bd_pins axi_uartlite_0/s_axi_aresetn] [get_bd_pins microblaze_0_axi_intc/s_axi_aresetn] [get_bd_pins microblaze_0_axi_periph/M00_ARESETN] [get_bd_pins microblaze_0_axi_periph/M01_ARESETN] [get_bd_pins microblaze_0_axi_periph/M03_ARESETN] [get_bd_pins microblaze_0_axi_periph/M04_ARESETN] [get_bd_pins microblaze_0_axi_periph/M05_ARESETN] [get_bd_pins microblaze_0_axi_periph/S00_ARESETN] [get_bd_pins microblaze_0_axi_periph/S01_ARESETN] [get_bd_pins rst_clk_wiz_0_100M/peripheral_aresetn] [get_bd_pins util_vector_logic_0/Op1]
   connect_bd_net -net rst_mig_7series_0_81M_peripheral_aresetn [get_bd_pins microblaze_0_axi_periph/M02_ARESETN] [get_bd_pins mig_7series_0/aresetn] [get_bd_pins rst_mig_7series_0_81M/peripheral_aresetn]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins mig_7series_0/sys_clk_i]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins audio_core_0/reset] [get_bd_pins util_vector_logic_0/Res]
+  connect_bd_net -net volume_ctrl_0_1 [get_bd_ports volume_ctrl_0] [get_bd_pins audio_core_0/volume_ctrl]
   connect_bd_net -net vsync_0_1 [get_bd_ports ov7670_vsync] [get_bd_pins ov7670_capture_0/vsync]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets vsync_0_1]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins audio_core_0/clk_enable] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_1_dout [get_bd_ports AUD_SD] [get_bd_pins xlconstant_1/dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x00002000 -offset 0x00008000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs PmodBT2_0/AXI_LITE_UART/Reg0] SEG_PmodBT2_0_Reg0
   create_bd_addr_seg -range 0x00002000 -offset 0x00008000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs PmodBT2_0/AXI_LITE_UART/Reg0] SEG_PmodBT2_0_Reg0
   create_bd_addr_seg -range 0x00001000 -offset 0x0000A000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs PmodBT2_0/AXI_LITE_GPIO/Reg0] SEG_PmodBT2_0_Reg01
   create_bd_addr_seg -range 0x00001000 -offset 0x0000A000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs PmodBT2_0/AXI_LITE_GPIO/Reg0] SEG_PmodBT2_0_Reg03
+  create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_gpio_drum/S_AXI/Reg] SEG_axi_gpio_0_Reg
+  create_bd_addr_seg -range 0x00010000 -offset 0x40000000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs axi_gpio_drum/S_AXI/Reg] SEG_axi_gpio_0_Reg
   create_bd_addr_seg -range 0x00010000 -offset 0x40600000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs axi_uartlite_0/S_AXI/Reg] SEG_axi_uartlite_0_Reg
   create_bd_addr_seg -range 0x00010000 -offset 0x40600000 [get_bd_addr_spaces microblaze_0/Instruction] [get_bd_addr_segs axi_uartlite_0/S_AXI/Reg] SEG_axi_uartlite_0_Reg
   create_bd_addr_seg -range 0x00008000 -offset 0x00000000 [get_bd_addr_spaces microblaze_0/Data] [get_bd_addr_segs microblaze_0_local_memory/dlmb_bram_if_cntlr/SLMB/Mem] SEG_dlmb_bram_if_cntlr_Mem

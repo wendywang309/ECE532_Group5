@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
--- Date        : Sat Mar 14 23:26:08 2020
--- Host        : SINCOL-PC running 64-bit major release  (build 9200)
+-- Date        : Sat Mar 21 14:38:50 2020
+-- Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               D:/GitHub/ECE532_Group5/camera_to_vga/camera_to_vga.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.vhdl
+--               C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_finger_detection_0_0/design_1_finger_detection_0_0_sim_netlist.vhdl
 -- Design      : design_1_finger_detection_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -16,7 +16,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1_finger_detection_0_0_finger_detection is
   port (
-    detect : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    Q : out STD_LOGIC_VECTOR ( 3 downto 0 );
     addr : in STD_LOGIC_VECTOR ( 17 downto 0 );
     clk : in STD_LOGIC;
     dout : in STD_LOGIC_VECTOR ( 3 downto 0 )
@@ -29,24 +29,24 @@ architecture STRUCTURE of design_1_finger_detection_0_0_finger_detection is
   signal blue : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal detected : STD_LOGIC;
   signal detected0 : STD_LOGIC;
-  signal \detected[0]_i_2_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_10_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_11_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_12_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_13_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_14_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_15_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_16_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_17_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_18_n_0\ : STD_LOGIC;
   signal \detected[0]_i_3_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_4_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_5_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_6_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_7_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_8_n_0\ : STD_LOGIC;
+  signal \detected[0]_i_9_n_0\ : STD_LOGIC;
   signal \detected[2]_i_2_n_0\ : STD_LOGIC;
   signal \detected[2]_i_3_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_10_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_11_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_12_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_13_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_14_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_15_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_16_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_3_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_4_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_5_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_6_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_7_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_8_n_0\ : STD_LOGIC;
-  signal \detected[3]_i_9_n_0\ : STD_LOGIC;
   signal green : STD_LOGIC_VECTOR ( 3 downto 2 );
   signal \nw1[0]_i_1_n_0\ : STD_LOGIC;
   signal \nw1[0]_i_3_n_0\ : STD_LOGIC;
@@ -274,6 +274,123 @@ begin
     );
 \detected[0]_i_1\: unisim.vcomponents.LUT6
     generic map(
+      INIT => X"AAAAAAAA8AAAAAAA"
+    )
+        port map (
+      I0 => x_coord_0,
+      I1 => \detected[0]_i_3_n_0\,
+      I2 => \detected[0]_i_4_n_0\,
+      I3 => \detected[0]_i_5_n_0\,
+      I4 => \detected[0]_i_6_n_0\,
+      I5 => \detected[0]_i_7_n_0\,
+      O => detected
+    );
+\detected[0]_i_10\: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFFFFFE"
+    )
+        port map (
+      I0 => nw4_reg(15),
+      I1 => nw4_reg(17),
+      I2 => nw4_reg(16),
+      I3 => nw4_reg(14),
+      I4 => nw2_reg(14),
+      O => \detected[0]_i_10_n_0\
+    );
+\detected[0]_i_11\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => nw3_reg(14),
+      I1 => nw3_reg(15),
+      I2 => nw3_reg(17),
+      I3 => nw3_reg(16),
+      O => \detected[0]_i_11_n_0\
+    );
+\detected[0]_i_12\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => nw4_reg(2),
+      I1 => nw4_reg(1),
+      I2 => nw4_reg(7),
+      I3 => nw4_reg(4),
+      O => \detected[0]_i_12_n_0\
+    );
+\detected[0]_i_13\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => nw4_reg(10),
+      I1 => nw4_reg(9),
+      I2 => nw4_reg(8),
+      I3 => nw4_reg(11),
+      I4 => nw4_reg(12),
+      I5 => nw4_reg(13),
+      O => \detected[0]_i_13_n_0\
+    );
+\detected[0]_i_14\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => nw2_reg(2),
+      I1 => nw2_reg(1),
+      I2 => nw2_reg(7),
+      I3 => nw2_reg(4),
+      O => \detected[0]_i_14_n_0\
+    );
+\detected[0]_i_15\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => nw2_reg(10),
+      I1 => nw2_reg(9),
+      I2 => nw2_reg(8),
+      I3 => nw2_reg(11),
+      I4 => nw2_reg(12),
+      I5 => nw2_reg(13),
+      O => \detected[0]_i_15_n_0\
+    );
+\detected[0]_i_16\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => nw1_reg(3),
+      I1 => nw1_reg(1),
+      I2 => nw1_reg(6),
+      I3 => nw1_reg(4),
+      O => \detected[0]_i_16_n_0\
+    );
+\detected[0]_i_17\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => nw1_reg(14),
+      I1 => nw1_reg(15),
+      I2 => nw1_reg(17),
+      I3 => nw1_reg(16),
+      O => \detected[0]_i_17_n_0\
+    );
+\detected[0]_i_18\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"FFFE"
+    )
+        port map (
+      I0 => nw3_reg(3),
+      I1 => nw3_reg(1),
+      I2 => nw3_reg(6),
+      I3 => nw3_reg(4),
+      O => \detected[0]_i_18_n_0\
+    );
+\detected[0]_i_2\: unisim.vcomponents.LUT6
+    generic map(
       INIT => X"FFFEFFFCFFFEFFFE"
     )
         port map (
@@ -281,11 +398,76 @@ begin
       I1 => nw1_reg(15),
       I2 => nw1_reg(17),
       I3 => nw1_reg(16),
-      I4 => \detected[0]_i_2_n_0\,
-      I5 => \detected[0]_i_3_n_0\,
+      I4 => \detected[0]_i_8_n_0\,
+      I5 => \detected[0]_i_9_n_0\,
       O => p_0_in(0)
     );
-\detected[0]_i_2\: unisim.vcomponents.LUT6
+\detected[0]_i_3\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFFFFFFFFFE"
+    )
+        port map (
+      I0 => \detected[0]_i_10_n_0\,
+      I1 => nw2_reg(16),
+      I2 => nw2_reg(17),
+      I3 => nw2_reg(15),
+      I4 => \detected[0]_i_8_n_0\,
+      I5 => \detected[0]_i_11_n_0\,
+      O => \detected[0]_i_3_n_0\
+    );
+\detected[0]_i_4\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000001"
+    )
+        port map (
+      I0 => \detected[0]_i_12_n_0\,
+      I1 => nw4_reg(3),
+      I2 => nw4_reg(0),
+      I3 => nw4_reg(6),
+      I4 => nw4_reg(5),
+      I5 => \detected[0]_i_13_n_0\,
+      O => \detected[0]_i_4_n_0\
+    );
+\detected[0]_i_5\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000001"
+    )
+        port map (
+      I0 => \detected[0]_i_14_n_0\,
+      I1 => nw2_reg(3),
+      I2 => nw2_reg(0),
+      I3 => nw2_reg(6),
+      I4 => nw2_reg(5),
+      I5 => \detected[0]_i_15_n_0\,
+      O => \detected[0]_i_5_n_0\
+    );
+\detected[0]_i_6\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000001"
+    )
+        port map (
+      I0 => \detected[0]_i_16_n_0\,
+      I1 => nw1_reg(7),
+      I2 => nw1_reg(5),
+      I3 => nw1_reg(2),
+      I4 => nw1_reg(0),
+      I5 => \detected[0]_i_17_n_0\,
+      O => \detected[0]_i_6_n_0\
+    );
+\detected[0]_i_7\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"FFFFFFFEFFFFFFFF"
+    )
+        port map (
+      I0 => \detected[0]_i_18_n_0\,
+      I1 => nw3_reg(7),
+      I2 => nw3_reg(5),
+      I3 => nw3_reg(2),
+      I4 => nw3_reg(0),
+      I5 => \detected[2]_i_3_n_0\,
+      O => \detected[0]_i_7_n_0\
+    );
+\detected[0]_i_8\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"FFFFFFFFFFFFFFFE"
     )
@@ -296,9 +478,9 @@ begin
       I3 => nw1_reg(11),
       I4 => nw1_reg(12),
       I5 => nw1_reg(13),
-      O => \detected[0]_i_2_n_0\
+      O => \detected[0]_i_8_n_0\
     );
-\detected[0]_i_3\: unisim.vcomponents.LUT5
+\detected[0]_i_9\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"00000001"
     )
@@ -307,8 +489,8 @@ begin
       I1 => nw1_reg(2),
       I2 => nw1_reg(5),
       I3 => nw1_reg(7),
-      I4 => \detected[3]_i_14_n_0\,
-      O => \detected[0]_i_3_n_0\
+      I4 => \detected[0]_i_16_n_0\,
+      O => \detected[0]_i_9_n_0\
     );
 \detected[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
@@ -318,7 +500,7 @@ begin
       I0 => nw2_reg(15),
       I1 => nw2_reg(17),
       I2 => nw2_reg(16),
-      I3 => \detected[3]_i_5_n_0\,
+      I3 => \detected[0]_i_5_n_0\,
       I4 => nw2_reg(14),
       O => p_0_in(1)
     );
@@ -344,7 +526,7 @@ begin
       I1 => nw3_reg(2),
       I2 => nw3_reg(5),
       I3 => nw3_reg(7),
-      I4 => \detected[3]_i_16_n_0\,
+      I4 => \detected[0]_i_18_n_0\,
       O => \detected[2]_i_2_n_0\
     );
 \detected[2]_i_3\: unisim.vcomponents.LUT6
@@ -360,101 +542,7 @@ begin
       I5 => nw3_reg(13),
       O => \detected[2]_i_3_n_0\
     );
-\detected[3]_i_1\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"AAAAAAAA8AAAAAAA"
-    )
-        port map (
-      I0 => x_coord_0,
-      I1 => \detected[3]_i_3_n_0\,
-      I2 => \detected[3]_i_4_n_0\,
-      I3 => \detected[3]_i_5_n_0\,
-      I4 => \detected[3]_i_6_n_0\,
-      I5 => \detected[3]_i_7_n_0\,
-      O => detected
-    );
-\detected[3]_i_10\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => nw4_reg(2),
-      I1 => nw4_reg(1),
-      I2 => nw4_reg(7),
-      I3 => nw4_reg(4),
-      O => \detected[3]_i_10_n_0\
-    );
-\detected[3]_i_11\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-        port map (
-      I0 => nw4_reg(10),
-      I1 => nw4_reg(9),
-      I2 => nw4_reg(8),
-      I3 => nw4_reg(11),
-      I4 => nw4_reg(12),
-      I5 => nw4_reg(13),
-      O => \detected[3]_i_11_n_0\
-    );
-\detected[3]_i_12\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => nw2_reg(2),
-      I1 => nw2_reg(1),
-      I2 => nw2_reg(7),
-      I3 => nw2_reg(4),
-      O => \detected[3]_i_12_n_0\
-    );
-\detected[3]_i_13\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-        port map (
-      I0 => nw2_reg(10),
-      I1 => nw2_reg(9),
-      I2 => nw2_reg(8),
-      I3 => nw2_reg(11),
-      I4 => nw2_reg(12),
-      I5 => nw2_reg(13),
-      O => \detected[3]_i_13_n_0\
-    );
-\detected[3]_i_14\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => nw1_reg(3),
-      I1 => nw1_reg(1),
-      I2 => nw1_reg(6),
-      I3 => nw1_reg(4),
-      O => \detected[3]_i_14_n_0\
-    );
-\detected[3]_i_15\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => nw1_reg(14),
-      I1 => nw1_reg(15),
-      I2 => nw1_reg(17),
-      I3 => nw1_reg(16),
-      O => \detected[3]_i_15_n_0\
-    );
-\detected[3]_i_16\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => nw3_reg(3),
-      I1 => nw3_reg(1),
-      I2 => nw3_reg(6),
-      I3 => nw3_reg(4),
-      O => \detected[3]_i_16_n_0\
-    );
-\detected[3]_i_2\: unisim.vcomponents.LUT5
+\detected[3]_i_1\: unisim.vcomponents.LUT5
     generic map(
       INIT => X"FEFFFEFE"
     )
@@ -462,97 +550,9 @@ begin
       I0 => nw4_reg(15),
       I1 => nw4_reg(17),
       I2 => nw4_reg(16),
-      I3 => \detected[3]_i_4_n_0\,
+      I3 => \detected[0]_i_4_n_0\,
       I4 => nw4_reg(14),
       O => detected0
-    );
-\detected[3]_i_3\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-        port map (
-      I0 => \detected[3]_i_8_n_0\,
-      I1 => nw2_reg(16),
-      I2 => nw2_reg(17),
-      I3 => nw2_reg(15),
-      I4 => \detected[0]_i_2_n_0\,
-      I5 => \detected[3]_i_9_n_0\,
-      O => \detected[3]_i_3_n_0\
-    );
-\detected[3]_i_4\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-        port map (
-      I0 => \detected[3]_i_10_n_0\,
-      I1 => nw4_reg(3),
-      I2 => nw4_reg(0),
-      I3 => nw4_reg(6),
-      I4 => nw4_reg(5),
-      I5 => \detected[3]_i_11_n_0\,
-      O => \detected[3]_i_4_n_0\
-    );
-\detected[3]_i_5\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-        port map (
-      I0 => \detected[3]_i_12_n_0\,
-      I1 => nw2_reg(3),
-      I2 => nw2_reg(0),
-      I3 => nw2_reg(6),
-      I4 => nw2_reg(5),
-      I5 => \detected[3]_i_13_n_0\,
-      O => \detected[3]_i_5_n_0\
-    );
-\detected[3]_i_6\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"0000000000000001"
-    )
-        port map (
-      I0 => \detected[3]_i_14_n_0\,
-      I1 => nw1_reg(7),
-      I2 => nw1_reg(5),
-      I3 => nw1_reg(2),
-      I4 => nw1_reg(0),
-      I5 => \detected[3]_i_15_n_0\,
-      O => \detected[3]_i_6_n_0\
-    );
-\detected[3]_i_7\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFEFFFFFFFF"
-    )
-        port map (
-      I0 => \detected[3]_i_16_n_0\,
-      I1 => nw3_reg(7),
-      I2 => nw3_reg(5),
-      I3 => nw3_reg(2),
-      I4 => nw3_reg(0),
-      I5 => \detected[2]_i_3_n_0\,
-      O => \detected[3]_i_7_n_0\
-    );
-\detected[3]_i_8\: unisim.vcomponents.LUT5
-    generic map(
-      INIT => X"FFFFFFFE"
-    )
-        port map (
-      I0 => nw4_reg(15),
-      I1 => nw4_reg(17),
-      I2 => nw4_reg(16),
-      I3 => nw4_reg(14),
-      I4 => nw2_reg(14),
-      O => \detected[3]_i_8_n_0\
-    );
-\detected[3]_i_9\: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"FFFE"
-    )
-        port map (
-      I0 => nw3_reg(14),
-      I1 => nw3_reg(15),
-      I2 => nw3_reg(17),
-      I3 => nw3_reg(16),
-      O => \detected[3]_i_9_n_0\
     );
 \detected_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -562,7 +562,7 @@ begin
       C => clk,
       CE => detected,
       D => p_0_in(0),
-      Q => detect(0),
+      Q => Q(0),
       R => '0'
     );
 \detected_reg[1]\: unisim.vcomponents.FDRE
@@ -573,7 +573,7 @@ begin
       C => clk,
       CE => detected,
       D => p_0_in(1),
-      Q => detect(1),
+      Q => Q(1),
       R => '0'
     );
 \detected_reg[2]\: unisim.vcomponents.FDRE
@@ -584,7 +584,7 @@ begin
       C => clk,
       CE => detected,
       D => p_0_in(2),
-      Q => detect(2),
+      Q => Q(2),
       R => '0'
     );
 \detected_reg[3]\: unisim.vcomponents.FDRE
@@ -595,7 +595,7 @@ begin
       C => clk,
       CE => detected,
       D => detected0,
-      Q => detect(3),
+      Q => Q(3),
       R => '0'
     );
 \green_reg[2]\: unisim.vcomponents.FDRE
@@ -2205,7 +2205,10 @@ entity design_1_finger_detection_0_0 is
     clk : in STD_LOGIC;
     dout : in STD_LOGIC_VECTOR ( 11 downto 0 );
     addr : in STD_LOGIC_VECTOR ( 17 downto 0 );
-    detect : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    c : out STD_LOGIC;
+    d : out STD_LOGIC;
+    e : out STD_LOGIC;
+    f : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of design_1_finger_detection_0_0 : entity is true;
@@ -2225,9 +2228,12 @@ architecture STRUCTURE of design_1_finger_detection_0_0 is
 begin
 inst: entity work.design_1_finger_detection_0_0_finger_detection
      port map (
+      Q(3) => f,
+      Q(2) => e,
+      Q(1) => d,
+      Q(0) => c,
       addr(17 downto 0) => addr(17 downto 0),
       clk => clk,
-      detect(3 downto 0) => detect(3 downto 0),
       dout(3 downto 2) => dout(7 downto 6),
       dout(1 downto 0) => dout(3 downto 2)
     );

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_finger_detection_0_0_synth_1" LaunchDir="C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_finger_detection_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_audio_core_0_0_synth_1" LaunchDir="C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_audio_core_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xlconstant_0_0_synth_1" LaunchDir="C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_xlconstant_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_xlconstant_1_0_synth_1" LaunchDir="C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_xlconstant_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_xlconstant_0_0_synth_1"/>
+	</Run>
+</Runs>
+

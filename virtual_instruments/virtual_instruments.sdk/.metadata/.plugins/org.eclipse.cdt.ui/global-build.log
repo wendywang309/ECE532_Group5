@@ -1,9 +1,11 @@
-19:39:54 **** Build of project virtual_instruments_bsp ****
+16:22:22 **** Build of project drumstick_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
 make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/intc_v3_7/src"
 make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Running Make include in microblaze_0/libsrc/PmodBT2_v1_0/src"
@@ -19,6 +21,9 @@ mb-ar: creating ../../../lib/libxil.a
 "Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
 make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
 "Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
 make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling intc"
@@ -36,37 +41,37 @@ make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-
 "Compiling uartlite"
 'Finished building libraries'
 
-**** Build of configuration Debug for project virtual_instruments ****
+**** Build of configuration Debug for project drumstick ****
 
-Nothing to build for project virtual_instruments
-19:40:20 **** Auto Build of configuration Debug for project virtual_instruments ****
+Nothing to build for project drumstick
+16:24:20 **** Auto Build of configuration Debug for project drumstick ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../virtual_instruments_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 'Finished building: ../src/main.c'
 ' '
-'Building target: virtual_instruments.elf'
+'Building target: drumstick.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../virtual_instruments_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "virtual_instruments.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 c:/xilinx/sdk/2018.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
 (.text+0x78): undefined reference to `main'
 collect2.exe: error: ld returned 1 exit status
-make: *** [virtual_instruments.elf] Error 1
-19:40:21 **** Auto Build of configuration Debug for project virtual_instruments ****
+make: *** [drumstick.elf] Error 1
+16:24:24 **** Auto Build of configuration Debug for project drumstick ****
 make all 
-'Building target: virtual_instruments.elf'
+'Building target: drumstick.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../virtual_instruments_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "virtual_instruments.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 c:/xilinx/sdk/2018.1/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.2.0/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
 (.text+0x78): undefined reference to `main'
 collect2.exe: error: ld returned 1 exit status
-make: *** [virtual_instruments.elf] Error 1
-19:40:26 **** Auto Build of configuration Debug for project virtual_instruments ****
+make: *** [drumstick.elf] Error 1
+16:24:26 **** Auto Build of configuration Debug for project drumstick ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../virtual_instruments_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
 ../src/main.c:89:4: warning: implicit declaration of function 'NavDemo_Cleanup' [-Wimplicit-function-declaration]
     NavDemo_Cleanup();
@@ -76,14 +81,58 @@ mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../virtual_instr
      ^~~~~~~
 'Finished building: ../src/main.c'
 ' '
-'Building target: virtual_instruments.elf'
+'Building target: drumstick.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../virtual_instruments_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "virtual_instruments.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: virtual_instruments.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size virtual_instruments.elf  |tee "virtual_instruments.elf.size"
+mb-size drumstick.elf  |tee "drumstick.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   8040	    328	   3288	  11656	   2d88	virtual_instruments.elf
-'Finished building: virtual_instruments.elf.size'
+   8040	    328	   3288	  11656	   2d88	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+16:24:50 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:88:4: warning: implicit declaration of function 'NavDemo_Cleanup' [-Wimplicit-function-declaration]
+    NavDemo_Cleanup();
+    ^~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8032	    328	   3288	  11648	   2d80	drumstick.elf
+'Finished building: drumstick.elf.size'
+' '
+16:31:15 **** Auto Build of configuration Debug for project drumstick ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../drumstick_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:99:4: warning: implicit declaration of function 'NavDemo_Cleanup' [-Wimplicit-function-declaration]
+    NavDemo_Cleanup();
+    ^~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: drumstick.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../drumstick_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "drumstick.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: drumstick.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size drumstick.elf  |tee "drumstick.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   8116	    332	   3296	  11744	   2de0	drumstick.elf
+'Finished building: drumstick.elf.size'
 ' '
