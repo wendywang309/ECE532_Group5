@@ -1,0 +1,6 @@
+Top Level Verilog File: top.v
+Audio IP: audio_core.v
+
+Include all of the verilog files into the project except top.v for the audio_core to work.
+
+XDC file included
