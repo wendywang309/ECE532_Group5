@@ -39,10 +39,10 @@ module top
           (.clk(CLK100MHZ),             // clock input: 100 MHz
            .reset(~CPU_RESETN),         // reset: active high
            .clk_enable(1),              // always enabled
-           .note_c6(SW[0]),             // active high - keep at 1 as long as the note desired to be played
-           .note_d6(SW[1]),             // active high - keep at 1 as long as the note desired to be played
-           .note_e6(SW[2]),             // active high - keep at 1 as long as the note desired to be played
-           .note_f6(SW[3]),             // active high - keep at 1 as long as the note desired to be played
+           .note_c4(SW[0]),             // active high - keep at 1 as long as the note desired to be played
+           .note_d4(SW[1]),             // active high - keep at 1 as long as the note desired to be played
+           .note_e4(SW[2]),             // active high - keep at 1 as long as the note desired to be played
+           .note_f4(SW[3]),             // active high - keep at 1 as long as the note desired to be played
            .run_drum(SW[4]),            // active high - keep at 1 for ~0.2 ms, for another round, write 0 and then 1 again for ~0.2ms
            .volume_ctrl(SW[15:8]),      // audio volume: 0 - 255 (8 bits)
            .ce_out(),                   // ignore
