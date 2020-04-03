@@ -1,6 +1,6 @@
-16:45:30 **** Incremental Build of configuration Debug for project drumstick ****
+19:47:38 **** Incremental Build of configuration Debug for project drumstick ****
 make all 
 make: Nothing to be done for `all'.
 
-16:45:31 Build Finished (took 389ms)
+19:47:39 Build Finished (took 943ms)
 

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:audio_core:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
@@ -57,10 +57,10 @@ module design_1_audio_core_0_0 (
   clk,
   reset,
   clk_enable,
-  note_c6,
-  note_d6,
-  note_e6,
-  note_f6,
+  note_c4,
+  note_d4,
+  note_e4,
+  note_f4,
   run_drum,
   volume_ctrl,
   ce_out,
@@ -74,10 +74,10 @@ input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
 input wire reset;
 input wire clk_enable;
-input wire note_c6;
-input wire note_d6;
-input wire note_e6;
-input wire note_f6;
+input wire note_c4;
+input wire note_d4;
+input wire note_e4;
+input wire note_f4;
 input wire run_drum;
 input wire [7 : 0] volume_ctrl;
 output wire ce_out;
@@ -87,10 +87,10 @@ output wire out_PDM;
     .clk(clk),
     .reset(reset),
     .clk_enable(clk_enable),
-    .note_c6(note_c6),
-    .note_d6(note_d6),
-    .note_e6(note_e6),
-    .note_f6(note_f6),
+    .note_c4(note_c4),
+    .note_d4(note_d4),
+    .note_e4(note_e4),
+    .note_f4(note_f4),
     .run_drum(run_drum),
     .volume_ctrl(volume_ctrl),
     .ce_out(ce_out),

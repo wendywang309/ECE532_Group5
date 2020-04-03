@@ -1,3 +1,0 @@
-NumberHits:1
-Timestamp: Thu Feb 20 23:56:34 UTC 2020
-VLNV: xilinx.com:ip:lmb_bram_if_cntlr:4.0

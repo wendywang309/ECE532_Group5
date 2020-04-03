@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-| Date         : Sat Mar 21 14:39:21 2020
+| Date         : Sun Mar 22 10:18:51 2020
 | Host         : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_audio_core_0_0_utilization_synth.rpt -pb design_1_audio_core_0_0_utilization_synth.pb
 | Design       : design_1_audio_core_0_0
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                | 3969 |     0 |     63400 |  6.26 |
-|   LUT as Logic             | 3766 |     0 |     63400 |  5.94 |
-|   LUT as Memory            |  203 |     0 |     19000 |  1.07 |
+| Slice LUTs*                | 3809 |     0 |     63400 |  6.01 |
+|   LUT as Logic             | 3702 |     0 |     63400 |  5.84 |
+|   LUT as Memory            |  107 |     0 |     19000 |  0.56 |
 |     LUT as Distributed RAM |    0 |     0 |           |       |
-|     LUT as Shift Register  |  203 |     0 |           |       |
-| Slice Registers            | 2806 |     0 |    126800 |  2.21 |
-|   Register as Flip Flop    | 2806 |     0 |    126800 |  2.21 |
+|     LUT as Shift Register  |  107 |     0 |           |       |
+| Slice Registers            | 2590 |     0 |    126800 |  2.04 |
+|   Register as Flip Flop    | 2590 |     0 |    126800 |  2.04 |
 |   Register as Latch        |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |    0 |     0 |     31700 |  0.00 |
 | F8 Muxes                   |    0 |     0 |     15850 |  0.00 |
@@ -56,10 +56,10 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 82    |          Yes |           - |          Set |
-| 2521  |          Yes |           - |        Reset |
+| 76    |          Yes |           - |          Set |
+| 2407  |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 203   |          Yes |       Reset |            - |
+| 107   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,17 +149,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     | 2521 |        Flop & Latch |
-| LUT2     | 1972 |                 LUT |
-| LUT3     | 1429 |                 LUT |
-| CARRY4   |  889 |          CarryLogic |
-| LUT1     |  747 |                 LUT |
-| LUT4     |  244 |                 LUT |
-| LUT6     |  236 |                 LUT |
-| SRL16E   |  203 |  Distributed Memory |
-| FDRE     |  203 |        Flop & Latch |
-| LUT5     |  129 |                 LUT |
-| FDPE     |   82 |        Flop & Latch |
+| FDCE     | 2407 |        Flop & Latch |
+| LUT2     | 1872 |                 LUT |
+| LUT3     | 1424 |                 LUT |
+| CARRY4   |  887 |          CarryLogic |
+| LUT1     |  741 |                 LUT |
+| LUT6     |  243 |                 LUT |
+| LUT4     |  173 |                 LUT |
+| LUT5     |  157 |                 LUT |
+| SRL16E   |  107 |  Distributed Memory |
+| FDRE     |  107 |        Flop & Latch |
+| FDPE     |   76 |        Flop & Latch |
 | DSP48E1  |   12 |    Block Arithmetic |
 +----------+------+---------------------+
 

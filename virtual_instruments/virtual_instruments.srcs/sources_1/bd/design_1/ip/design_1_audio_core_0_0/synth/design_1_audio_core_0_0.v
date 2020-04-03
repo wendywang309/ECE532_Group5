@@ -48,20 +48,20 @@
 
 
 // IP VLNV: xilinx.com:user:audio_core:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 (* X_CORE_INFO = "audio_core,Vivado 2018.1" *)
 (* CHECK_LICENSE_TYPE = "design_1_audio_core_0_0,audio_core,{}" *)
-(* CORE_GENERATION_INFO = "design_1_audio_core_0_0,audio_core,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=audio_core,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_audio_core_0_0,audio_core,{x_ipProduct=Vivado 2018.1,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=audio_core,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_audio_core_0_0 (
   clk,
   reset,
   clk_enable,
-  note_c6,
-  note_d6,
-  note_e6,
-  note_f6,
+  note_c4,
+  note_d4,
+  note_e4,
+  note_f4,
   run_drum,
   volume_ctrl,
   ce_out,
@@ -75,10 +75,10 @@ input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 reset RST" *)
 input wire reset;
 input wire clk_enable;
-input wire note_c6;
-input wire note_d6;
-input wire note_e6;
-input wire note_f6;
+input wire note_c4;
+input wire note_d4;
+input wire note_e4;
+input wire note_f4;
 input wire run_drum;
 input wire [7 : 0] volume_ctrl;
 output wire ce_out;
@@ -88,10 +88,10 @@ output wire out_PDM;
     .clk(clk),
     .reset(reset),
     .clk_enable(clk_enable),
-    .note_c6(note_c6),
-    .note_d6(note_d6),
-    .note_e6(note_e6),
-    .note_f6(note_f6),
+    .note_c4(note_c4),
+    .note_d4(note_d4),
+    .note_e4(note_e4),
+    .note_f4(note_f4),
     .run_drum(run_drum),
     .volume_ctrl(volume_ctrl),
     .ce_out(ce_out),

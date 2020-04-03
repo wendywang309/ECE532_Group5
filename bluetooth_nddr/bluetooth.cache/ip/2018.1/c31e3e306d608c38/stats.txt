@@ -1,3 +1,0 @@
-NumberHits:1
-Timestamp: Mon Mar 09 17:11:29 UTC 2020
-VLNV: xilinx.com:ip:axi_bram_ctrl:4.0

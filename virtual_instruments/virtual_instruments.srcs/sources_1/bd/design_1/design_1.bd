@@ -615,13 +615,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>audio_core_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="audio_core" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_audio_core_0_0</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>xlconstant_0</spirit:instanceName>
         <spirit:componentRef spirit:library="ip" spirit:name="xlconstant" spirit:vendor="xilinx.com" spirit:version="1.1"/>
         <spirit:configurableElementValues>
@@ -658,6 +651,13 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axi_gpio_0_0</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_ALL_OUTPUTS">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>audio_core_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="audio_core" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_audio_core_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -897,7 +897,7 @@
         <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_0_100M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="PmodBT2_0" spirit:portRef="s_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_drum" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ACLK"/>
@@ -906,8 +906,8 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M03_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M04_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="axi_gpio_drum" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M05_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="clk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>clk_wiz_0_locked</spirit:name>
@@ -936,14 +936,14 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_intc" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_uartlite_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="PmodBT2_0" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="util_vector_logic_0" spirit:portRef="Op1"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_drum" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="S01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M03_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M04_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="util_vector_logic_0" spirit:portRef="Op1"/>
-        <spirit:internalPortReference spirit:componentRef="axi_gpio_drum" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M05_ARESETN"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
@@ -1002,25 +1002,25 @@
         <spirit:name>finger_detection_0_c</spirit:name>
         <spirit:internalPortReference spirit:componentRef="finger_detection_0" spirit:portRef="c"/>
         <spirit:externalPortReference spirit:portRef="c_0"/>
-        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_c6"/>
+        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_c4"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>finger_detection_0_d</spirit:name>
         <spirit:internalPortReference spirit:componentRef="finger_detection_0" spirit:portRef="d"/>
         <spirit:externalPortReference spirit:portRef="d_0"/>
-        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_d6"/>
+        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_d4"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>finger_detection_0_e</spirit:name>
         <spirit:internalPortReference spirit:componentRef="finger_detection_0" spirit:portRef="e"/>
         <spirit:externalPortReference spirit:portRef="e_0"/>
-        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_e6"/>
+        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_e4"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>finger_detection_0_f</spirit:name>
         <spirit:internalPortReference spirit:componentRef="finger_detection_0" spirit:portRef="f"/>
         <spirit:externalPortReference spirit:portRef="f_0"/>
-        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_f6"/>
+        <spirit:internalPortReference spirit:componentRef="audio_core_0" spirit:portRef="note_f4"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>util_vector_logic_0_Res</spirit:name>

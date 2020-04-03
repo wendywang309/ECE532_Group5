@@ -1,3 +1,0 @@
-NumberHits:5
-Timestamp: Mon Mar 09 17:11:34 UTC 2020
-VLNV: xilinx.com:ip:axi_crossbar:2.1

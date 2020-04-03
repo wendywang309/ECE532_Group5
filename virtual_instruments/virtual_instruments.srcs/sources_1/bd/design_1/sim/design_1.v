@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.1 (win64) Build 2188600 Wed Apr  4 18:40:38 MDT 2018
-//Date        : Sat Mar 21 16:05:20 2020
+//Date        : Sun Mar 22 10:20:34 2020
 //Host        : DESKTOP-BBJD4E6 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
@@ -533,10 +533,10 @@ module design_1
   design_1_audio_core_0_0 audio_core_0
        (.clk(microblaze_0_Clk),
         .clk_enable(xlconstant_0_dout),
-        .note_c6(finger_detection_0_c),
-        .note_d6(finger_detection_0_d),
-        .note_e6(finger_detection_0_e),
-        .note_f6(finger_detection_0_f),
+        .note_c4(finger_detection_0_c),
+        .note_d4(finger_detection_0_d),
+        .note_e4(finger_detection_0_e),
+        .note_f4(finger_detection_0_f),
         .out_PDM(audio_core_0_out_PDM),
         .reset(util_vector_logic_0_Res),
         .run_drum(axi_gpio_0_gpio_io_o),

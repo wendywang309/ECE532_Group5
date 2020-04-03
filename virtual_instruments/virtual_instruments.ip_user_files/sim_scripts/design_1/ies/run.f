@@ -247,22 +247,22 @@
   "../../../bd/design_1/ip/design_1_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/sim/PmodBT2_pmod_bridge_0_0.v" \
   "../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/259d/src/PmodBT2.v" \
   "../../../bd/design_1/ip/design_1_PmodBT2_0_0/sim/design_1_PmodBT2_0_0.v" \
-  "../../../bd/design_1/ipshared/4dff/DeltaSigma.v" \
-  "../../../bd/design_1/ipshared/4dff/Drum.v" \
-  "../../../bd/design_1/ipshared/4dff/Sin.v" \
-  "../../../bd/design_1/ipshared/4dff/Sin1.v" \
-  "../../../bd/design_1/ipshared/4dff/Sin2.v" \
-  "../../../bd/design_1/ipshared/4dff/Sin3.v" \
-  "../../../bd/design_1/ipshared/4dff/Sin4.v" \
-  "../../../bd/design_1/ipshared/4dff/Trig1.v" \
-  "../../../bd/design_1/ipshared/4dff/Trig1_block.v" \
-  "../../../bd/design_1/ipshared/4dff/alpha190Hz_Trig.v" \
-  "../../../bd/design_1/ipshared/4dff/alpha285Hz_Trig1.v" \
-  "../../../bd/design_1/ipshared/4dff/alpha370Hz_Sin.v" \
-  "../../../bd/design_1/ipshared/4dff/audio_core.v" \
-  "../../../bd/design_1/ipshared/4dff/fader_1_0_16ms.v" \
-  "../../../bd/design_1/ipshared/4dff/fader_2_0_16ms.v" \
-  "../../../bd/design_1/ipshared/4dff/fader_3_0_16ms.v" \
+  "../../../bd/design_1/ipshared/89d3/DeltaSigma.v" \
+  "../../../bd/design_1/ipshared/89d3/Drum.v" \
+  "../../../bd/design_1/ipshared/89d3/Sin.v" \
+  "../../../bd/design_1/ipshared/89d3/Sin1.v" \
+  "../../../bd/design_1/ipshared/89d3/Sin2.v" \
+  "../../../bd/design_1/ipshared/89d3/Sin3.v" \
+  "../../../bd/design_1/ipshared/89d3/Sin4.v" \
+  "../../../bd/design_1/ipshared/89d3/Trig1.v" \
+  "../../../bd/design_1/ipshared/89d3/Trig1_block.v" \
+  "../../../bd/design_1/ipshared/89d3/alpha190Hz_Trig.v" \
+  "../../../bd/design_1/ipshared/89d3/alpha285Hz_Trig1.v" \
+  "../../../bd/design_1/ipshared/89d3/alpha370Hz_Sin.v" \
+  "../../../bd/design_1/ipshared/89d3/fader_1_0_16ms.v" \
+  "../../../bd/design_1/ipshared/89d3/fader_2_0_16ms.v" \
+  "../../../bd/design_1/ipshared/89d3/fader_3_0_16ms.v" \
+  "../../../bd/design_1/ipshared/89d3/audio_core.v" \
   "../../../bd/design_1/ip/design_1_audio_core_0_0/sim/design_1_audio_core_0_0.v" \
 -endlib
 -makelib ies_lib/xlconstant_v1_1_4 \
@@ -271,6 +271,15 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
   "../../../bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" \
+-endlib
+-makelib ies_lib/util_vector_logic_v2_0_1 \
+  "../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_16 \
   "../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/1229/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -282,6 +291,7 @@
   "../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/2c2b/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_auto_ds_4/sim/design_1_auto_ds_4.v" \
   "../../../bd/design_1/ip/design_1_auto_ds_3/sim/design_1_auto_ds_3.v" \
   "../../../bd/design_1/ip/design_1_auto_ds_2/sim/design_1_auto_ds_2.v" \
   "../../../bd/design_1/ip/design_1_auto_cc_0/sim/design_1_auto_cc_0.v" \

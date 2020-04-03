@@ -26,6 +26,7 @@ vlib riviera/axi_uart16550_v2_0_18
 vlib riviera/interrupt_control_v3_1_4
 vlib riviera/axi_gpio_v2_0_18
 vlib riviera/xlconstant_v1_1_4
+vlib riviera/util_vector_logic_v2_0_1
 vlib riviera/axi_protocol_converter_v2_1_16
 vlib riviera/axi_clock_converter_v2_1_15
 vlib riviera/axi_dwidth_converter_v2_1_16
@@ -55,6 +56,7 @@ vmap axi_uart16550_v2_0_18 riviera/axi_uart16550_v2_0_18
 vmap interrupt_control_v3_1_4 riviera/interrupt_control_v3_1_4
 vmap axi_gpio_v2_0_18 riviera/axi_gpio_v2_0_18
 vmap xlconstant_v1_1_4 riviera/xlconstant_v1_1_4
+vmap util_vector_logic_v2_0_1 riviera/util_vector_logic_v2_0_1
 vmap axi_protocol_converter_v2_1_16 riviera/axi_protocol_converter_v2_1_16
 vmap axi_clock_converter_v2_1_15 riviera/axi_clock_converter_v2_1_15
 vmap axi_dwidth_converter_v2_1_16 riviera/axi_dwidth_converter_v2_1_16
@@ -308,22 +310,22 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../virtual_instruments.srcs/s
 "../../../bd/design_1/ip/design_1_PmodBT2_0_0/src/PmodBT2_pmod_bridge_0_0/sim/PmodBT2_pmod_bridge_0_0.v" \
 "../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/259d/src/PmodBT2.v" \
 "../../../bd/design_1/ip/design_1_PmodBT2_0_0/sim/design_1_PmodBT2_0_0.v" \
-"../../../bd/design_1/ipshared/4dff/DeltaSigma.v" \
-"../../../bd/design_1/ipshared/4dff/Drum.v" \
-"../../../bd/design_1/ipshared/4dff/Sin.v" \
-"../../../bd/design_1/ipshared/4dff/Sin1.v" \
-"../../../bd/design_1/ipshared/4dff/Sin2.v" \
-"../../../bd/design_1/ipshared/4dff/Sin3.v" \
-"../../../bd/design_1/ipshared/4dff/Sin4.v" \
-"../../../bd/design_1/ipshared/4dff/Trig1.v" \
-"../../../bd/design_1/ipshared/4dff/Trig1_block.v" \
-"../../../bd/design_1/ipshared/4dff/alpha190Hz_Trig.v" \
-"../../../bd/design_1/ipshared/4dff/alpha285Hz_Trig1.v" \
-"../../../bd/design_1/ipshared/4dff/alpha370Hz_Sin.v" \
-"../../../bd/design_1/ipshared/4dff/audio_core.v" \
-"../../../bd/design_1/ipshared/4dff/fader_1_0_16ms.v" \
-"../../../bd/design_1/ipshared/4dff/fader_2_0_16ms.v" \
-"../../../bd/design_1/ipshared/4dff/fader_3_0_16ms.v" \
+"../../../bd/design_1/ipshared/89d3/DeltaSigma.v" \
+"../../../bd/design_1/ipshared/89d3/Drum.v" \
+"../../../bd/design_1/ipshared/89d3/Sin.v" \
+"../../../bd/design_1/ipshared/89d3/Sin1.v" \
+"../../../bd/design_1/ipshared/89d3/Sin2.v" \
+"../../../bd/design_1/ipshared/89d3/Sin3.v" \
+"../../../bd/design_1/ipshared/89d3/Sin4.v" \
+"../../../bd/design_1/ipshared/89d3/Trig1.v" \
+"../../../bd/design_1/ipshared/89d3/Trig1_block.v" \
+"../../../bd/design_1/ipshared/89d3/alpha190Hz_Trig.v" \
+"../../../bd/design_1/ipshared/89d3/alpha285Hz_Trig1.v" \
+"../../../bd/design_1/ipshared/89d3/alpha370Hz_Sin.v" \
+"../../../bd/design_1/ipshared/89d3/fader_1_0_16ms.v" \
+"../../../bd/design_1/ipshared/89d3/fader_2_0_16ms.v" \
+"../../../bd/design_1/ipshared/89d3/fader_3_0_16ms.v" \
+"../../../bd/design_1/ipshared/89d3/audio_core.v" \
 "../../../bd/design_1/ip/design_1_audio_core_0_0/sim/design_1_audio_core_0_0.v" \
 
 vlog -work xlconstant_v1_1_4  -v2k5 "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
@@ -332,6 +334,15 @@ vlog -work xlconstant_v1_1_4  -v2k5 "+incdir+../../../../virtual_instruments.src
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v" \
 "../../../bd/design_1/ip/design_1_xlconstant_1_0/sim/design_1_xlconstant_1_0.v" \
+
+vlog -work util_vector_logic_v2_0_1  -v2k5 "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ip/design_1_util_vector_logic_0_0/sim/design_1_util_vector_logic_0_0.v" \
+
+vcom -work xil_defaultlib -93 \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_16  -v2k5 "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/1229/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
@@ -343,6 +354,7 @@ vlog -work axi_dwidth_converter_v2_1_16  -v2k5 "+incdir+../../../../virtual_inst
 "../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/2c2b/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/4903" "+incdir+../../../../virtual_instruments.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+"../../../bd/design_1/ip/design_1_auto_ds_4/sim/design_1_auto_ds_4.v" \
 "../../../bd/design_1/ip/design_1_auto_ds_3/sim/design_1_auto_ds_3.v" \
 "../../../bd/design_1/ip/design_1_auto_ds_2/sim/design_1_auto_ds_2.v" \
 "../../../bd/design_1/ip/design_1_auto_cc_0/sim/design_1_auto_cc_0.v" \

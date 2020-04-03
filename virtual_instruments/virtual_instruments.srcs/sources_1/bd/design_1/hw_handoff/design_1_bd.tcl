@@ -467,10 +467,10 @@ proc create_root_design { parentCell } {
 HDL_ATTRIBUTE.DEBUG {true} \
  ] [get_bd_nets d_0_1]
   connect_bd_net -net debounce_0_o [get_bd_pins debounce_0/o] [get_bd_pins ov7670_controller_0/resend]
-  connect_bd_net -net finger_detection_0_c [get_bd_ports c_0] [get_bd_pins audio_core_0/note_c6] [get_bd_pins finger_detection_0/c]
-  connect_bd_net -net finger_detection_0_d [get_bd_ports d_0] [get_bd_pins audio_core_0/note_d6] [get_bd_pins finger_detection_0/d]
-  connect_bd_net -net finger_detection_0_e [get_bd_ports e_0] [get_bd_pins audio_core_0/note_e6] [get_bd_pins finger_detection_0/e]
-  connect_bd_net -net finger_detection_0_f [get_bd_ports f_0] [get_bd_pins audio_core_0/note_f6] [get_bd_pins finger_detection_0/f]
+  connect_bd_net -net finger_detection_0_c [get_bd_ports c_0] [get_bd_pins audio_core_0/note_c4] [get_bd_pins finger_detection_0/c]
+  connect_bd_net -net finger_detection_0_d [get_bd_ports d_0] [get_bd_pins audio_core_0/note_d4] [get_bd_pins finger_detection_0/d]
+  connect_bd_net -net finger_detection_0_e [get_bd_ports e_0] [get_bd_pins audio_core_0/note_e4] [get_bd_pins finger_detection_0/e]
+  connect_bd_net -net finger_detection_0_f [get_bd_ports f_0] [get_bd_pins audio_core_0/note_f4] [get_bd_pins finger_detection_0/f]
   connect_bd_net -net href_0_1 [get_bd_ports ov7670_href] [get_bd_pins ov7670_capture_0/href]
   set_property -dict [ list \
 HDL_ATTRIBUTE.DEBUG {true} \

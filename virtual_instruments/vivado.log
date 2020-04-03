@@ -2,10 +2,10 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Sat Mar 21 15:36:46 2020
-# Process ID: 9460
+# Start of session at: Sat Mar 28 20:50:30 2020
+# Process ID: 9548
 # Current directory: C:/ECE532/ECE532_Group5/virtual_instruments
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6860 C:\ECE532\ECE532_Group5\virtual_instruments\virtual_instruments.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8060 C:\ECE532\ECE532_Group5\virtual_instruments\virtual_instruments.xpr
 # Log file: C:/ECE532/ECE532_Group5/virtual_instruments/vivado.log
 # Journal file: C:/ECE532/ECE532_Group5/virtual_instruments\vivado.jou
 #-----------------------------------------------------------
@@ -16,7 +16,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
-open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 977.238 ; gain = 301.082
+open_project: Time (s): cpu = 00:00:41 ; elapsed = 00:01:18 . Memory (MB): peak = 1009.191 ; gain = 315.109
 update_compile_order -fileset sources_1
 open_bd_design {C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd}
 Adding cell -- xilinx.com:user:ov7670_capture:1.0 - ov7670_capture_0
@@ -34,12 +34,15 @@ Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
 Adding cell -- xilinx.com:ip:mig_7series:4.1 - mig_7series_0
 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_81M
 Adding cell -- digilentinc.com:IP:PmodBT2:1.0 - PmodBT2_0
-Adding cell -- xilinx.com:user:audio_core:1.0 - audio_core_0
 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
 Adding cell -- xilinx.com:user:finger_detection:1.0 - finger_detection_0
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_drum
+Adding cell -- xilinx.com:user:audio_core:1.0 - audio_core_0
 WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_25(clk) and /ov7670_vga_0/clk25(undef)
 Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
 Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
 Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
 Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
@@ -54,273 +57,4 @@ Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
 Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
 Successfully read diagram <design_1> from BD file <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1076.563 ; gain = 78.188
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0
-endgroup
-set_property -dict [list CONFIG.C_OPERATION {not} CONFIG.LOGO_FILE {data/sym_notgate.png}] [get_bd_cells util_vector_logic_0]
-disconnect_bd_net /rst_clk_wiz_0_100M_peripheral_aresetn [get_bd_pins audio_core_0/reset]
-connect_bd_net [get_bd_pins audio_core_0/reset] [get_bd_pins util_vector_logic_0/Res]
-startgroup
-set_property -dict [list CONFIG.C_SIZE {1}] [get_bd_cells util_vector_logic_0]
-endgroup
-connect_bd_net [get_bd_pins rst_clk_wiz_0_100M/peripheral_aresetn] [get_bd_pins util_vector_logic_0/Op1]
-save_bd_design
-Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
-INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
-INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
-WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /PmodBT2_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /audio_core_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /finger_detection_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
-Please check your design and connect them as needed: 
-/audio_core_0/run_drum
-
-Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
-VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_vga_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block finger_detection_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodBT2_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_core_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_cc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
-Exporting to file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_0, cache-ID = ff56782cc75ccbaf; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_xbar_0, cache-ID = 1b95db2f6b63bcf6; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_3, cache-ID = a6f078607fc7a9c5; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_2, cache-ID = ea23c0adaf5001fa; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = d831766163b4fdcc; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bb75e3ab0d8740fc; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = a6f078607fc7a9c5; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = a6f078607fc7a9c5; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = 06794b5ccec95d66; cache size = 36.890 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 3776a69cb724b2ca; cache size = 36.890 MB.
-[Sat Mar 21 15:42:17 2020] Launched design_1_util_vector_logic_0_0_synth_1, synth_1...
-Run output will be captured here:
-design_1_util_vector_logic_0_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_util_vector_logic_0_0_synth_1/runme.log
-synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/runme.log
-[Sat Mar 21 15:42:18 2020] Launched impl_1...
-Run output will be captured here: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:37 ; elapsed = 00:02:02 . Memory (MB): peak = 1366.457 ; gain = 240.352
-open_hw
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2018.1
-  **** Build date : Apr  4 2018-19:32:53
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
-
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292646209A
-set_property PROGRAM.FILE {C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtools 27-3361] The debug hub core was not detected.
-Resolution: 
-1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
-2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
-For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
-close_hw
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
-endgroup
-set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
-connect_bd_net [get_bd_pins axi_gpio_0/gpio_io_o] [get_bd_pins audio_core_0/run_drum]
-WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_0/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
-apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_100 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_gpio_0/S_AXI} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
-</axi_gpio_0/S_AXI/Reg> is being mapped into </microblaze_0/Data> at <0x40000000 [ 64K ]>
-</axi_gpio_0/S_AXI/Reg> is being mapped into </microblaze_0/Instruction> at <0x40000000 [ 64K ]>
-set_property name axi_gpio_drum [get_bd_cells axi_gpio_0]
-update_ip_catalog -rebuild -scan_changes
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/ECE532_Group5/IP'.
-report_ip_status -name ip_status
-save_bd_design
-Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
-Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-WARNING: [BD 41-1781] Updates have been made to one or more nets/interface connections marked for debug.
-Debug nets, which are already connected to System ILA IP core in the block-design, will be automatically available for debug in Hardware Manager.
-For unconnected Debug nets, please open synthesized design and use 'Set Up Debug' wizard to insert, modify or delete Debug Cores. Failure to do so could result in critical warnings and errors in the implementation flow.
-INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
-INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
-WARNING: [BD 41-927] Following properties on pin /ov7670_controller_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /debounce_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /PmodBT2_0/s_axi_aclk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /audio_core_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-WARNING: [BD 41-927] Following properties on pin /finger_detection_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
-	CLK_DOMAIN=/clk_wiz_0_clk_out1 
-Wrote  : <C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd> 
-VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/sim/design_1.v
-VHDL Output written to : C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_capture_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_controller_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block ov7670_vga_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block debounce_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block finger_detection_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_0_100M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block mig_7series_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_81M .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/xbar .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block PmodBT2_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_core_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
-INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_drum .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_4/design_1_auto_ds_4_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m05_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_3/design_1_auto_ds_3_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m04_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m03_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_cc_0/design_1_auto_cc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_cc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m02_couplers/auto_pc .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m01_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/m00_couplers/auto_ds .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s01_couplers/auto_us .
-WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_ooc.xdc'
-INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_periph/s00_couplers/auto_us .
-Exporting to file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_mig_7series_0_0, cache-ID = ff56782cc75ccbaf; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_4, cache-ID = a6f078607fc7a9c5; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_3, cache-ID = a6f078607fc7a9c5; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_2, cache-ID = ea23c0adaf5001fa; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_cc_0, cache-ID = d831766163b4fdcc; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = bb75e3ab0d8740fc; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_1, cache-ID = a6f078607fc7a9c5; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_ds_0, cache-ID = a6f078607fc7a9c5; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_1, cache-ID = 06794b5ccec95d66; cache size = 36.922 MB.
-INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_us_0, cache-ID = 3776a69cb724b2ca; cache size = 36.922 MB.
-[Sat Mar 21 16:07:08 2020] Launched design_1_dlmb_bram_if_cntlr_0_synth_1, design_1_ilmb_bram_if_cntlr_0_synth_1, design_1_xbar_0_synth_1, design_1_axi_gpio_0_0_synth_1, synth_1...
-Run output will be captured here:
-design_1_dlmb_bram_if_cntlr_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_dlmb_bram_if_cntlr_0_synth_1/runme.log
-design_1_ilmb_bram_if_cntlr_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_ilmb_bram_if_cntlr_0_synth_1/runme.log
-design_1_xbar_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_xbar_0_synth_1/runme.log
-design_1_axi_gpio_0_0_synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/design_1_axi_gpio_0_0_synth_1/runme.log
-synth_1: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/synth_1/runme.log
-[Sat Mar 21 16:07:08 2020] Launched impl_1...
-Run output will be captured here: C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/runme.log
-launch_runs: Time (s): cpu = 00:00:30 ; elapsed = 00:02:01 . Memory (MB): peak = 2201.160 ; gain = 86.699
-open_hw
-file mkdir C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk
-file copy -force C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.runs/impl_1/design_1_wrapper.sysdef C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
-
-launch_sdk -workspace C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk -hwspec C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk -hwspec C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-open_project C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.xpr
-INFO: [Project 1-313] Project file moved from 'C:/ECE532/bluetooth_nv' since last save.
-Scanning sources...
-Finished scanning sources
-INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/ECE532/ECE532_Group5/diligent_library/vivado-library'; using path 'C:/ECE532/diligent_library/vivado-library' instead.
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/diligent_library/vivado-library'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:39 . Memory (MB): peak = 2347.734 ; gain = 106.547
-update_compile_order -fileset sources_1
-launch_sdk -workspace C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk -hwspec C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk -hwspec C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk/design_1_wrapper.hdf
-INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-current_project virtual_instruments
-open_bd_design {C:/ECE532/ECE532_Group5/virtual_instruments/virtual_instruments.srcs/sources_1/bd/design_1/design_1.bd}
-current_project bluetooth
-close_project
-exit
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 21 17:20:48 2020...
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1109.578 ; gain = 91.645

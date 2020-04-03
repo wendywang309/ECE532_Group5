@@ -58,7 +58,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ecf0d26b</spirit:value>
+            <spirit:value>7e2ab65e</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -74,7 +74,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>719adbdb</spirit:value>
+            <spirit:value>a5993413</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -134,7 +134,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>note_c6</spirit:name>
+        <spirit:name>note_c4</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -147,7 +147,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>note_d6</spirit:name>
+        <spirit:name>note_d4</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -160,7 +160,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>note_e6</spirit:name>
+        <spirit:name>note_e4</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -173,7 +173,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>note_f6</spirit:name>
+        <spirit:name>note_f4</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:wireTypeDefs>
@@ -299,10 +299,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>audio_core.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>fader_1_0_16ms.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -314,6 +310,11 @@
         <spirit:name>fader_3_0_16ms.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_93ff81ac</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>audio_core.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_3a6728da</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -367,10 +368,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>audio_core.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>fader_1_0_16ms.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
@@ -380,6 +377,10 @@
       </spirit:file>
       <spirit:file>
         <spirit:name>fader_3_0_16ms.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>audio_core.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -434,8 +435,8 @@
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2020-03-21T18:19:50Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-03-22T14:14:59Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="nopcore"/>
         <xilinx:tag xilinx:name="xilinx.com:user:audio_core:1.0_ARCHIVE_LOCATION">c:/ECE532/ECE532_Group5/IP/audio_synth</xilinx:tag>
@@ -444,8 +445,8 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="50102c5c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e17dc7cb"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="a22fef95"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cadacb11"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="379fdd5f"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="90e90a39"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

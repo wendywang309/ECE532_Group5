@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Sun Mar 15 19:48:10 2020
+# Process ID: 12940
+# Current directory: C:/ECE532/ECE532_Group5/bluetooth_nv
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7144 C:\ECE532\ECE532_Group5\bluetooth_nv\bluetooth.xpr
+# Log file: C:/ECE532/ECE532_Group5/bluetooth_nv/vivado.log
+# Journal file: C:/ECE532/ECE532_Group5/bluetooth_nv\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.xpr
+INFO: [Project 1-313] Project file moved from 'C:/ECE532/bluetooth_nv' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/ECE532/ECE532_Group5/diligent_library/vivado-library'; using path 'C:/ECE532/diligent_library/vivado-library' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ECE532/diligent_library/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.1/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 960.082 ; gain = 260.527
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk -hwspec C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk -hwspec C:/ECE532/ECE532_Group5/bluetooth_nv/bluetooth.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 18:17:29 2020...
